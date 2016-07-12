@@ -181,9 +181,6 @@ header {
 	.b-top-row__location{
 		float: left;
 
-		li {
-			margin: 0 7px;
-		}
 		a, a:hover {
 			border: 0;
 		}
@@ -291,6 +288,7 @@ header {
 
 .b-main-slider {
 	position: relative;
+  display: none;
 
 	&__loginform {
 		position: absolute;
@@ -299,6 +297,107 @@ header {
 		box-sizing: border-box;
 	}
 }
+
+.b-footer {
+  &__up-row {
+    background: unquote("rgb(#{$color-primary})");
+    text-align: center;
+  }
+  &__down-row {
+    color: #fff;
+    font-size: 14px;
+    background: unquote("rgb(#{$color-accent})");
+  }
+}
+
+.b-footer-links { color: #fff; display: inline-block; text-align: left; padding: 20px 0;
+  &__head {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    margin: 5px 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+
+.b-social {
+  display: inline-block;
+  padding-top: 4px;
+  margin: 0 15px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    float: left;
+    padding: 0 5px;
+  }
+  a {
+    height: 15px;
+    width: 15px;
+    padding: 2px;
+    color: unquote("rgb(#{$color-accent})");
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 18px;
+    transition: background-color 0.1s linear 0s;
+    transition: color 0.1s linear 0s;
+  }
+  a:hover, a:active {
+    background: unquote("rgb(#{$color-primary})");
+    color: #fff;
+  }
+}
+
+.b-footer-ground-links {
+  display: inline-block;
+  padding-top: 5px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    float: left;
+    position: relative;
+    padding: 0 7px 0 6px;
+  }
+  li:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+  li:last-child:after {
+    display: none;
+  }
+  a {
+    color: #fff;
+  }
+}
+.b-copy {
+  padding-top: 8px;
+}
 /*-----------------------------------HOLDERS----------------------------------*/
 
 
@@ -306,6 +405,8 @@ header {
 .bordered{ border:1px solid red; }
 .font-antialiased { text-shadow: rgba(0,0,0,.3) 0 0 2px; }
 .location-icon { margin-right: 0px !important; }
+.top-bot-m-0 { margin-top: 0; margin-bottom: 0; }
+.top-bot-p-0 { padding-top: 0; padding-bottom: 0; }
 
 .underline-link {
 	text-decoration: none;
@@ -315,5 +416,16 @@ header {
 	&:hover {
 		text-decoration: none;
 		border-color: transparent;
+	}
+}
+
+.underlined-link {
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.1s linear 0s;
+
+	&:hover {
+		text-decoration: none;
+		border-color: #fff;
 	}
 }
