@@ -1,0 +1,89 @@
+/* ----------------------------- MOBILE --------------------------- */
+@media screen and (max-width:479px) {
+	.mdl-layout__header {
+		display: flex;
+	}
+	header .mdl-navigation {
+		display: none;
+	}
+	.mdl-layout__drawer-button {
+		color: #fff;
+	}
+	.b-top-row{
+		display: none;
+	}
+	.mobile-hide {
+		display: none;
+	}
+	.b-mobile-search {
+		display: inline-block;
+		width: 44px;
+		position: absolute;
+		top: 7px;
+		right: 10px;
+		padding: 0 !important;
+	}
+	.b-logo {
+		width: 100px;
+		padding: 0;
+		position: absolute;
+		top: 8px;
+		left: 65px;
+	}
+	header .mdl-textfield {
+		padding: 0 !important;
+	}
+}
+
+/* ----------------------------- TABLET --------------------------- */
+@media screen and (min-width:480px) and (max-width:959px) {
+	.mdl-layout__header {
+		display: flex;
+	}
+	header .mdl-navigation {
+		display: none;
+	}
+	.mdl-layout__drawer-button {
+		color: #fff;
+	}
+	.b-top-row {
+		display: none;
+	}
+	.b-logo {
+		width: 100px;
+		padding: 0;
+		position: absolute;
+		top: 8px;
+		left: 65px;
+	}
+	header .mdl-textfield {
+		position: absolute;
+		top: 7px;
+		right: 10px;
+		padding: 0 !important;
+	}
+	.mdl-textfield.is-focused .mdl-textfield__expandable-holder, 
+	.mdl-textfield.is-dirty .mdl-textfield__expandable-holder {
+		max-width: 800px;
+		// width: 100%;
+	}
+	.mobile-show {
+		display: none;
+	}
+}
+
+
+/* ----------------------------- DESKTOP --------------------------- */
+@media screen and (min-width:960px) {
+	.mdl-layout__drawer-button { 
+		display: none; 
+	}
+	.mobile-show {
+		display: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.mdl-layout__header {
+		display: flex;
+	}
+}

@@ -1,0 +1,37 @@
+@font-face {
+	font-family: $proximaFont;
+	src: url('../fonts/proximaNova/light/proximanova-light-webfont.eot?') format('eot'), 
+	     url('../fonts/proximaNova/light/proximanova-light-webfont.woff') format('woff'), 
+	     url('../fonts/proximaNova/light/proximanova-light-webfont.ttf')  format('truetype'),
+	     url('../fonts/proximaNova/light/proximanova-light-webfont.svg#svgFontName') format('svg');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: $proximaFont;
+	src: url('../fonts/proximaNova/reg/ProximaNova-Regular_nohint.eot?') format('eot'), 
+	     url('../fonts/proximaNova/reg/ProximaNova-Regular_nohint.woff') format('woff'), 
+	     url('../fonts/proximaNova/reg/ProximaNova-Regular_nohint.ttf')  format('truetype'),
+	     url('../fonts/proximaNova/reg/ProximaNova-Regular_nohint.svg#svgFontName') format('svg');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: $proximaFont;
+	src: url('../fonts/proximaNova/semibold/ProximaNova-Semibold_nohint.eot?') format('eot'), 
+	     url('../fonts/proximaNova/semibold/ProximaNova-Semibold_nohint.woff') format('woff'), 
+	     url('../fonts/proximaNova/semibold/ProximaNova-Semibold_nohint.ttf')  format('truetype'),
+	     url('../fonts/proximaNova/semibold/ProximaNova-Semibold_nohint.svg#svgFontName') format('svg');
+	font-weight: 600;
+}
+
+/* ICOMOON */
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon/icomoon.eot?') format('eot'), 
+	     url('../fonts/icomoon/icomoon.woff') format('woff'), 
+	     url('../fonts/icomoon/icomoon.ttf')  format('truetype'),
+	     url('../fonts/icomoon/icomoon.svg#svgFontName') format('svg');
+	font-weight: 600;
+}

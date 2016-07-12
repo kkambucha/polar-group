@@ -1,0 +1,27 @@
+/* MDL Colors */
+
+$mdlapp-text-color-primary: "0,0,0" !default;
+$mdlapp-color-primary: "52,65,145"  !default;
+$mdlapp-color-primary-dark: "25,118,210"  !default;
+$mdlapp-color-primary-contrast: "255,255,255" !default;
+$mdlapp-color-accent: "103,175,221" !default;
+$mdlapp-color-accent-contrast: "255,255,255" !default;
+
+/* ==========  Color & Themes  ========== */
+$color-primary: $mdlapp-color-primary;
+$color-primary-dark: $mdlapp-color-primary-dark;
+$color-accent: $mdlapp-color-accent;
+$color-primary-contrast: $mdlapp-color-primary-contrast;
+$color-accent-contrast: $mdlapp-color-accent-contrast;
+
+/* ==========  Typography  ========== */
+$text-color-primary: unquote("rgba(#{$mdlapp-text-color-primary}, 0.87)");
+$text-link-color: unquote("rgb(#{$color-accent})");
+
+
+/* Fonts */
+
+$proximaFont: 'ProximaNova';
+$fontLight: 300;
+$fontNormal: 400;
+$fontSemibold: 600;

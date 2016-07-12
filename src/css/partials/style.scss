@@ -1,0 +1,319 @@
+/*-----------------------------------MIXINS----------------------------------*/
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*-----------------------------------GLOBALS----------------------------------*/
+html, body {
+	font-family: $proximaFont;
+	font-weight: $fontNormal;
+}
+/*-----------------------------------LAYERS----------------------------------*/
+.l-content {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.l-main-menu-wrapper {
+	float: right;
+}
+.l-login-form {
+	width: 482px;
+	background-color: rgba(52, 65, 145, 0.8);
+	border-radius: 5px;
+}
+/*-----------------------------------BLOCKS----------------------------------*/
+.mdl-cell--no-t-marg {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.mdl-grid--no-t-pad {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.mdl-button {
+	font-family: $proximaFont;
+	font-weight: $fontNormal;
+	color: #fff;
+}
+.mdl-layout__header .mdl-layout-title {
+	display: none;
+}
+.mdl-layout__header-row, .mdl-layout__header-row .mdl-navigation {
+	height: auto;
+}
+.mdl-layout__header-row {
+	padding: 0;
+}
+.mdl-button--no-capital {
+	text-transform: none;
+}
+.mdl-navigation--main-menu {
+	display: inline-block;
+	float: right;
+	padding: 40px 0 !important;
+
+	.mdl-button {
+		font-size: 22px;
+		padding: 0;
+		line-height: 22px;
+		height: 22px;
+		margin: 0 35px;
+	}
+	.mdl-button:hover, .mdl-button:focus:not(:active) {
+		background: none;
+		border-bottom: 1px solid #9fa4c5;
+	}
+	.mdl-button:last-child {
+		margin-right: 0;
+	}
+	.mdl-menu__outline, .mdl-menu {
+		top: 20px;
+	}
+	.mdl-menu {
+		padding: 0px;
+	}
+	.mdl-menu__item {
+		font-size: 20px;
+		border-bottom: 1px solid #cccccc;
+		height: 60px;
+		line-height: 60px;
+		color: #000;
+	}
+	.mdl-menu__item:last-child {
+		border-bottom: none;
+	}
+	.mdl-menu__item:first-child:hover {
+		border-radius: 2px 2px 0 0;
+	}
+	.mdl-menu__item:last-child:hover {
+		border-radius: 0 0 2px 2px;
+	}
+	.mdl-menu__item:hover {
+		background-color: #67afdd;
+		color: #fff;
+	}
+}
+header {
+	.mdl-textfield {
+		padding: 24px 0 !important;
+		min-height: 44px;
+	}
+	.mdl-textfield .mdl-button {
+		bottom: auto;
+	}
+	.mdl-textfield .mdl-button i {
+		font-size: 44px;
+	}
+	.mdl-button--icon {
+		width: 44px;
+		height: 44px;
+	}
+	.mdl-textfield__input {
+		font-family: $proximaFont;
+		font-weight: $fontLight;
+		border-bottom: 1px solid rgba(255, 255, 255, .4);
+	}
+	.mdl-textfield__expandable-holder {
+		margin-left: 50px;
+		padding-top: 5px;
+	}
+}
+.b-logo {
+	display: inline-block;
+	width: 148px;
+	float: left;
+	padding: 24px 0;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.b-top-row {
+	background: unquote("rgb(#{$color-accent})");
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		border-color: unquote("rgb(#{$color-accent})");
+		transition: border-color 0.3s linear 0s;
+		font-size: 15px;
+	}
+	a:hover {
+		border-bottom: 1px solid #94c5e6;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		display: inline-block;
+		float: left;
+		margin: 0 8px;
+	}
+	li:last-child {
+		margin-right: 0px;
+	}
+	li:first-child {
+		margin-left: 0px;
+	}
+
+	.b-top-row__urls{
+		float: right;
+
+		a {
+			border-bottom: 1px solid #94c5e6;
+			transition: border-color 0.3s linear 0s;
+		}
+		a:hover {
+			border-color: unquote("rgb(#{$color-accent})");
+		}
+	}
+	.b-top-row__location{
+		float: left;
+
+		li {
+			margin: 0 7px;
+		}
+		a, a:hover {
+			border: 0;
+		}
+		a span {
+			border-bottom: 1px solid unquote("rgb(#{$color-accent})");
+			transition: border-color 0.3s linear 0s;
+		}
+		a:hover span {
+			border-color: #94c5e6;
+		}
+	}
+	.material-icons {
+		position: relative;
+		font-size: 20px;
+		margin-right: 8px;
+		bottom: -4px;
+	}
+	.mdl-grid {
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+}
+.mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+	background-image: url('../img/tick.svg');
+}
+.mdl-checkbox__tick-outline {
+	mask: url('../img/tick-mask.svg');
+}
+
+.b-form {
+	width: 100%;
+	box-sizing: border-box;
+
+	&__textfield {
+		width: 100%;
+		padding: 7px 0;
+	}
+	&__header {
+		font-size: 30px;
+		font-weight: $fontSemibold;
+		font-family: $proximaFont;
+		color: #fff;
+	}
+	&__input {
+		background: #fff;
+		border: 1px solid #cccccc;
+		color: #aaaaaa;
+		line-height: 34px;
+		font-size: 18px;
+		font-family: $proximaFont;
+		border-radius: 3px;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+	&__label {
+		line-height: 34px;
+		font-size: 18px;
+		font-family: $proximaFont;
+		padding: 0 10px;
+		top: 8px;
+		font-weight: $fontSemibold;
+		box-sizing: border-box;
+	}
+	&__label:after {
+		background-color: unquote("rgb(#{$color-accent})");
+		bottom: 7px;
+	}
+	&__checkbox-label {
+		color: #fff;
+	}
+	&__buttons {
+		color: #fff;
+		font-size: 18px;
+	}
+	&__alter-link {
+		color: #fff;
+		text-decoration: none;
+	}
+	&__alter-link:hover {
+		text-decoration: none;
+	}
+	.mdl-checkbox__box-outline {
+		background: #fff;
+		border: 0;
+		border-radius: 3px;
+		color: #000;
+	}
+	.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+		border: 0;
+		background: none;
+	}
+	.mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+		color: #000;
+		background: #fff url("../img/tick.svg?embed");
+	}
+	.b-form__buttons{
+		.b-form__alter-link {
+			margin-left: 5px;
+		}
+		.mdl-button {
+			margin-right: 5px;
+		}
+	}
+}
+
+.b-main-slider {
+	position: relative;
+
+	&__loginform {
+		position: absolute;
+		top: 20px;
+		padding: 10px 40px;
+		box-sizing: border-box;
+	}
+}
+/*-----------------------------------HOLDERS----------------------------------*/
+
+
+/*-----------------------------------HELPERS----------------------------------*/
+.bordered{ border:1px solid red; }
+.font-antialiased { text-shadow: rgba(0,0,0,.3) 0 0 2px; }
+.location-icon { margin-right: 0px !important; }
+
+.underline-link {
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	transition: border-color 0.1s linear 0s;
+
+	&:hover {
+		text-decoration: none;
+		border-color: transparent;
+	}
+}
