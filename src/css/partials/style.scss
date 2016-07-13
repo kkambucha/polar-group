@@ -20,6 +20,15 @@ html, body {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
+  @include clearfix();
+
+  &--wide{
+    width: 100%;
+    max-width: none;
+  }
+  &--dark{
+    background: unquote("rgb(#{$color-primary})");
+  }
 }
 .l-main-menu-wrapper {
 	float: right;
@@ -288,7 +297,7 @@ header {
 
 .b-main-slider {
 	position: relative;
-  display: none;
+  // display: none;
 
 	&__loginform {
 		position: absolute;
@@ -395,8 +404,83 @@ header {
     color: #fff;
   }
 }
+
 .b-copy {
   padding-top: 8px;
+}
+
+.b-sec-slider {
+  padding: 65px 0;
+  &__head {
+    font-size: 72px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+  .swiper-button {
+    color: unquote("rgb(#{$color-primary})");
+  }
+  &--white {
+    .b-sec-slider__head {
+      color: #fff;
+    }
+    .b-one-slide-block__wrapper {
+      background: #fff;
+    }
+    .swiper-button {
+      color: #fff;
+    }
+  }
+}
+
+.swiper-button {
+  margin-top: -7px;
+
+  i {
+    font-size: 40px;
+    line-height: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+  };
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: -5px;
+  i {
+    transform: translate(-21px, -19px) !important;
+  };
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: -5px;
+  i {
+    transform: translate(-19px, -20px) !important;
+  };
+}
+
+.b-one-slide-block {
+  width: 33.33333333333333%;
+  box-sizing: border-box;
+  float: left;
+  padding: 2%;
+
+  &__wrapper {
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.swiper-container {
+    width: 90%;
 }
 /*-----------------------------------HOLDERS----------------------------------*/
 

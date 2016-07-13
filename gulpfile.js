@@ -15,9 +15,8 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     spritesmith = require('gulp.spritesmith'),
     plumber = require('gulp-plumber'),
-    reload = browserSync.reload;
-
-
+    reload = browserSync.reload,
+    cssImport = require('gulp-cssimport');
 
 var path = {
     sprites : {
@@ -110,6 +109,7 @@ gulp.task('style:build', function () {
         .pipe(plumber()) // Ловим ошибки
         // .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass()) //Скомпилируем
+        .pipe(cssImport())
         .pipe(prefixer()) //Добавим вендорные префиксы
         // .pipe(cssmin({
         //     //https://www.npmjs.com/package/clean-css#how-to-set-compatibility-mode
