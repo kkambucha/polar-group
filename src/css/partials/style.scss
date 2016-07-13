@@ -482,6 +482,28 @@ header {
 .swiper-container {
     width: 90%;
 }
+
+.b-text-content {
+  & > * {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  margin: 3em 0;
+
+  p {
+    margin: 1.2em 0;
+  }
+
+  strong {
+    color: unquote("rgb(#{$color-primary})");
+  }
+}
+
+.b-button-wrapper {
+  margin: 4em 0;
+  text-align: center;
+}
 /*-----------------------------------HOLDERS----------------------------------*/
 
 
