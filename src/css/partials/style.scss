@@ -593,4 +593,23 @@ header {
       content: '\2022';
       padding-right: 30px;
     }
+
+    /*--------- rail-cargo --------*/
+
+    &__big {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      font-size: 36px;
+      color: #aaaaaa;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 75px;
+    }
+    &__small{
+      max-width: 900px;
+      margin: 0 auto;
+      margin-bottom: 75px;
+    }
 }
+
