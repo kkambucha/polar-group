@@ -566,3 +566,31 @@ header {
 		border-color: #fff;
 	}
 }
+
+/*------------------------  PARTNERS ----------------------------*/
+
+.b-text-main {
+    margin-top: 80px;
+
+    & > * {
+      font-size: 18px;
+    }
+    &__head {
+      color: #344191;
+      font-weight: $fontSemibold;
+    }
+    &__paragraph {
+      margin-bottom: 30px;
+    }
+    &__list{
+      padding-left: 0;
+      list-style: none;
+    }
+    &__list-item {
+
+    }
+    &__list-item:before{
+      content: '\2022';
+      padding-right: 30px;
+    }
+}
