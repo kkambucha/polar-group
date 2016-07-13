@@ -613,3 +613,33 @@ header {
     }
 }
 
+/*----------             --------------*/
+
+.l-content {
+  &__head {
+    font-size: 50px;
+    color: #344191;
+    font-family: $proximaFont;
+    font-weight: $fontSemibold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 36px;
+    font-family: $proximaFont;
+  }
+  &__img {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  &__paragraph {
+    margin-bottom: 30px;
+    font-family: $proximaFont;
+    font-size: 18px;
+  }
+  &__button{
+    margin: 80px 0;
+    text-align: center;
+  }
+}
