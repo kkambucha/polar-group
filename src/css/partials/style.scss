@@ -504,6 +504,37 @@ header {
   margin: 4em 0;
   text-align: center;
 }
+
+.b-main-image {
+  position: relative;
+  &__image {
+    display: block;
+    width: 100%;
+
+  &__image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__wrapper {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  &__row {
+    display: table-row;
+    text-align: center;
+  }
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+  }
+  &__text {
+
+  }
+}
 /*-----------------------------------HOLDERS----------------------------------*/
 
 
