@@ -613,7 +613,78 @@ header {
     }
 }
 
-/*----------             --------------*/
+/*--------------------  NEWS  ----------------------*/
+.b-news-list{
+  margin-top: 80px;
+}
+
+.b-news-item {
+  margin-bottom: 40px;
+  @include clearfix();
+
+  &__image {
+    width: 300px;
+    float: left;
+  }
+  &__text {
+    width: 1080px;
+    float: right;
+  }
+  &__text > * {
+    font-family: $proximaFont;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__head {
+    font-size: 30px;
+    color: #344191;
+    line-height: 30px;
+    margin: 20px 0 35px;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__learn-more {
+    width: 100%;
+    text-align: right;
+  }
+  &__learn-more a {
+    color: #000000;
+  }
+}
+
+.pagination {
+  width: 100%;
+
+  &__list {
+    list-style: none;
+    text-align: center;
+  }
+  &__list-item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 3px;
+    vertical-align: middle;
+  }
+  &__list-item a {
+    font-size: 20px;
+    font-family: $proximaFont;
+    color: #cccccc;
+    text-decoration: none;
+  }
+  &__list-item.back > a, &__list-item.forward > a {
+    color: #000000;
+    font-size: 42px;
+  }
+  &__list-item.active > a {
+    color: #344191;
+  }
+  &__list-item a:hover {
+    color: #344191;
+  }
+}
+
+/*----------   BODY-NEWS   -----------*/
 
 .l-content {
   &__head {
@@ -643,3 +714,4 @@ header {
     text-align: center;
   }
 }
+
