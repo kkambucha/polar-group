@@ -11712,6 +11712,82 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .icon-linkedin:before {
   content: "\eac9"; }
 
+.b-form {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 42px; }
+  .b-form__textfield {
+    width: 100%;
+    padding: 7px 0; }
+  .b-form__header {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "ProximaNova";
+    color: #fff; }
+  .b-form__input {
+    background: #fff;
+    border: 1px solid #cccccc;
+    color: #aaaaaa;
+    line-height: 34px;
+    font-size: 18px;
+    font-family: "ProximaNova";
+    border-radius: 3px;
+    padding: 0 10px;
+    box-sizing: border-box; }
+  .b-form__label {
+    line-height: 34px;
+    font-size: 18px;
+    font-family: "ProximaNova";
+    padding: 0 10px;
+    top: 8px;
+    font-weight: 600;
+    box-sizing: border-box; }
+  .b-form__label:after {
+    background-color: rgb(103,175,221);
+    bottom: 7px; }
+  .b-form__checkbox-label {
+    color: #fff;
+    font-size: 19px; }
+  .b-form__buttons {
+    color: #fff;
+    font-size: 18px; }
+  .b-form__alter-link {
+    color: #fff;
+    text-decoration: none; }
+  .b-form__alter-link:hover {
+    text-decoration: none; }
+  .b-form .mdl-checkbox__box-outline {
+    background: #fff;
+    border: 0;
+    border-radius: 3px;
+    color: #000; }
+  .b-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    border: 0;
+    background: none; }
+  .b-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+    color: #000;
+    background: #fff url("../img/tick.svg?embed"); }
+  .b-form__buttons {
+    margin: 35px 0;
+    font-size: 18px; }
+    .b-form__buttons .b-form__alter-link {
+      margin-left: 5px; }
+    .b-form__buttons .mdl-button {
+      margin-right: 5px; }
+  .b-form__checkbox {
+    margin-top: 3px; }
+
+.b-big-header {
+  font-size: 72px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 60px; }
+
+.b-secondary-frase {
+  color: #aaaaaa;
+  font-size: 36px;
+  text-align: center; }
+
 /*-----------------------------------MIXINS----------------------------------*/
 /*-----------------------------------GLOBALS----------------------------------*/
 html, body {
@@ -11767,6 +11843,11 @@ html, body {
 
 .mdl-button--no-capital {
   text-transform: none; }
+
+.mdl-button--bold {
+  font-weight: 600;
+  font-size: 19px;
+  padding: 0 21px; }
 
 .mdl-navigation--main-menu {
   display: inline-block;
@@ -11891,64 +11972,6 @@ header .mdl-textfield__expandable-holder {
 .mdl-checkbox__tick-outline {
   -webkit-mask: url("../img/tick-mask.svg");
           mask: url("../img/tick-mask.svg"); }
-
-.b-form {
-  width: 100%;
-  box-sizing: border-box; }
-  .b-form__textfield {
-    width: 100%;
-    padding: 7px 0; }
-  .b-form__header {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "ProximaNova";
-    color: #fff; }
-  .b-form__input {
-    background: #fff;
-    border: 1px solid #cccccc;
-    color: #aaaaaa;
-    line-height: 34px;
-    font-size: 18px;
-    font-family: "ProximaNova";
-    border-radius: 3px;
-    padding: 0 10px;
-    box-sizing: border-box; }
-  .b-form__label {
-    line-height: 34px;
-    font-size: 18px;
-    font-family: "ProximaNova";
-    padding: 0 10px;
-    top: 8px;
-    font-weight: 600;
-    box-sizing: border-box; }
-  .b-form__label:after {
-    background-color: rgb(103,175,221);
-    bottom: 7px; }
-  .b-form__checkbox-label {
-    color: #fff; }
-  .b-form__buttons {
-    color: #fff;
-    font-size: 18px; }
-  .b-form__alter-link {
-    color: #fff;
-    text-decoration: none; }
-  .b-form__alter-link:hover {
-    text-decoration: none; }
-  .b-form .mdl-checkbox__box-outline {
-    background: #fff;
-    border: 0;
-    border-radius: 3px;
-    color: #000; }
-  .b-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
-    border: 0;
-    background: none; }
-  .b-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    color: #000;
-    background: #fff url("../img/tick.svg?embed"); }
-  .b-form .b-form__buttons .b-form__alter-link {
-    margin-left: 5px; }
-  .b-form .b-form__buttons .mdl-button {
-    margin-right: 5px; }
 
 .b-main-slider {
   position: relative; }
@@ -12407,7 +12430,6 @@ header .mdl-textfield__expandable-holder {
     width: 660px;
     padding: 20px;
     background: #ffffff;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 285px;
     left: -223px;
@@ -12423,6 +12445,21 @@ header .mdl-textfield__expandable-holder {
     display: block; }
   .b-means__image:hover .b-means__text {
     display: block; }
+
+/*  extending-logistics  */
+.b-extending-logistics {
+  margin: 20px 0; }
+  .b-extending-logistics:before, .b-extending-logistics:after {
+    content: "";
+    display: table; }
+  .b-extending-logistics:after {
+    clear: both; }
+  .b-extending-logistics__frase {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
 
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {

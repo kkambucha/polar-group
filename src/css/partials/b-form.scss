@@ -1,0 +1,82 @@
+.b-form {
+	width: 100%;
+	box-sizing: border-box;
+  margin-bottom: 42px;
+
+	&__textfield {
+		width: 100%;
+		padding: 7px 0;
+	}
+	&__header {
+		font-size: 30px;
+		font-weight: $fontSemibold;
+		font-family: $proximaFont;
+		color: #fff;
+	}
+	&__input {
+		background: #fff;
+		border: 1px solid #cccccc;
+		color: #aaaaaa;
+		line-height: 34px;
+		font-size: 18px;
+		font-family: $proximaFont;
+		border-radius: 3px;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+	&__label {
+		line-height: 34px;
+		font-size: 18px;
+		font-family: $proximaFont;
+		padding: 0 10px;
+		top: 8px;
+		font-weight: $fontSemibold;
+		box-sizing: border-box;
+	}
+	&__label:after {
+		background-color: unquote("rgb(#{$color-accent})");
+		bottom: 7px;
+	}
+	&__checkbox-label {
+		color: #fff;
+    font-size: 19px;
+	}
+	&__buttons {
+		color: #fff;
+		font-size: 18px;
+	}
+	&__alter-link {
+		color: #fff;
+		text-decoration: none;
+	}
+	&__alter-link:hover {
+		text-decoration: none;
+	}
+	.mdl-checkbox__box-outline {
+		background: #fff;
+		border: 0;
+		border-radius: 3px;
+		color: #000;
+	}
+	.mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+		border: 0;
+		background: none;
+	}
+	.mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+		color: #000;
+		background: #fff url("../img/tick.svg?embed");
+	}
+	&__buttons{
+    margin: 35px 0;
+    font-size: 18px;
+		.b-form__alter-link {
+			margin-left: 5px;
+		}
+		.mdl-button {
+			margin-right: 5px;
+		}
+	}
+  &__checkbox{
+    margin-top: 3px;
+  }
+}
