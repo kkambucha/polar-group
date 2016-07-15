@@ -12592,23 +12592,7 @@ header .mdl-textfield__expandable-holder {
     color: #ffffff;
     margin: 0 0 40px; }
   .b-tracking__input {
-    width: 390px;
-    padding: 5px;
-    font-size: 18px;
-    color: #000000 !important;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
     margin-bottom: 40px; }
-  .b-tracking__input[placeholder] {
-    color: #aaaaaa; }
-  .b-tracking__input::-moz-placeholder {
-    color: #aaaaaa; }
-  .b-tracking__input::-webkit-input-placeholder {
-    color: #aaaaaa; }
-  .b-tracking__input:-moz-placeholder {
-    color: #aaaaaa; }
-  .b-tracking__input:-ms-placeholder {
-    color: #aaaaaa; }
   .b-tracking__button a {
     font-size: 18px; }
   .b-tracking__advanced {
@@ -12630,7 +12614,7 @@ header .mdl-textfield__expandable-holder {
   margin: 0 auto 80px; }
 
 .b-tariff-requests__form-item {
-  width: 100%;
+  width: 388px;
   padding: 5px;
   margin-bottom: 15px;
   border-radius: 3px;
@@ -12638,21 +12622,6 @@ header .mdl-textfield__expandable-holder {
   font-family: "ProximaNova";
   font-size: 18px;
   color: #000000; }
-
-.b-tariff-requests__form-item[placeholder] {
-  color: #aaaaaa; }
-
-.b-tariff-requests__form-item::-moz-placeholder {
-  color: #aaaaaa; }
-
-.b-tariff-requests__form-item::-webkit-input-placeholder {
-  color: #aaaaaa; }
-
-.b-tariff-requests__form-item:-moz-placeholder {
-  color: #aaaaaa; }
-
-.b-tariff-requests__form-item:-ms-placeholder {
-  color: #aaaaaa; }
 
 .b-tariff-requests__send-files {
   width: 100px;
