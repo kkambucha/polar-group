@@ -895,3 +895,153 @@ header {
     font-weight: 600;
   }
 }
+
+/*------------------ ONLINE SERVICES -------------------*/
+
+.b-mypolar {
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    margin: 80px 0 40px;
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: 36px;
+    color: #aaaaaa;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__list {
+    width: 930px;
+    margin: 0 auto 80px;
+    list-style: none;
+    font-size: 20px;
+  }
+  &__list-item:before {
+    content: '\2022';
+    padding-right: 5px;
+  }
+  &__button {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__button a {
+    font-size: 18px;
+  }
+}
+
+.b-track-trace {
+  background: #f0f0f0;
+
+  &__wrap {
+    width: 1030px;
+    margin: 0 auto;
+    @include clearfix();
+  }
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin: 80px 0;
+  }
+  &__text {
+    width: 480px;
+    float: right;
+    font-size: 20px;
+    margin-top: 65px;
+  }
+  &__text span{
+    color: #344191;
+  }
+}
+
+.b-tracking {
+  width: 400px;
+  background: #344191;
+  padding: 40px;
+  margin-bottom: 80px;
+  float: left;
+
+  &__head {
+    font-size: 30px;
+    font-weight: $fontSemibold;
+    color: #ffffff;
+    margin: 0 0 40px;
+  }
+  &__input {
+    width: 390px;
+    padding: 5px;
+    font-size: 18px;
+    color: #000000 !important;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+
+  &__input[placeholder] { color: #aaaaaa; }
+  &__input::-moz-placeholder { color: #aaaaaa; }
+  &__input::-webkit-input-placeholder { color: #aaaaaa; }
+  &__input:-moz-placeholder { color: #aaaaaa; }
+  &__input:-ms-placeholder { color: #aaaaaa; }
+
+  &__button a{
+    font-size: 18px;
+  }
+  &__advanced {
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+  &__advanced a {
+    color: #ffffff;
+  }
+}
+
+.b-tariff-requests {
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin: 80px 0;
+  }
+  &__form {
+    width: 400px;
+    margin: 0 auto 80px;
+  }
+  &__form-item {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    font-family: $proximaFont;
+    font-size: 18px;
+    color: #000000;
+  }
+  &__form-item[placeholder] { color: #aaaaaa; }
+  &__form-item::-moz-placeholder { color: #aaaaaa; }
+  &__form-item::-webkit-input-placeholder { color: #aaaaaa; }
+  &__form-item:-moz-placeholder { color: #aaaaaa; }
+  &__form-item:-ms-placeholder { color: #aaaaaa; }
+  &__send-files {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  &__send-files:before {
+    content: '';
+    width: 100px;
+    height: 40px;
+    background: url(../pic/send-files.png) left top no-repeat;
+    padding-right: 30px;
+  }
+  &__button {
+    text-align: center;
+  }
+  &__button a{
+    font-size: 18px;
+  }
+}
