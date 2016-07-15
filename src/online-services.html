@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+	<title>Polar Group</title>
+</head>
+<body>
+
+	<div class="mdl-layout mdl-js-layout">
+
+		//= template/header.html
+
+		<main class="mdl-layout__content">
+
+			<div class="b-main-slider">
+				<img src="pic/main-slider/1.jpg" alt="">
+				<div class="l-content">
+
+					<div class="l-login-form b-main-slider__loginform">
+						<form action="#" method="POST" class="b-form">
+							<h3 class="b-form__header">Login in MyPOLAR</h3>
+							<div class="mdl-textfield mdl-js-textfield b-form__textfield">
+								<input class="mdl-textfield__input b-form__input" type="text" id="login">
+								<label class="mdl-textfield__label b-form__label" for="login">Login</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield b-form__textfield">
+								<input class="mdl-textfield__input b-form__input" type="text" id="password">
+								<label class="mdl-textfield__label b-form__label" for="password">Password</label>
+							</div>
+
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember">
+								<input type="checkbox" id="remember" class="mdl-checkbox__input">
+								<span class="mdl-checkbox__label b-form__checkbox-label">Remember me</span>
+							</label>
+
+							<div class="b-form__buttons">
+								<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+								Login
+								</a>
+								or
+								<a href="#" class="b-form__alter-link underline-link">Register</a>
+							</div>
+						</form>
+						<hr>
+						<form action="#" method="POST" class="b-form">
+							<h3 class="b-form__header">Tracking</h3>
+							<div class="mdl-textfield mdl-js-textfield b-form__textfield">
+								<input class="mdl-textfield__input b-form__input" type="text" id="order_number">
+								<label class="mdl-textfield__label b-form__label" for="order_number">Order number</label>
+							</div>
+							<div class="b-form__buttons">
+								<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+								Search
+								</a>
+								or
+								<a href="#" class="b-form__alter-link underline-link">Advanced
+								</a>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="l-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell--12-col">
+
+						<div class="b-mypolar">
+							<h2 class="b-mypolar__head">MyPolar</h2>
+							<h3 class="b-mypolar__subtitle">Order management tool for customs and transport</h3>
+							<ul class="b-mypolar__list">
+								<li class="b-mypolar__list-item">Polar web customs tool is compatible with Client’ ERP systems like SAP and others</li>
+								<li class="b-mypolar__list-item">24 hours online on Polar servers</li>
+								<li class="b-mypolar__list-item">Only authorized users have an access to shipment information</li>
+								<li class="b-mypolar__list-item">Duties payable and receivable are easily monitored in web customs tool</li>
+								<li class="b-mypolar__list-item">Documents for customs clearence are directly uploaded into web customs tool</li>
+								<li class="b-mypolar__list-item">All relevant documents - customs declarations, waybills, invoices - are stored and visible in system</li>
+								<li class="b-mypolar__list-item">Consigments status is updates on agreed frequency</li>
+								<li class="b-mypolar__list-item">All reports including KPLs are available</li>
+							</ul>
+
+							<div class="b-mypolar__button">
+								<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+									Login in MyPolar
+								</a>
+							</div>
+						</div>
+
+			        </div>
+			    </div>
+			</div>
+
+			<div class="b-track-trace">
+				<div class="b-track-trace__wrap">
+
+					<h2 class="b-track-trace__head">Track & Trace</h2>
+					<div class="b-tracking">
+						<h3 class="b-tracking__head">Tracking</h3>
+						<form>
+							<input class="b-tracking__input" type="text" name="number" placeholder="Order number">
+						</form>
+						<div class="b-tracking__button">
+							<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+								Search
+							</a>
+							<span class="b-tracking__advanced">or <a href="#">Advanced</a></span>
+						</div>
+					</div>
+					<p class="b-track-trace__text">
+                        <span>Follow your parcel in it's journey with our Track&Trace service.</span> It allows you to get all required information about current status and location of your shipment <span>using only a code, which was given to you in the end of cargo registration.</span>
+					</p>
+
+				</div>
+			</div>
+
+			<div class="b-tariff-requests">
+				<h2 class="b-tariff-requests__head">Tariff requests</h2>
+				<form class="b-tariff-requests__form">
+					<input class="b-tariff-requests__form-item" type="text" placeholder="Your name">
+					<input class="b-tariff-requests__form-item" type="text" placeholder="Your company">
+					<input class="b-tariff-requests__form-item" type="text" placeholder="Your mobile number">
+					<input class="b-tariff-requests__form-item" type="text" placeholder="Your e-mail address">
+					<textarea class="b-tariff-requests__form-item" placeholder="Short description of the goods" rows="8"></textarea>
+					<div class="b-tariff-requests__send-files">Files</div>
+
+					<div class="b-tariff-requests__button">
+						<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+							Send
+						</a>
+					</div>
+				</form>
+			</div>
+
+			//= template/footer.html
+
+		</main>
+
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
