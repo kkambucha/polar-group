@@ -12643,6 +12643,41 @@ header .mdl-textfield__expandable-holder {
 .b-tariff-requests__button a {
   font-size: 18px; }
 
+/*--------------- AWARDS ---------------*/
+.b-awards {
+  width: 1160px;
+  margin: 80px auto; }
+  .b-awards__head {
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px; }
+
+.b-award-item {
+  margin-bottom: 40px; }
+  .b-award-item:before, .b-award-item:after {
+    content: "";
+    display: table; }
+  .b-award-item:after {
+    clear: both; }
+  .b-award-item__image {
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin-right: 20px; }
+  .b-award-item__text {
+    width: 740px;
+    float: left; }
+  .b-award-item__date {
+    font-size: 18px;
+    margin: 0 0 5px; }
+  .b-award-item__text-head {
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 35px; }
+  .b-award-item__icons img {
+    padding-right: 16px; }
+
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {
   .mdl-layout__header {

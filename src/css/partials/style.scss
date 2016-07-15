@@ -1028,3 +1028,44 @@ header {
     font-size: 18px;
   }
 }
+
+/*--------------- AWARDS ---------------*/
+
+.b-awards {
+  width: 1160px;
+  margin: 80px auto;
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
+.b-award-item{
+  margin-bottom: 40px;
+  @include clearfix();
+
+  &__image {
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
+  &__text {
+    width: 740px;
+    float: left;
+  }
+  &__date {
+    font-size: 18px;
+    margin: 0 0 5px;
+  }
+  &__text-head {
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 35px;
+  }
+  &__icons img{
+    padding-right: 16px;
+  }
+}
