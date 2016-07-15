@@ -434,7 +434,7 @@ header {
 }
 
 .swiper-button {
-  margin-top: -7px;
+  margin-top: -15px;
 
   i {
     font-size: 40px;
@@ -446,7 +446,7 @@ header {
 
 .swiper-button-prev {
   position: absolute;
-  left: -5px;
+  left: 0px;
   i {
     transform: translate(-21px, -19px) !important;
   };
@@ -454,7 +454,7 @@ header {
 
 .swiper-button-next {
   position: absolute;
-  right: -5px;
+  right: 0px;
   i {
     transform: translate(-19px, -20px) !important;
   };
@@ -481,6 +481,8 @@ header {
 
 .swiper-container {
     width: 90%;
+    // overflow: visible;
+    padding: 0 1.5%;
 }
 
 .b-text-content {
