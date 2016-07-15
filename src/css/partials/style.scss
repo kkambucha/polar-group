@@ -878,4 +878,20 @@ header {
     width: 80%;
     margin: 0 auto;
   }
+
+  &__contacts {
+    color: #fff;
+    padding: 39px;
+    border-radius: 4px;
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  &__head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
 }

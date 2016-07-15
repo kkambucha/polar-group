@@ -11788,6 +11788,9 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   font-size: 36px;
   text-align: center; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ProximaNova"; }
+
 /*-----------------------------------MIXINS----------------------------------*/
 /*-----------------------------------GLOBALS----------------------------------*/
 html, body {
@@ -12513,6 +12516,16 @@ header .mdl-textfield__expandable-holder {
     text-align: center;
     width: 80%;
     margin: 0 auto; }
+  .b-extending-logistics__contacts {
+    color: #fff;
+    padding: 39px;
+    border-radius: 4px; }
+  .b-extending-logistics__button {
+    text-align: center; }
+  .b-extending-logistics__head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600; }
 
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {
