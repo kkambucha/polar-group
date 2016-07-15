@@ -12407,6 +12407,15 @@ header .mdl-textfield__expandable-holder {
     font-family: "ProximaNova";
     font-size: 30px;
     font-weight: 600; }
+  .b-means__item--thin {
+    width: 217px;
+    height: 217px; }
+  .b-means__item--thin .b-means__image {
+    width: 217px;
+    height: 217px; }
+  .b-means__item--thin .b-means__image img {
+    width: 100%;
+    height: auto; }
   .b-means__image {
     width: 256px;
     height: 256px;
@@ -12504,6 +12513,7 @@ header .mdl-textfield__expandable-holder {
 
 /*  extending-logistics  */
 .b-extending-logistics {
+  font-family: "ProximaNova";
   margin: 20px 0; }
   .b-extending-logistics:before, .b-extending-logistics:after {
     content: "";
@@ -12519,13 +12529,62 @@ header .mdl-textfield__expandable-holder {
   .b-extending-logistics__contacts {
     color: #fff;
     padding: 39px;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-size: 18px; }
+  .b-extending-logistics__contacts p, .b-extending-logistics__contacts ul {
+    font-size: 18px;
+    margin-bottom: 30px; }
   .b-extending-logistics__button {
     text-align: center; }
   .b-extending-logistics__head {
     text-align: center;
     font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 30px 0; }
+  .b-extending-logistics__town {
+    font-size: 30px;
     font-weight: 600; }
+  .b-extending-logistics__branch {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: inline-block; }
+
+.b-vertex-background {
+  background-size: 100% auto;
+  text-align: center;
+  padding: 75px 0;
+  color: #fff; }
+  .b-vertex-background:before, .b-vertex-background:after {
+    content: "";
+    display: table; }
+  .b-vertex-background:after {
+    clear: both; }
+  .b-vertex-background__table {
+    display: table;
+    width: 100%; }
+  .b-vertex-background__table__row {
+    display: table-row; }
+  .b-vertex-background__table-cell {
+    display: table-cell;
+    vertical-align: middle; }
+  .b-vertex-background__content {
+    display: inline-block; }
+  .b-vertex-background__head {
+    font-size: 72px;
+    margin: 30px 0;
+    font-weight: 500; }
+  .b-vertex-background__text {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 30px 0;
+    width: 100%;
+    padding: 0 50px;
+    display: inline-block;
+    box-sizing: border-box; }
+
+.b-news-blocks-slider {
+  margin: 30px 0; }
 
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {

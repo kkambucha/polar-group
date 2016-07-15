@@ -752,6 +752,18 @@ header {
     font-size: 30px;
     font-weight: $fontSemibold;
   }
+  &__item--thin {
+    width: 217px;
+    height: 217px;
+  }
+  &__item--thin &__image {
+    width: 217px;
+    height: 217px;
+  }
+  &__item--thin &__image img {
+    width: 100%;
+    height: auto;;
+  }
   &__image {
     width: 256px;
     height: 256px;
@@ -869,6 +881,7 @@ header {
 /*  extending-logistics  */
 .b-extending-logistics {
   @include clearfix();
+  font-family: $proximaFont;
   margin: 20px 0;
 
   &__frase {
@@ -883,6 +896,12 @@ header {
     color: #fff;
     padding: 39px;
     border-radius: 4px;
+    font-size: 18px;
+  }
+
+  &__contacts p, &__contacts ul {
+    font-size: 18px;
+    margin-bottom: 30px;
   }
 
   &__button {
@@ -893,5 +912,59 @@ header {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    margin: 0 0 30px 0;
   }
+
+  &__town {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  &__branch {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+}
+
+.b-vertex-background {
+  @include clearfix();
+  background-size: 100% auto;
+  text-align: center;
+  padding: 75px 0;
+  color: #fff;
+
+  &__table {
+    display: table;
+    width: 100%;
+  }
+  &__table__row {
+    display: table-row;
+  }
+  &__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__content {
+    display: inline-block;
+  }
+  &__head {
+    font-size: 72px;
+    margin: 30px 0;
+    font-weight: 500;
+  }
+  &__text {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 30px 0;
+    width: 100%;
+    padding: 0 50px;
+    display: inline-block;;
+    box-sizing: border-box;
+  }
+}
+
+.b-news-blocks-slider {
+  margin: 30px 0;
 }
