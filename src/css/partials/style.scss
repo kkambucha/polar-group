@@ -1042,21 +1042,8 @@ header {
     margin: 0 0 40px;
   }
   &__input {
-    width: 390px;
-    padding: 5px;
-    font-size: 18px;
-    color: #000000 !important;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
     margin-bottom: 40px;
   }
-
-  &__input[placeholder] { color: #aaaaaa; }
-  &__input::-moz-placeholder { color: #aaaaaa; }
-  &__input::-webkit-input-placeholder { color: #aaaaaa; }
-  &__input:-moz-placeholder { color: #aaaaaa; }
-  &__input:-ms-placeholder { color: #aaaaaa; }
-
   &__button a{
     font-size: 18px;
   }
@@ -1083,7 +1070,7 @@ header {
     margin: 0 auto 80px;
   }
   &__form-item {
-    width: 100%;
+    width: 388px;
     padding: 5px;
     margin-bottom: 15px;
     border-radius: 3px;
@@ -1092,11 +1079,7 @@ header {
     font-size: 18px;
     color: #000000;
   }
-  &__form-item[placeholder] { color: #aaaaaa; }
-  &__form-item::-moz-placeholder { color: #aaaaaa; }
-  &__form-item::-webkit-input-placeholder { color: #aaaaaa; }
-  &__form-item:-moz-placeholder { color: #aaaaaa; }
-  &__form-item:-ms-placeholder { color: #aaaaaa; }
+
   &__send-files {
     width: 100px;
     height: 40px;
@@ -1116,5 +1099,46 @@ header {
   }
   &__button a{
     font-size: 18px;
+  }
+}
+
+/*--------------- AWARDS ---------------*/
+
+.b-awards {
+  width: 1160px;
+  margin: 80px auto;
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
+.b-award-item{
+  margin-bottom: 40px;
+  @include clearfix();
+
+  &__image {
+    width: 400px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
+  &__text {
+    width: 740px;
+    float: left;
+  }
+  &__date {
+    font-size: 18px;
+    margin: 0 0 5px;
+  }
+  &__text-head {
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 35px;
+  }
+  &__icons img{
+    padding-right: 16px;
   }
 }
