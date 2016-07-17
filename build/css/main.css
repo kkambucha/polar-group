@@ -12569,7 +12569,8 @@ header .mdl-textfield__expandable-holder {
     display: table-cell;
     vertical-align: middle; }
   .b-vertex-background__content {
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
   .b-vertex-background__head {
     font-size: 72px;
     margin: 30px 0;
@@ -12582,6 +12583,11 @@ header .mdl-textfield__expandable-holder {
     padding: 0 50px;
     display: inline-block;
     box-sizing: border-box; }
+  .b-vertex-background--partner {
+    background-repeat: no-repeat;
+    min-height: 456px; }
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 456px; }
 
 .b-news-blocks-slider {
   margin: 30px 0; }
