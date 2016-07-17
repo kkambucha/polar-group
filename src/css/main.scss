@@ -10,6 +10,13 @@
 @import "../../node_modules/swiper/dist/css/swiper.css";
 
 /*
+* Vendor
+*/
+
+@import "partials/vendor/mdl-jquery-modal-dialog.scss";
+
+
+/*
 * Custom
 */
 @import "partials/fonts.scss";
@@ -19,4 +26,9 @@
 
 @import "partials/_typography.scss";
 @import "partials/style.scss";
+
+@import "partials/main-login-form.scss";
+
+@import "partials/vendor/royalslider.scss";
+
 @import "partials/media.scss";

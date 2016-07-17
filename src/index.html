@@ -17,7 +17,9 @@
 		<main class="mdl-layout__content">
 
 			<div class="b-main-slider">
-				<img src="pic/main-slider/1.jpg" alt="">
+
+				//= template/main-slider.html
+
 				<div class="l-content">
 
 					<div class="l-login-form b-main-slider__loginform">
@@ -38,14 +40,14 @@
 							</label>
 
 							<div class="b-form__buttons">
-								<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-button--bold mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+								<a href="javascript: void 0;" class="mdl-button mdl-button--bold mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
 								Login
 								</a>
 								or
 								<a href="#" class="b-form__alter-link underline-link">Register</a>
 							</div>
 						</form>
-						<hr>
+						<hr class="login-form-hr">
 						<form action="#" method="POST" class="b-form">
 							<h3 class="b-form__header">Tracking</h3>
 							<div class="mdl-textfield mdl-js-textfield b-form__textfield">
@@ -53,7 +55,7 @@
 								<label class="mdl-textfield__label b-form__label" for="order_number">Order number</label>
 							</div>
 							<div class="b-form__buttons">
-								<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-button--bold mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+								<a href="javascript: void 0;" class="mdl-button mdl-button--bold mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
 								Search
 								</a>
 								or
@@ -147,7 +149,7 @@
 			</div>
 			<!-- end Extending Logistics -->
 			<!-- start Logistics Excellence -->
-			<div class="b-vertex-background" style="background-image: url('pic/logistics-exelence.jpg')">
+			<div class="b-vertex-background b-vertex-background--thick" style="background-image: url('pic/logistics-exelence.jpg')">
 				<div class="l-content">
 					<div class="b-vertex-background__table">
 						<div class="b-vertex-background__table__row">
@@ -166,40 +168,79 @@
 			</div>
 			<!-- end Logistics Excellence -->
 			<!-- start news blocks slider -->
-			<style>
-			.demo-card-wide.mdl-card {
-			  width: 512px;
-			}
-			.demo-card-wide > .mdl-card__title {
-			  color: #fff;
-			  height: 176px;
-			  background: url('../assets/demos/welcome_card.jpg') center / cover;
-			}
-			.demo-card-wide > .mdl-card__menu {
-			  color: #fff;
-			}
-			</style>
-			<div class="b-news-blocks-slider">
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-				  <div class="mdl-card__title">
-				    <h2 class="mdl-card__title-text">Welcome</h2>
-				  </div>
-				  <div class="mdl-card__supporting-text">
-				    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				    Mauris sagittis pellentesque lacus eleifend lacinia...
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-				      Get Started
-				    </a>
-				  </div>
-				  <div class="mdl-card__menu">
-				    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-				      <i class="material-icons">share</i>
-				    </button>
-				  </div>
+
+			<div class="l-content">
+				<div class="b-sec-slider b-sec-slider--news">
+					<!-- Slider main container -->
+					<div class="swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+									<!-- Slides -->
+
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<div class="b-one-slide-block__header-img"><img src="pic/news/1.jpg" alt=""></div>
+												<span class="b-one-slide-block__date">23.03.2016</span>
+												<span class="b-one-slide-block__main-text">Polar Logistics Russia transports an oversized cargo from Germany to Russia</span>
+												<span class="b-one-slide-block__text">March 28th, 2016 – Polar Logistics Russia carried out two oversized transformers from Kirkham to Novosibirsk. In order to comply all the actual rules of transportation between Russia and European countries and to transport the transformers succes...</span>
+												<span><a href="#">Learn more</a></span>
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/2.jpg" alt="">
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/3.jpg" alt="">
+											</div>
+										</div>
+
+
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/1.jpg" alt="">
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/2.jpg" alt="">
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/3.jpg" alt="">
+											</div>
+										</div>
+
+
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/1.jpg" alt="">
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/2.jpg" alt="">
+											</div>
+										</div>
+										<div class="b-one-slide-block swiper-slide">
+											<div class="b-one-slide-block__wrapper mdl-shadow--6dp">
+												<img src="pic/cert-slider/3.jpg" alt="">
+											</div>
+										</div>
+
+							</div>
+							<!-- If we need navigation buttons -->
+
+							<div class="mdl-button mdl-js-button mdl-button--icon md-light swiper-button-prev swiper-button"><i class="material-icons md-48">keyboard_arrow_left</i></div>
+							<div class="mdl-button mdl-js-button mdl-button--icon md-light swiper-button-next swiper-button"><i class="material-icons md-48">keyboard_arrow_right</i></div>
+					</div>
+
 				</div>
 			</div>
+
 			<!-- end news blocks slider -->
 			<div class="l-content l-content--wide l-content--dark">
 				<div class="l-content">
@@ -274,7 +315,7 @@
 			</div>
 			<div class="l-content">
 				<div class="b-sec-slider">
-					<h3 class="b-sec-slider__head">They Rely On Us</h3>
+					<h3 class="b-sec-slider__head">Certificates And Standarts</h3>
 
 					<!-- Slider main container -->
 					<div class="swiper-container">

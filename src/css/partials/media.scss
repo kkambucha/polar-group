@@ -94,3 +94,37 @@
 	.top-bot-m-0 { margin-top: 0; margin-bottom: 0; }
 	.top-bot-p-0 { padding-top: 0; padding-bottom: 0; }
 }
+
+@media screen and (max-width: 1500px) {
+	.b-form	{
+		margin-bottom: 10px;
+	}
+	.b-form__header {
+		margin: 10px 0;
+	}
+	.b-main-slider__loginform {
+		left: 15px;
+	}
+	.rsTitle {
+	  font-weight: 600;
+	  font-size: 50px;
+	  line-height: 50px;
+	}
+	.rsDesc {
+	  a {
+	    color: #fff;
+	    text-decoration: none;
+	    font-size: 20px;
+	    line-height: 30px;
+	    padding: 10px 0;
+	    display: inline-block;
+	  }
+	  img {
+	    margin-top: 10px;
+	  }
+	}
+	.rsHomePorthole .rsCapt {
+	  height: 80%;
+	}
+
+}

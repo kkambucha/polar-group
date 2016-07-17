@@ -6,6 +6,12 @@
 //= ../../node_modules/swiper/dist/js/swiper.jquery.js
 
 /*
+ * Vendor
+ */
+//= partials/vendor/mdl-jquery-modal-dialog/mdl-jquery-modal-dialog.js
+//= partials/vendor/royal-slider/jquery.royalslider.js
+
+/*
  * Custom
  */
 //= partials/app.js

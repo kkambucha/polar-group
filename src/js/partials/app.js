@@ -12,6 +12,163 @@ $(function(){
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
 
-    })
+    });
+
+
+    $('.js-show-search-dialog').click(function () {
+        showDialog({
+            text: '\
+			<form action="#" class="b-mobile-search-form">\
+			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">\
+			    <input class="mdl-textfield__input" type="text" id="sample3">\
+			    <label class="mdl-textfield__label" for="sample3">Search</label>\
+			  </div>\
+			</form>\
+            ',
+            contentStyle: {'max-width': '100%'},
+            cancelable: true
+        });
+    });
+
+
+
+/* !-jQuery extensions */
+
+	/* !- Check if element exists */
+	$.fn.exists = function() {
+		if ($(this).length > 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	/* !- Check if element is loaded */
+	$.fn.loaded = function(callback, jointCallback, ensureCallback){
+		var len	= this.length;
+		if (len > 0) {
+			return this.each(function() {
+				var	el		= this,
+					$el		= $(el),
+					blank	= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+				$el.on("load.dt", function(event) {
+					$(this).off("load.dt");
+					if (typeof callback == "function") {
+						callback.call(this);
+					}
+					if (--len <= 0 && (typeof jointCallback == "function")){
+						jointCallback.call(this);
+					}
+				});
+
+				if (!el.complete || el.complete === undefined) {
+					el.src = el.src;
+				} else {
+					$el.trigger("load.dt")
+				}
+			});
+		} else if (ensureCallback) {
+			if (typeof jointCallback == "function") {
+				jointCallback.call(this);
+			}
+			return this;
+		}
+	};
+
+/* jQuery extensions: end */
+
+
+/* !-Royal Slider */
+	if ($(".rsHomePorthole").exists()) {
+		var portholeSlider = {};
+			portholeSlider.container = $("#main-slideshow");
+			portholeSlider.width = portholeSlider.container.attr("data-width") ? parseInt(portholeSlider.container.attr("data-width")) : 1280;
+			portholeSlider.height = portholeSlider.container.attr("data-height") ? parseInt(portholeSlider.container.attr("data-height")) : 720;
+			portholeSlider.autoslide = portholeSlider.container.attr("data-autoslide") && parseInt(portholeSlider.container.attr("data-autoslide")) > 999 ? parseInt(portholeSlider.container.attr("data-autoslide")) : 5000;
+			portholeSlider.scale = portholeSlider.container.attr("data-scale") ? portholeSlider.container.attr("data-scale") : "fill";
+			portholeSlider.paused = portholeSlider.container.attr("data-paused") ? portholeSlider.container.attr("data-paused") : true;
+			portholeSlider.hendheld = $(window).width() < 740 && dtGlobals.isMobile ? true : false;
+		console.log(portholeSlider);
+		$("#main-slideshow-content").appendTo(portholeSlider.container);
+
+		portholeSlider.api = $(".rsHomePorthole").royalSlider({
+			transitionType: 'fade',
+			autoScaleSlider: true,
+			autoScaleSliderWidth: portholeSlider.width,
+			autoScaleSliderHeight: portholeSlider.height,
+			autoPlay: {
+				enabled: !portholeSlider.hendheld,
+				stopAtAction: false,
+				pauseOnHover: false,
+				delay: portholeSlider.autoslide
+			},
+			imageScaleMode: portholeSlider.scale,
+			imageScalePadding: 0,
+			numImagesToPreload: 999,
+			slidesOrientation: "horizontal",
+			disableResponsiveness: false,
+			loopRewind: true,
+			arrowsNav: false,
+			globalCaption: true,
+			controlNavigation: !portholeSlider.hendheld ? 'porthole' : 'none',
+			thumbs: {
+				orientation: 'horizontal',
+				drag: false,
+				touch: false,
+				spacing: 10,
+				firstMargin: false,
+				appendSpan: false
+			},
+			block: {
+				fadeEffect: true,
+				moveEffect: 'bottom',
+				moveOffset: 5
+			}
+		}).data("royalSlider");
+		var $_this = portholeSlider.container,
+			$_this_childs = $_this.find(".rsSlide").size();
+		if ($_this_childs < 2) {
+			$(".rsThumbs", $_this).hide();
+			portholeSlider.api._isMove = false;
+			$_this.find(".rsOverflow").css("cursor", "auto")
+		};
+
+		if (portholeSlider.paused == "true") {
+			$(".rsHomePorthole").royalSlider("stopAutoPlay");
+		}
+	};
+
+	$(".slider-content .preload-me").loaded(null, function() {
+		$(".slider-content").each(function(){
+			var $this = $(this),
+				autoslide = $this.attr("data-autoslide") && parseInt($this.attr("data-autoslide")) > 999 ? parseInt($this.attr("data-autoslide")) : 5000;
+				hendheld = !($(window).width() < 740 && dtGlobals.isMobile) && $this.attr("data-autoslide") ? true : false;
+
+			$this.royalSlider({
+				autoPlay: {
+					enabled: hendheld,
+					stopAtAction: false,
+					pauseOnHover: false,
+					delay: autoslide
+				},
+				autoHeight: true,
+				controlsInside: false,
+				fadeinLoadedSlide: false,
+				controlNavigationSpacing: 0,
+				controlNavigation: 'bullets',
+				imageScaleMode: 'none',
+				imageAlignCenter:false,
+				loop: false,
+				loopRewind: true,
+				numImagesToPreload: 6,
+				keyboardNavEnabled: true
+
+			}).data("royalSlider");
+		});
+	}, true);
+
+	/* Royal Slider: end */
+
 
 });

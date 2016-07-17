@@ -226,13 +226,14 @@ header {
 
 .b-main-slider {
 	position: relative;
-  // display: none;
+  margin-bottom: 30px;
 
 	&__loginform {
 		position: absolute;
 		top: 20px;
 		padding: 10px 40px;
 		box-sizing: border-box;
+    z-index: 200;
 	}
 }
 
@@ -359,6 +360,12 @@ header {
     .swiper-button {
       color: #fff;
     }
+  }
+}
+
+.b-sec-slider--news {
+  .b-one-slide-block__wrapper {
+    padding: 0;
   }
 }
 
@@ -754,16 +761,19 @@ header {
     font-weight: $fontSemibold;
   }
   &__item--thin {
-    width: 217px;
-    height: 217px;
+    width: 180px;
+    height: 180px;
   }
   &__item--thin &__image {
-    width: 217px;
-    height: 217px;
+    width: 180px;
+    height: 180px;
   }
   &__item--thin &__image img {
     width: 100%;
     height: auto;;
+  }
+  &__item--thin h3 {
+    font-size: 25px;
   }
   &__image {
     width: 256px;
@@ -883,14 +893,14 @@ header {
 .b-extending-logistics {
   @include clearfix();
   font-family: $proximaFont;
-  margin: 20px 0;
+  margin: 30px 0;
 
   &__frase {
     color: #000000;
     font-size: 20px;
     text-align: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
   }
 
   &__contacts {
@@ -927,6 +937,9 @@ header {
     margin-bottom: 25px;
     display: inline-block;
   }
+  .b-secondary-frase {
+    margin-bottom: 35px;
+  }
 }
 
 .b-vertex-background {
@@ -939,7 +952,7 @@ header {
   background-size: 100% auto;
   background-position: top center;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 30px auto;
 
   &__table {
     display: table;
@@ -958,6 +971,7 @@ header {
   }
   &__head {
     font-size: 72px;
+    line-height: 72px;
     margin: 30px 0;
     font-weight: 500;
   }
@@ -981,6 +995,12 @@ header {
   }
   &--about &__table {
     height: 500px;
+  }
+}
+
+.b-vertex-background--thick {
+  .b-vertex-background__content {
+    padding: 50px 0;
   }
 }
 
@@ -1159,5 +1179,33 @@ header {
   }
   &__icons img{
     padding-right: 16px;
+  }
+}
+
+/* Slder */
+.rsHomePorthole .rsCapt {
+  height: 70%;
+  padding: 20px 0;
+  bottom: 0;
+  width: 60% !important;
+  right: 0 !important;
+  left: auto !important;
+}
+.rsTitle {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+}
+.rsDesc {
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px 0;
+    display: inline-block;
+  }
+  img {
+    margin-top: 20px;
   }
 }
