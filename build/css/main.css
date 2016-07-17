@@ -12633,7 +12633,7 @@ header .mdl-textfield__expandable-holder {
   background-size: 100% auto;
   background-position: top center;
   max-width: 1920px;
-  margin: 30px auto; }
+  margin: 0 auto 30px auto; }
   .b-vertex-background:before, .b-vertex-background:after {
     content: "";
     display: table; }
