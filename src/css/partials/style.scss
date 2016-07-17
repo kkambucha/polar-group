@@ -413,6 +413,35 @@ header {
       height: auto;
     }
   }
+  &__text-wrapper {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+  }
+  &__date {
+    display: block;
+    color: #aaaaaa;
+    margin: 10px 0;
+  }
+  &__main-text {
+    color: unquote("rgb(#{$color-primary})");
+    margin: 10px 0;
+    display: block;
+  }
+  &__text {
+    color: #000;
+    margin: 10px 0;
+    display: block;
+  }
+  &__more {
+    text-align: right;
+    display: block;
+    a {
+      color: #000;
+      border-color: #000;
+      display: inline-block;
+    }
+  }
 }
 
 .swiper-container {
