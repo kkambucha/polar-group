@@ -12356,10 +12356,10 @@ header .mdl-textfield__expandable-holder {
     color: #40ac6e; }
 
 .b-philosophy {
-  width: 1920px;
+  max-width: 1920px;
   height: 950px;
   background-image: url(../pic/philosophy.jpg);
-  margin-bottom: 80px; }
+  margin: 0 auto 80px auto; }
   .b-philosophy__back {
     background: rgba(52, 65, 145, 0.6);
     width: 100%;
@@ -12378,7 +12378,8 @@ header .mdl-textfield__expandable-holder {
     font-family: "ProximaNova";
     font-size: 72px;
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .b-philosophy__sign {
     text-align: right; }
 
@@ -12553,8 +12554,13 @@ header .mdl-textfield__expandable-holder {
 .b-vertex-background {
   background-size: 100% auto;
   text-align: center;
-  padding: 75px 0;
-  color: #fff; }
+  padding: 0;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  max-width: 1920px;
+  margin: 0 auto; }
   .b-vertex-background:before, .b-vertex-background:after {
     content: "";
     display: table; }
@@ -12584,10 +12590,13 @@ header .mdl-textfield__expandable-holder {
     display: inline-block;
     box-sizing: border-box; }
   .b-vertex-background--partner {
-    background-repeat: no-repeat;
     min-height: 456px; }
   .b-vertex-background--partner .b-vertex-background__table {
     height: 456px; }
+  .b-vertex-background--about {
+    min-height: 500px; }
+  .b-vertex-background--about .b-vertex-background__table {
+    height: 500px; }
 
 .b-news-blocks-slider {
   margin: 30px 0; }

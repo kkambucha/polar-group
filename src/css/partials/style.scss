@@ -692,10 +692,10 @@ header {
 }
 
 .b-philosophy {
-  width: 1920px;
+  max-width: 1920px;
   height: 950px;
   background-image: url(../pic/philosophy.jpg);
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
 
   &__back {
     background: rgba(52,65,145,.6);
@@ -719,6 +719,7 @@ header {
     font-size: 72px;
     font-weight: $fontSemibold;
     text-align: center;
+    width: 100%;
   }
   &__sign {
     text-align: right;
@@ -932,8 +933,13 @@ header {
   @include clearfix();
   background-size: 100% auto;
   text-align: center;
-  padding: 75px 0;
+  padding: 0;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  max-width: 1920px;
+  margin: 0 auto;
 
   &__table {
     display: table;
@@ -965,11 +971,16 @@ header {
     box-sizing: border-box;
   }
   &--partner {
-    background-repeat: no-repeat;
     min-height: 456px;
   }
   &--partner &__table {
     height: 456px;
+  }
+  &--about {
+    min-height: 500px;
+  }
+  &--about &__table {
+    height: 500px;
   }
 }
 
