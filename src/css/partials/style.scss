@@ -1025,6 +1025,12 @@ header {
   &--about &__table {
     height: 500px;
   }
+  &--career {
+    min-height: 600px;
+  }
+  &--career &__table {
+    height: 600px;
+  }
 }
 
 .b-vertex-background--thick {
@@ -1237,5 +1243,94 @@ header {
   img {
     margin-top: 20px;
 
+  }
+}
+
+/*--------------- CAREER ---------------*/
+
+.b-career {
+  width: 1400px;
+  @include clearfix();
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__left {
+    float: left;
+    width: 800px;
+  }
+  &__text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &__right {
+    float: right;
+    width: 550px;
+  }
+  &__right img {
+    margin-top: 45px;
+  }
+}
+
+.b-vacancies {
+  width: 100%;
+  height: auto;
+  background: #f0f0f0;
+  padding-bottom: 40px;
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+  &__list {
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    @include clearfix();
+  }
+  &__item {
+    width: 436px;
+    height: 562px;
+    float: left;
+    position: relative;
+    background: blueviolet;
+    margin-right: 46px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__item h3 {
+    font-size: 60px;
+    font-weight: $fontSemibold;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+  }
+  &__text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__text p {
+    font-size: 30px;
+    font-weight: $fontSemibold;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  &__text a {
+    color: #ffffff;
   }
 }

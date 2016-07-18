@@ -12671,6 +12671,10 @@ header .mdl-textfield__expandable-holder {
     min-height: 500px; }
   .b-vertex-background--about .b-vertex-background__table {
     height: 500px; }
+  .b-vertex-background--career {
+    min-height: 600px; }
+  .b-vertex-background--career .b-vertex-background__table {
+    height: 600px; }
 
 .b-vertex-background--thick .b-vertex-background__content {
   padding: 50px 0; }
@@ -12853,6 +12857,86 @@ header .mdl-textfield__expandable-holder {
 
 .rsDesc img {
   margin-top: 20px; }
+
+/*--------------- CAREER ---------------*/
+.b-career {
+  width: 1400px; }
+  .b-career:before, .b-career:after {
+    content: "";
+    display: table; }
+  .b-career:after {
+    clear: both; }
+  .b-career__head {
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px; }
+  .b-career__left {
+    float: left;
+    width: 800px; }
+  .b-career__text p {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .b-career__right {
+    float: right;
+    width: 550px; }
+  .b-career__right img {
+    margin-top: 45px; }
+
+.b-vacancies {
+  width: 100%;
+  height: auto;
+  background: #f0f0f0;
+  padding-bottom: 40px; }
+  .b-vacancies__head {
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 80px; }
+  .b-vacancies__list {
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 40px; }
+    .b-vacancies__list:before, .b-vacancies__list:after {
+      content: "";
+      display: table; }
+    .b-vacancies__list:after {
+      clear: both; }
+  .b-vacancies__item {
+    width: 436px;
+    height: 562px;
+    float: left;
+    position: relative;
+    background: blueviolet;
+    margin-right: 46px; }
+  .b-vacancies__item:last-child {
+    margin-right: 0; }
+  .b-vacancies__item h3 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 40px; }
+  .b-vacancies__text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .b-vacancies__text p {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px; }
+  .b-vacancies__text a {
+    color: #ffffff; }
 
 .b-form {
   width: 100%;
