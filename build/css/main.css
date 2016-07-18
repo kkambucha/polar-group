@@ -12664,9 +12664,9 @@ header .mdl-textfield__expandable-holder {
     display: inline-block;
     box-sizing: border-box; }
   .b-vertex-background--partner {
-    min-height: 456px; }
+    min-height: 80px; }
   .b-vertex-background--partner .b-vertex-background__table {
-    height: 456px; }
+    height: 850px; }
   .b-vertex-background--about {
     min-height: 500px; }
   .b-vertex-background--about .b-vertex-background__table {

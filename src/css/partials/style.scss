@@ -1014,10 +1014,10 @@ header {
     box-sizing: border-box;
   }
   &--partner {
-    min-height: 456px;
+    min-height: 80px;
   }
   &--partner &__table {
-    height: 456px;
+    height: 850px;
   }
   &--about {
     min-height: 500px;
@@ -1236,5 +1236,6 @@ header {
   }
   img {
     margin-top: 20px;
+
   }
 }
