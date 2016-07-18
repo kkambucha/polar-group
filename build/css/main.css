@@ -12271,7 +12271,7 @@ header .mdl-textfield__expandable-holder {
 
 /*------------------------  PARTNERS ----------------------------*/
 .b-text-main {
-  margin-top: 80px;
+  margin-top: 50px;
   /*--------- rail-cargo --------*/ }
   .b-text-main > * {
     font-size: 18px; }
@@ -12286,6 +12286,8 @@ header .mdl-textfield__expandable-holder {
   .b-text-main__list-item:before {
     content: '\2022';
     padding-right: 30px; }
+  .b-text-main__btn a {
+    font-size: 18px; }
   .b-text-main__big {
     width: 100%;
     max-width: 1320px;
@@ -12675,6 +12677,10 @@ header .mdl-textfield__expandable-holder {
     min-height: 600px; }
   .b-vertex-background--career .b-vertex-background__table {
     height: 600px; }
+  .b-vertex-background--vacancy {
+    min-height: 614px; }
+  .b-vertex-background--vacancy .b-vertex-background__table {
+    height: 614px; }
 
 .b-vertex-background--thick .b-vertex-background__content {
   padding: 50px 0; }

@@ -536,7 +536,7 @@ header {
 /*------------------------  PARTNERS ----------------------------*/
 
 .b-text-main {
-    margin-top: 80px;
+    margin-top: 50px;
 
     & > * {
       font-size: 18px;
@@ -555,6 +555,9 @@ header {
     &__list-item:before{
       content: '\2022';
       padding-right: 30px;
+    }
+    &__btn a {
+      font-size: 18px;
     }
 
     /*--------- rail-cargo --------*/
@@ -1030,6 +1033,12 @@ header {
   }
   &--career &__table {
     height: 600px;
+  }
+  &--vacancy {
+    min-height: 614px;
+  }
+  &--vacancy &__table {
+    height: 614px;
   }
 }
 
