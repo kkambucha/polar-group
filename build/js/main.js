@@ -21934,6 +21934,10 @@ $(function(){
 		var str = $(this).val();
 		$(".b-tariff-requests__label-file").html(str);
 	});
+	$(".b-question__input-file").change(function(){
+		var str = $(this).val();
+		$(".b-question__label-file").html(str);
+	});
 
 
 });
