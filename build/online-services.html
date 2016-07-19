@@ -126,6 +126,19 @@
 
 		<main class="mdl-layout__content">
 
+			<div class="b-vertex-background b-vertex-background--vacancy" style="background-image: url('pic/online-services-main.jpg'); ">
+				<div class="b-vertex-background__table">
+					<div class="b-vertex-background__table__row">
+						<div class="b-vertex-background__table-cell">
+							<div class="b-vertex-background__content">
+								<img src="" alt="" class="b-vertex-background__img">
+								<h4 class="b-vertex-background__head">Online Services</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="l-content">
                 <div class="mdl-grid">
                     <div class="mdl-cell--12-col">
@@ -186,23 +199,29 @@
 				<form class="b-tariff-requests__form">
                     <div class="mdl-textfield mdl-js-textfield b-form__textfield">
                         <input class="mdl-textfield__input b-form__input" type="text" id="name">
-                        <label class="mdl-textfield__label b-form__label" for="login">Your name</label>
+                        <label class="mdl-textfield__label b-form__label" for="name">Your name</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield b-form__textfield">
                         <input class="mdl-textfield__input b-form__input" type="text" id="company">
-                        <label class="mdl-textfield__label b-form__label" for="login">Your company</label>
+                        <label class="mdl-textfield__label b-form__label" for="company">Your company</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield b-form__textfield">
                         <input class="mdl-textfield__input b-form__input" type="text" id="phone">
-                        <label class="mdl-textfield__label b-form__label" for="login">Your mobile number</label>
+                        <label class="mdl-textfield__label b-form__label" for="phone">Your mobile number</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield b-form__textfield">
                         <input class="mdl-textfield__input b-form__input" type="text" id="email">
-                        <label class="mdl-textfield__label b-form__label" for="login">Your e-mail address</label>
+                        <label class="mdl-textfield__label b-form__label" for="email">Your e-mail address</label>
                     </div>
+					<div class="mdl-textfield mdl-js-textfield b-form__textfield">
+						<textarea class="mdl-textfield__input b-form__input" rows="6" id="text"></textarea>
+						<label class="mdl-textfield__label b-form__label" for="text">Short description of the goods</label>
+					</div>
 
-					<textarea class="b-tariff-requests__form-item" placeholder="Short description of the goods" rows="8"></textarea>
-					<div class="b-tariff-requests__send-files">Files</div>
+					<div class="b-tariff-requests__send-files">
+						<label for="file" class="b-tariff-requests__label-file">Files</label>
+						<input type="file" id="file" class="b-tariff-requests__input-file">
+					</div>
 
 					<div class="b-tariff-requests__button">
 						<a href="javascript: void 0;" class="mdl-button mdl-button--no-capital mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">

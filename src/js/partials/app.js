@@ -171,4 +171,12 @@ $(function(){
 	/* Royal Slider: end */
 
 
+	/* Upload file */
+
+	$(".b-tariff-requests__input-file").change(function(){
+		var str = $(this).val();
+		$(".b-tariff-requests__label-file").html(str);
+	});
+
+
 });

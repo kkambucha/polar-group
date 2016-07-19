@@ -12784,7 +12784,7 @@ header .mdl-textfield__expandable-holder {
     font-size: 72px;
     line-height: 72px;
     margin: 30px 0;
-    font-weight: 500; }
+    font-weight: 600; }
   .b-vertex-background__text {
     font-size: 36px;
     line-height: 43px;
@@ -12913,18 +12913,25 @@ header .mdl-textfield__expandable-holder {
   color: #000000; }
 
 .b-tariff-requests__send-files {
-  width: 100px;
-  height: 40px;
-  font-size: 18px;
-  line-height: 36px;
   margin-bottom: 30px; }
 
-.b-tariff-requests__send-files:before {
-  content: '';
-  width: 100px;
-  height: 40px;
-  background: url(../pic/send-files.png) left top no-repeat;
-  padding-right: 30px; }
+.b-tariff-requests .b-tariff-requests__input-file {
+  display: none; }
+
+.b-tariff-requests .b-tariff-requests__label-file {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 0 0 35px;
+  position: relative; }
+
+.b-tariff-requests .b-tariff-requests__label-file:before {
+  content: "";
+  width: 24px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../pic/icon-file.png") no-repeat; }
 
 .b-tariff-requests__button {
   text-align: center; }
