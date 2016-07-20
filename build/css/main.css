@@ -12699,7 +12699,6 @@ header .mdl-textfield__expandable-holder {
   width: 410px;
   float: right; }
   .b-include__head {
-    font-family: "ProximaNova";
     font-size: 36px;
     margin: 80px 0; }
   .b-include__list {
@@ -12712,6 +12711,22 @@ header .mdl-textfield__expandable-holder {
   .b-include__list-item:before {
     content: '\2022';
     padding-right: 30px; }
+
+.b-work {
+  width: 1200px;
+  margin: 0 auto 80px; }
+  .b-work__head {
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center; }
+  .b-work__row:before, .b-work__row:after {
+    content: "";
+    display: table; }
+  .b-work__row:after {
+    clear: both; }
+  .b-work__item {
+    width: 400px;
+    float: left; }
 
 /*  extending-logistics  */
 .b-extending-logistics {
@@ -13265,20 +13280,24 @@ header .mdl-textfield__expandable-holder {
     margin: 0 auto;
     padding-bottom: 80px; }
   .b-question__send-files {
+    margin-top: 8px;
     margin-bottom: 30px; }
   .b-question__input-file {
     display: none; }
   .b-question__label-file {
     font-size: 18px;
     line-height: 24px;
-    padding: 5px 0 0 35px;
-    position: relative; }
+    padding: 0 0 0 35px;
+    position: relative;
+    cursor: pointer; }
+  .b-question__label-file:hover {
+    text-decoration: underline; }
   .b-question__label-file:before {
     content: "";
     width: 24px;
     height: 32px;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     background: url("../pic/icon-file.png") no-repeat; }
   .b-question__button {

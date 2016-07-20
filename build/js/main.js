@@ -21947,7 +21947,7 @@ $(function(){
 		var $this = $(this),
 			item = $this.closest(".b-faq-acc__item"),
 			list = $this.closest(".b-faq-acc__list"),
-			items = list.find(".b-faq-acc__list"),
+			items = list.find(".b-faq-acc__item"),
 			content = $this.next(".b-faq-acc__item-content-wrap"),
 			all = list.find(".b-faq-acc__item-content-wrap");
 

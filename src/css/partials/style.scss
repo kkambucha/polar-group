@@ -1031,7 +1031,6 @@ header {
   float: right;
 
   &__head {
-    font-family: $proximaFont;
     font-size: 36px;
     margin: 80px 0;
   }
@@ -1049,6 +1048,27 @@ header {
     padding-right: 30px;
   }
 }
+
+.b-work {
+  width: 1200px;
+  margin: 0 auto 80px;
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+  }
+  &__row {
+    @include clearfix();
+
+  }
+  &__item {
+    width: 400px;
+    float: left;
+  }
+}
+
+
 
 /*  extending-logistics  */
 .b-extending-logistics {
@@ -1703,6 +1723,7 @@ header {
     padding-bottom: 80px;
   }
   &__send-files {
+    margin-top: 8px;
     margin-bottom: 30px;
   }
   &__input-file {
@@ -1711,15 +1732,19 @@ header {
   &__label-file {
     font-size: 18px;
     line-height: 24px;
-    padding: 5px 0 0 35px;
+    padding: 0 0 0 35px;
     position: relative;
+    cursor: pointer;
+  }
+  &__label-file:hover {
+    text-decoration: underline;
   }
   &__label-file:before {
     content: "";
     width: 24px;
     height: 32px;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     background: url("../pic/icon-file.png") no-repeat;
   }
