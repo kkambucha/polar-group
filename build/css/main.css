@@ -13308,12 +13308,25 @@ header .mdl-textfield__expandable-holder {
   margin-bottom: 30px; }
 
 .b-faq-acc {
-  width: 930px;
+  width: 900px;
   margin: 0 auto 80px; }
   .b-faq-acc__list {
     list-style: none; }
   .b-faq-acc__item {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: relative; }
+  .b-faq-acc__item:after {
+    content: "";
+    width: 20px;
+    height: 12px;
+    background: url("../pic/arrow.png") no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: block; }
+  .b-faq-acc .active:after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .b-faq-acc__item-link {
     width: 100%;
     background: #344191;
@@ -13321,16 +13334,37 @@ header .mdl-textfield__expandable-holder {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
+    border-radius: 3px;
     padding: 10px 15px;
-    display: block; }
+    display: block;
+    position: relative; }
+  .b-faq-acc__item-content-wrap {
+    width: 100%;
+    padding: 0 15px 15px;
+    display: none; }
   .b-faq-acc__item-content {
     width: 730px;
-    margin: 40px auto; }
+    margin: 0 auto;
+    text-align: center; }
   .b-faq-acc__item-content h4 {
     font-size: 18px;
     font-weight: 600;
+    line-height: 1;
     text-align: center;
-    margin-bottom: 40px; }
+    margin: 0 0 40px;
+    padding-top: 40px; }
+  .b-faq-acc__item-content img {
+    margin-bottom: 20px; }
+  .b-faq-acc__item-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: left; }
+  .b-faq-acc__item-content ol {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    text-align: left; }
+  .b-faq-acc__item-content ol li {
+    font-size: 18px; }
 
 .b-form {
   width: 100%;

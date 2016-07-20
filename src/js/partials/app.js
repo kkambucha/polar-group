@@ -182,5 +182,28 @@ $(function(){
 		$(".b-question__label-file").html(str);
 	});
 
+	/* FAQ-accordeon*/
+
+	$(".c-faq-link").on("click", function(e){
+		e.preventDefault();
+
+		var $this = $(this),
+			item = $this.closest(".b-faq-acc__item"),
+			list = $this.closest(".b-faq-acc__list"),
+			items = list.find(".b-faq-acc__list"),
+			content = $this.next(".b-faq-acc__item-content-wrap"),
+			all = list.find(".b-faq-acc__item-content-wrap");
+
+		if(!item.hasClass("active")) {
+
+			items.removeClass("active");
+			item.addClass("active");
+			all.stop(true, true).slideUp(300);
+            content.stop(true, true).slideDown(300);
+		} else {
+            content.stop(true, true).slideUp(300);
+		    item.removeClass("active");
+        };
+	});
 
 });
