@@ -13286,6 +13286,52 @@ header .mdl-textfield__expandable-holder {
   .b-question__button a {
     font-size: 18px; }
 
+/*--------------- FAQ ---------------*/
+.b-faq__head {
+  font-size: 72px;
+  font-weight: 600;
+  text-align: center;
+  margin: 80px 0 40px; }
+
+.b-faq__subtitle {
+  font-size: 36px;
+  color: #aaaaaa;
+  text-align: center;
+  margin-bottom: 80px; }
+
+.b-faq__text {
+  width: 720px;
+  margin: 0 auto 80px; }
+
+.b-faq__text p {
+  font-size: 20px;
+  margin-bottom: 30px; }
+
+.b-faq-acc {
+  width: 930px;
+  margin: 0 auto 80px; }
+  .b-faq-acc__list {
+    list-style: none; }
+  .b-faq-acc__item {
+    margin-bottom: 15px; }
+  .b-faq-acc__item-link {
+    width: 100%;
+    background: #344191;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; }
+  .b-faq-acc__item-content {
+    width: 730px;
+    margin: 40px auto; }
+  .b-faq-acc__item-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px; }
+
 .b-form {
   width: 100%;
   box-sizing: border-box;
