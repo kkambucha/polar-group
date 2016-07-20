@@ -1354,7 +1354,7 @@ header {
     margin-bottom: 80px;
   }
 }
-.b-award-item{
+.b-award-item {
   margin-bottom: 40px;
   @include clearfix();
 
@@ -1377,8 +1377,88 @@ header {
     line-height: 1;
     margin: 0 0 35px;
   }
-  &__icons img{
-    padding-right: 16px;
+  &__icons {
+
+  }
+  &__icons a {
+    width: 48px;
+    height: 64px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  &__download {
+    background-image: url("../pic/icon-download.png");
+  }
+  &__search {
+    background-image: url("../pic/icon-search.png");
+  }
+  &__download:hover {
+    background-image: url("../pic/icon-download-blue.png");
+  }
+  &__search:hover {
+    background-image: url("../pic/icon-search-blue.png");
+  }
+}
+
+.b-certificates {
+  background: #f0f0f0;
+
+  &__head {
+    font-size: 72px;
+    font-weight: $fontSemibold;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  &__content {
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  &__row {
+    margin-bottom: 40px;
+    @include clearfix();
+  }
+  &__item {
+    float: left;
+    margin-left: 40px;
+    position: relative;
+  }
+  &__item:hover > &__icons {
+   display: block;
+  }
+  &__item:first-child {
+    margin-left: 0;
+  }
+  &__icons {
+    width: 300px;
+    height: 400px;
+    line-height: 400px;
+    background: rgba(103,175,221,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+  }
+  &__icons a {
+    width: 48px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+  &__download {
+    background-image: url("../pic/icon-download-white.png");
+  }
+  &__search {
+    background-image: url("../pic/icon-search-white.png");
+  }
+  &__download:hover {
+    background-image: url("../pic/icon-download-blue.png");
+  }
+  &__search:hover {
+    background-image: url("../pic/icon-search-blue.png");
   }
 }
 
