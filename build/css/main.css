@@ -12714,6 +12714,27 @@ h4.b-logistics-header__head {
     background-image: url(../pic/logistics-img-1.jpg);
     float: left; }
 
+/*--- plus ---*/
+h4.b-plus-header__head {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1; }
+
+.b-plus {
+  margin: 80px 0; }
+  .b-plus:before, .b-plus:after {
+    content: "";
+    display: table; }
+  .b-plus:after {
+    clear: both; }
+  .b-plus .b-about-service {
+    width: 960px;
+    height: 691px;
+    background-image: url(../pic/plus-img.jpg);
+    float: left; }
+    .b-plus .b-about-service__text p {
+      margin-bottom: 25px; }
+
 .b-include {
   width: 410px;
   float: right; }
