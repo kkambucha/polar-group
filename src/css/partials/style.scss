@@ -85,7 +85,7 @@ html, body {
 		background: none;
 		border-bottom: 1px solid #9fa4c5;
 	}
-	.mdl-button:last-child {
+    .mdl-button:last-child {
 		margin-right: 0;
 	}
 	.mdl-menu__outline, .mdl-menu {
@@ -117,7 +117,7 @@ html, body {
 }
 header {
 	.mdl-textfield {
-		padding: 24px 0 !important;
+		padding: 29px 35px 29px 0 !important;
 		min-height: 44px;
 	}
 	.mdl-textfield .mdl-button {
