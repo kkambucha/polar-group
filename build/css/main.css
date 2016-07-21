@@ -11978,11 +11978,29 @@ header .mdl-textfield__expandable-holder {
   .b-top-row li {
     display: inline-block;
     float: left;
-    margin: 0 8px; }
+    margin: 0 8px;
+    position: relative; }
   .b-top-row li:last-child {
     margin-right: 0px; }
   .b-top-row li:first-child {
     margin-left: 0px; }
+  .b-top-row .b-list-lang {
+    width: 100px;
+    position: absolute;
+    list-style: none;
+    display: none;
+    background: #ffffff;
+    margin: 0;
+    padding: 0; }
+  .b-top-row .b-list-lang li {
+    margin: 0;
+    padding: 10px 0; }
+  .b-top-row .b-list-lang li a {
+    padding: 10px 15px;
+    color: #000000;
+    font-size: 18px;
+    border-bottom: 1px solid #aaaaaa;
+    text-decoration: none; }
   .b-top-row .b-top-row__urls {
     float: right; }
     .b-top-row .b-top-row__urls a {
@@ -12274,15 +12292,24 @@ header .mdl-textfield__expandable-holder {
   margin-top: 40px;
   /*--------- rail-cargo --------*/ }
   .b-text-main > * {
-    font-size: 18px; }
+    font-size: 20px; }
   .b-text-main__head {
     color: #344191;
-    font-weight: 600; }
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 30px; }
+  .b-text-main__head2 {
+    color: #000000;
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+    margin: 80px 0; }
   .b-text-main__paragraph {
     margin-bottom: 30px; }
   .b-text-main__list {
     padding-left: 0;
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 30px; }
   .b-text-main__list-item:before {
     content: '\2022';
     padding-right: 30px; }

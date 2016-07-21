@@ -173,6 +173,7 @@ header {
 		display: inline-block;
 		float: left;
 		margin: 0 8px;
+        position: relative;
 	}
 	li:last-child {
 		margin-right: 0px;
@@ -180,6 +181,31 @@ header {
 	li:first-child {
 		margin-left: 0px;
 	}
+    &__lang:hover .b-list-lang {
+
+    }
+
+    .b-list-lang {
+      width: 100px;
+      position: absolute;
+      list-style: none;
+      display: none;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .b-list-lang li{
+      margin: 0;
+      padding: 10px 0;
+    }
+    .b-list-lang li a{
+      padding: 10px 15px;
+      color: #000000;
+      font-size: 18px;
+      border-bottom: 1px solid #aaaaaa;
+      text-decoration: none;
+    }
+
 
 	.b-top-row__urls{
 		float: right;
@@ -539,11 +565,20 @@ header {
     margin-top: 40px;
 
     & > * {
-      font-size: 18px;
+      font-size: 20px;
     }
     &__head {
       color: #344191;
+      line-height: 1.2;
       font-weight: $fontSemibold;
+      margin-bottom: 30px;
+    }
+    &__head2 {
+      color: #000000;
+      font-size: 72px;
+      font-weight: $fontSemibold;
+      text-align: center;
+      margin: 80px 0;
     }
     &__paragraph {
       margin-bottom: 30px;
@@ -551,6 +586,7 @@ header {
     &__list{
       padding-left: 0;
       list-style: none;
+      margin-bottom: 30px;
     }
     &__list-item:before{
       content: '\2022';
