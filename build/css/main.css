@@ -12660,7 +12660,7 @@ header .mdl-textfield__expandable-holder {
   .b-means__image:hover .b-means__text {
     display: block; }
 
-/*--------------- CONNECT ---------------*/
+/*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 .b-connect {
   margin: 80px 0; }
   .b-connect:before, .b-connect:after {
@@ -12694,6 +12694,25 @@ header .mdl-textfield__expandable-holder {
     font-family: "ProximaNova";
     font-size: 20px;
     color: #ffffff; }
+
+/*--- logistics ---*/
+h4.b-logistics-header__head {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1; }
+
+.b-logistics {
+  margin: 80px 0; }
+  .b-logistics:before, .b-logistics:after {
+    content: "";
+    display: table; }
+  .b-logistics:after {
+    clear: both; }
+  .b-logistics .b-about-service {
+    width: 960px;
+    height: 1027px;
+    background-image: url(../pic/logistics-img-1.jpg);
+    float: left; }
 
 .b-include {
   width: 410px;
