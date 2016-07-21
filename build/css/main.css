@@ -12718,15 +12718,90 @@ header .mdl-textfield__expandable-holder {
   .b-work__head {
     font-size: 72px;
     font-weight: 600;
-    text-align: center; }
-  .b-work__row:before, .b-work__row:after {
-    content: "";
-    display: table; }
-  .b-work__row:after {
-    clear: both; }
+    text-align: center;
+    margin-bottom: 80px; }
+  .b-work__row {
+    margin-bottom: 80px; }
+    .b-work__row:before, .b-work__row:after {
+      content: "";
+      display: table; }
+    .b-work__row:after {
+      clear: both; }
   .b-work__item {
     width: 400px;
-    float: left; }
+    float: left;
+    text-align: center;
+    position: relative; }
+  .b-work__image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    position: relative; }
+  .b-work__image:hover > .b-work__hover {
+    display: block; }
+  .b-work__image:hover + .b-work__text {
+    display: block; }
+  .b-work__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(103, 175, 221, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none; }
+  .b-work__hover p {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .b-work__item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    margin: 0; }
+  .b-work__text {
+    width: 390px;
+    background: #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 235px;
+    left: -15px;
+    z-index: 10;
+    display: none; }
+  .b-work__text:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 30px;
+    margin-left: -30px; }
+  .b-work__text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0; }
+  .b-work__text ul li {
+    font-size: 20px;
+    text-align: left; }
+  .b-work__text ul li:before {
+    content: '\2022';
+    padding-right: 30px; }
+  .b-work__button {
+    text-align: center; }
+  .b-work__button a {
+    font-size: 18px;
+    font-weight: 600; }
 
 /*  extending-logistics  */
 .b-extending-logistics {
