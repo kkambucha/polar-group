@@ -991,9 +991,11 @@ header {
   }
   &__text p{
     font-size: 20px;
+    margin-bottom: 22px;
   }
   &__text span{
     color: #40ac6e;
+    font-weight: $fontSemibold;
   }
 }
 
@@ -1887,6 +1889,9 @@ h4.b-plus-header__head {
   }
   &__text a {
     color: #ffffff;
+  }
+  &__text a:hover {
+    text-decoration: none;
   }
 }
 

@@ -12666,9 +12666,11 @@ header .mdl-textfield__expandable-holder {
     top: -40px;
     left: -35px; }
   .b-attitude__text p {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 22px; }
   .b-attitude__text span {
-    color: #40ac6e; }
+    color: #40ac6e;
+    font-weight: 600; }
 
 .b-philosophy {
   max-width: 1920px;
@@ -13435,6 +13437,8 @@ h4.b-plus-header__head {
     padding: 0 20px; }
   .b-vacancies__text a {
     color: #ffffff; }
+  .b-vacancies__text a:hover {
+    text-decoration: none; }
 
 /*--------------- CONTACT US ---------------*/
 .b-contact {
