@@ -12290,7 +12290,7 @@ header .mdl-textfield__expandable-holder {
 /*------------------------  PARTNERS ----------------------------*/
 .b-text-main {
   margin-top: 40px;
-  /*--------- rail-cargo --------*/ }
+  margin-bottom: 80px; }
   .b-text-main > * {
     font-size: 20px; }
   .b-text-main__head {
@@ -12324,10 +12324,12 @@ header .mdl-textfield__expandable-holder {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 75px; }
+  .b-text-main__big span {
+    font-weight: 600; }
   .b-text-main__small {
     max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 75px; }
+    margin-bottom: 30px; }
 
 .b-transport-cards {
   width: 1320px;
@@ -12355,9 +12357,9 @@ header .mdl-textfield__expandable-holder {
     left: 0;
     bottom: 0;
     font-size: 20px;
-    color: #ffffff;
-    text-align: center; }
+    color: #ffffff; }
   .b-transport-cards__item-text {
+    width: 100%;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -12365,10 +12367,14 @@ header .mdl-textfield__expandable-holder {
             transform: translateY(-50%); }
   .b-transport-cards__item-text h4 {
     font-weight: 600;
-    margin: 0; }
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 auto; }
   .b-transport-cards__item-text p {
     font-size: 20px;
-    margin: 0; }
+    text-align: center;
+    margin: 0;
+    padding: 0 10px; }
   .b-transport-cards__item-full {
     padding: 10px 10px 0;
     position: absolute;

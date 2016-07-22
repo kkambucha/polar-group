@@ -563,6 +563,7 @@ header {
 
 .b-text-main {
     margin-top: 40px;
+    margin-bottom: 80px;
 
     & > * {
       font-size: 20px;
@@ -596,8 +597,6 @@ header {
       font-size: 18px;
     }
 
-    /*--------- rail-cargo --------*/
-
     &__big {
       width: 100%;
       max-width: 1320px;
@@ -608,10 +607,13 @@ header {
       line-height: 1.2;
       margin-bottom: 75px;
     }
+    &__big span{
+      font-weight: $fontSemibold;
+    }
     &__small{
       max-width: 900px;
       margin: 0 auto;
-      margin-bottom: 75px;
+      margin-bottom: 30px;
     }
 }
 
@@ -642,9 +644,9 @@ header {
     bottom: 0;
     font-size: 20px;
     color: #ffffff;
-    text-align: center;
   }
   &__item-text {
+    width: 100%;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -652,11 +654,15 @@ header {
   }
   &__item-text h4 {
     font-weight: $fontSemibold;
-    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 auto;
   }
   &__item-text p{
     font-size: 20px;
+    text-align: center;
     margin: 0;
+    padding: 0 10px;
   }
 
   &__item-full {
