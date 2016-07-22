@@ -11820,9 +11820,10 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
 .b-big-header {
   font-size: 72px;
+  line-height: 60px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 .b-secondary-frase {
   color: #aaaaaa;
@@ -12044,7 +12045,7 @@ header .mdl-textfield__expandable-holder {
   margin-bottom: 30px; }
   .b-main-slider__loginform {
     position: absolute;
-    top: 20px;
+    top: 80px;
     padding: 10px 40px;
     box-sizing: border-box;
     z-index: 200; }
@@ -12141,8 +12142,9 @@ header .mdl-textfield__expandable-holder {
   padding: 65px 0; }
   .b-sec-slider__head {
     font-size: 72px;
+    line-height: 1;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 60px; }
   .b-sec-slider .swiper-button {
     color: rgb(52,65,145); }
@@ -12187,7 +12189,8 @@ header .mdl-textfield__expandable-holder {
     box-sizing: border-box;
     padding: 15px;
     border-radius: 5px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px; }
     .b-one-slide-block__wrapper img {
       max-width: 100%;
       height: auto; }
@@ -12201,7 +12204,7 @@ header .mdl-textfield__expandable-holder {
     margin: 10px 0; }
   .b-one-slide-block__main-text {
     color: rgb(52,65,145);
-    margin: 10px 0;
+    margin: 10px 0 40px;
     display: block; }
   .b-one-slide-block__text {
     color: #000;
@@ -12721,21 +12724,24 @@ header .mdl-textfield__expandable-holder {
     font-size: 30px;
     font-weight: 600; }
   .b-means__item--thin {
-    width: 180px;
-    height: 180px; }
+    width: 217px;
+    margin-bottom: 40px;
+    cursor: pointer; }
   .b-means__item--thin .b-means__image {
-    width: 180px;
-    height: 180px; }
+    width: 217px;
+    height: 217px; }
   .b-means__item--thin .b-means__image img {
     width: 100%;
     height: auto; }
   .b-means__item--thin h3 {
-    font-size: 25px; }
+    font-size: 30px; }
   .b-means__image {
     width: 256px;
     height: 256px;
     position: relative;
     margin: 0 auto; }
+  .b-means__image--thin {
+    border-radius: 50%; }
   .b-means__hover {
     position: absolute;
     top: 0;
@@ -12748,10 +12754,12 @@ header .mdl-textfield__expandable-holder {
   .b-means__hover p {
     font-size: 30px;
     font-weight: 600;
-    line-height: 1.25;
+    line-height: 1.1;
     text-align: center;
     color: #ffffff;
-    margin-top: 35%; }
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   .b-means__text {
     display: none;
     width: 660px;
@@ -12959,7 +12967,7 @@ h4.b-plus-header__head {
 /*  extending-logistics  */
 .b-extending-logistics {
   font-family: "ProximaNova";
-  margin: 30px 0; }
+  margin: 20px 0 80px; }
   .b-extending-logistics:before, .b-extending-logistics:after {
     content: "";
     display: table; }
@@ -12972,30 +12980,53 @@ h4.b-plus-header__head {
     width: 80%;
     margin: 25px auto 0 auto; }
   .b-extending-logistics__contacts {
+    width: 436px;
+    height: 562px;
     color: #fff;
-    padding: 39px;
     border-radius: 4px;
-    font-size: 18px; }
+    font-size: 18px;
+    background-repeat: no-repeat; }
   .b-extending-logistics__contacts p, .b-extending-logistics__contacts ul {
     font-size: 18px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding: 0 40px; }
+  .b-extending-logistics__contacts ul {
+    list-style: none; }
+  .b-extending-logistics__contacts ul li {
+    margin-bottom: 10px; }
   .b-extending-logistics__button {
     text-align: center; }
   .b-extending-logistics__head {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px;
+    padding-top: 40px; }
+    .b-extending-logistics__head--left {
+      text-align: left;
+      padding: 0 0 0 40px; }
   .b-extending-logistics__town {
     font-size: 30px;
     font-weight: 600; }
   .b-extending-logistics__branch {
     color: #fff;
     font-size: 18px;
-    margin-bottom: 25px;
     display: inline-block; }
   .b-extending-logistics .b-secondary-frase {
-    margin-bottom: 35px; }
+    margin-bottom: 70px; }
+  .b-extending-logistics__content {
+    width: 1170px; }
+    .b-extending-logistics__content:before, .b-extending-logistics__content:after {
+      content: "";
+      display: table; }
+    .b-extending-logistics__content:after {
+      clear: both; }
+    .b-extending-logistics__content--left {
+      float: left;
+      margin-right: 140px; }
+    .b-extending-logistics__content--right {
+      float: right;
+      width: 436px; }
 
 .b-vertex-background {
   background-size: 100% auto;
@@ -13028,6 +13059,8 @@ h4.b-plus-header__head {
     line-height: 72px;
     margin: 30px 0;
     font-weight: 600; }
+    .b-vertex-background__head--main {
+      margin-bottom: 0; }
   .b-vertex-background__text {
     font-size: 36px;
     line-height: 43px;
@@ -13054,7 +13087,7 @@ h4.b-plus-header__head {
     height: 614px; }
 
 .b-vertex-background--thick .b-vertex-background__content {
-  padding: 50px 0; }
+  padding: 150px 0; }
 
 .b-news-blocks-slider {
   margin: 30px 0; }
@@ -13340,6 +13373,7 @@ h4.b-plus-header__head {
     width: 800px; }
   .b-career__text p {
     font-size: 20px;
+    font-weight: 400;
     margin-bottom: 30px; }
   .b-career__right {
     float: right;
@@ -13625,7 +13659,7 @@ h4.b-plus-header__head {
     font-weight: 600;
     font-family: "ProximaNova";
     color: #fff;
-    margin: 25px 0; }
+    margin: 20px 0; }
   .b-form__input {
     background: #fff;
     border: 1px solid #cccccc;
@@ -14113,7 +14147,7 @@ h4.b-plus-header__head {
 .rsHomePorthole .rsCapt {
   position: absolute;
   top: auto;
-  bottom: 45px;
+  bottom: 85px;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;

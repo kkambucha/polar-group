@@ -254,12 +254,12 @@ header {
 }
 
 .b-main-slider {
-	position: relative;
+  position: relative;
   margin-bottom: 30px;
 
 	&__loginform {
 		position: absolute;
-		top: 20px;
+		top: 80px;
 		padding: 10px 40px;
 		box-sizing: border-box;
     z-index: 200;
@@ -370,10 +370,12 @@ header {
 
 .b-sec-slider {
   padding: 65px 0;
+
   &__head {
     font-size: 72px;
+    line-height: 1;
     text-align: center;
-    font-weight: 500;
+    font-weight: $fontSemibold;
     margin-bottom: 60px;
   }
   .swiper-button {
@@ -436,6 +438,7 @@ header {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
+    margin-bottom: 10px;
 
     img {
       max-width: 100%;
@@ -454,7 +457,7 @@ header {
   }
   &__main-text {
     color: unquote("rgb(#{$color-primary})");
-    margin: 10px 0;
+    margin: 10px 0 40px;
     display: block;
   }
   &__text {
@@ -1057,25 +1060,29 @@ header {
     font-weight: $fontSemibold;
   }
   &__item--thin {
-    width: 180px;
-    height: 180px;
+    width: 217px;
+    margin-bottom: 40px;
+    cursor: pointer;
   }
   &__item--thin &__image {
-    width: 180px;
-    height: 180px;
+    width: 217px;
+    height: 217px;
   }
   &__item--thin &__image img {
     width: 100%;
-    height: auto;;
+    height: auto;
   }
   &__item--thin h3 {
-    font-size: 25px;
+    font-size: 30px;
   }
   &__image {
     width: 256px;
     height: 256px;
     position: relative;
     margin: 0 auto;
+  }
+  &__image--thin {
+    border-radius: 50%;
   }
   &__hover {
     position: absolute;
@@ -1090,10 +1097,11 @@ header {
   &__hover p {
     font-size: 30px;
     font-weight: $fontSemibold;
-    line-height: 1.25;
+    line-height: 1.1;
     text-align: center;
     color: #ffffff;
-    margin-top: 35%;
+    margin-top: 50%;
+    transform: translateY(-50%);
   }
   &__text {
     display: none;
@@ -1332,7 +1340,7 @@ h4.b-plus-header__head {
 .b-extending-logistics {
   @include clearfix();
   font-family: $proximaFont;
-  margin: 30px 0;
+  margin: 20px 0 80px;
 
   &__frase {
     color: #000000;
@@ -1343,26 +1351,38 @@ h4.b-plus-header__head {
   }
 
   &__contacts {
+    width: 436px;
+    height: 562px;
     color: #fff;
-    padding: 39px;
     border-radius: 4px;
     font-size: 18px;
+    background-repeat: no-repeat;
   }
 
   &__contacts p, &__contacts ul {
     font-size: 18px;
     margin-bottom: 30px;
+    padding: 0 40px;
   }
-
+  &__contacts ul {
+    list-style: none;
+  }
+  &__contacts ul li {
+    margin-bottom: 10px;
+  }
   &__button {
     text-align: center;
   }
-
   &__head {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
+    padding-top: 40px;
+    &--left {
+      text-align: left;
+      padding: 0 0 0 40px;
+    }
   }
 
   &__town {
@@ -1373,11 +1393,23 @@ h4.b-plus-header__head {
   &__branch {
     color: #fff;
     font-size: 18px;
-    margin-bottom: 25px;
     display: inline-block;
   }
   .b-secondary-frase {
-    margin-bottom: 35px;
+    margin-bottom: 70px;
+  }
+  &__content {
+    width: 1170px;
+    @include clearfix();
+
+    &--left {
+      float: left;
+      margin-right: 140px;
+    }
+    &--right {
+      float: right;
+      width: 436px;
+    }
   }
 }
 
@@ -1413,6 +1445,9 @@ h4.b-plus-header__head {
     line-height: 72px;
     margin: 30px 0;
     font-weight: 600;
+    &--main {
+      margin-bottom: 0;
+    }
   }
   &__text {
     font-size: 36px;
@@ -1451,7 +1486,7 @@ h4.b-plus-header__head {
 
 .b-vertex-background--thick {
   .b-vertex-background__content {
-    padding: 50px 0;
+    padding: 150px 0;
   }
 }
 
@@ -1655,9 +1690,6 @@ h4.b-plus-header__head {
     line-height: 1;
     margin: 0 0 35px;
   }
-  &__icons {
-
-  }
   &__icons a {
     width: 48px;
     height: 64px;
@@ -1765,7 +1797,6 @@ h4.b-plus-header__head {
   }
   img {
     margin-top: 20px;
-
   }
 }
 
@@ -1787,6 +1818,7 @@ h4.b-plus-header__head {
   }
   &__text p {
     font-size: 20px;
+    font-weight: 400;
     margin-bottom: 30px;
   }
   &__right {
