@@ -206,4 +206,20 @@ $(function(){
         };
 	});
 
+
+	/* Become polar partner - animation*/
+
+    $(document).ready( function () {
+        var img = $(".b-vertex-background--partner"),
+            head = $(".c-table-cell--partner"),
+            all = $(".c-layout--partner");
+
+        //head.css("vertical-align", "top");
+        all.css("opacity", 0);
+        all.queue(function() {
+            all.animate({opacity: 1}, 3000).delay(3000);
+            all.dequeue();
+        });
+        img.css("display", "none").fadeIn(3000);
+	});
 });
