@@ -11981,26 +11981,30 @@ header .mdl-textfield__expandable-holder {
     margin: 0 8px;
     position: relative; }
   .b-top-row li:last-child {
-    margin-right: 0px; }
+    margin-right: 0; }
   .b-top-row li:first-child {
-    margin-left: 0px; }
-  .b-top-row .b-list-lang {
-    width: 100px;
-    position: absolute;
-    list-style: none;
-    display: none;
-    background: #ffffff;
+    margin-left: 0; }
+  .b-top-row .b-top-row__lang .mdl-button {
+    padding: 0;
+    line-height: 2; }
+  .b-top-row .b-top-row__lang .mdl-button .material-icons {
+    vertical-align: top; }
+  .b-top-row .b-top-row__lang li.mdl-menu__item {
+    width: 100%;
     margin: 0;
-    padding: 0; }
-  .b-top-row .b-list-lang li {
-    margin: 0;
-    padding: 10px 0; }
-  .b-top-row .b-list-lang li a {
+    padding: 0;
+    height: 42px;
+    border-bottom: 1px solid #cccccc; }
+  .b-top-row .b-top-row__lang li.mdl-menu__item:last-child {
+    border-bottom: none; }
+  .b-top-row .b-top-row__lang-link {
     padding: 10px 15px;
     color: #000000;
-    font-size: 18px;
-    border-bottom: 1px solid #aaaaaa;
-    text-decoration: none; }
+    display: block;
+    line-height: 1.5; }
+  .b-top-row .b-top-row__lang-link:hover {
+    background: #67afdd;
+    color: #ffffff; }
   .b-top-row .b-top-row__urls {
     float: right; }
     .b-top-row .b-top-row__urls a {
