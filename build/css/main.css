@@ -13651,6 +13651,27 @@ h4.b-plus-header__head {
   .b-faq-acc__item-content ol li {
     font-size: 18px; }
 
+/*--------- POPUP ---------*/
+.b-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: none; }
+
+.b-popup__content {
+  width: 480px;
+  height: 640px;
+  margin: 8% auto;
+  background: #ffffff;
+  padding-top: 40px;
+  z-index: 500; }
+
+.b-popup__content textarea {
+  resize: none; }
+
 .b-form {
   width: 100%;
   box-sizing: border-box;

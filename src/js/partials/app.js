@@ -222,4 +222,20 @@ $(function(){
         });
         img.css("display", "none").fadeIn(3000);
 	});
+
+	/* ShowPopup */
+
+	$(".c-popup-show").on("click", function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		$(".b-popup").fadeIn(300);
+	});
+	$(".b-popup__content").click(function(e) {
+		e.stopImmediatePropagation();
+	});
+	$("body").on("click", function(e){
+		e.preventDefault();
+		$(".b-popup").fadeOut(300);
+	});
+
 });
