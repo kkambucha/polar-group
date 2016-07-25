@@ -1928,8 +1928,7 @@ h4.b-plus-header__head {
     position: relative;
   }
   &__item:hover > &__office {
-    display: block;
-    transition: 0.3s;
+    /*display: block;*/
   }
   &__item-head {
     width: 100%;
@@ -1984,12 +1983,14 @@ h4.b-plus-header__head {
     font-size: 60px;
     font-weight: $fontSemibold;
     margin: 0 0 45px;
+    display: none;
   }
   &__office-item {
     width: 415px;
     float: left;
     margin-right: 35px;
     margin-bottom: 25px;
+    display: none;
   }
   &__office-item h4{
     font-size: 30px;

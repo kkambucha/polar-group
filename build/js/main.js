@@ -21980,6 +21980,7 @@ $(function(){
         img.css("display", "none").fadeIn(3000);
 	});
 
+
 	/* ShowPopup */
 
 	$(".c-popup-show").on("click", function(e){
@@ -21993,6 +21994,24 @@ $(function(){
 	$("body").on("click", function(e){
 		e.preventDefault();
 		$(".b-popup").fadeOut(300);
+	});
+
+
+	/* Contact Us */
+
+	$(".b-contact__item").on("mouseenter", function(e){
+		var $this = $(this),
+			office = $this.children(".b-contact__office"),
+			items = office.children(".b-contact__office-item"),
+			head = office.children(".b-contact__office-head");
+
+		office.stop(true, true).slideDown(700);
+		items.stop(true, true).fadeIn(2500);
+		head.stop(true, true).fadeIn(2500);
+	});
+
+	$(".b-contact__item").on("mouseleave", function(e){
+		$(".b-contact__office").fadeOut(500);
 	});
 
 });

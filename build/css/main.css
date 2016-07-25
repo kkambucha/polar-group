@@ -13471,9 +13471,7 @@ h4.b-plus-header__head {
     background: #344191;
     position: relative; }
   .b-contact__item:hover > .b-contact__office {
-    display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
+    /*display: block;*/ }
   .b-contact__item-head {
     width: 100%;
     position: absolute;
@@ -13520,12 +13518,14 @@ h4.b-plus-header__head {
   .b-contact__office-head {
     font-size: 60px;
     font-weight: 600;
-    margin: 0 0 45px; }
+    margin: 0 0 45px;
+    display: none; }
   .b-contact__office-item {
     width: 415px;
     float: left;
     margin-right: 35px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    display: none; }
   .b-contact__office-item h4 {
     font-size: 30px;
     font-weight: 600;
