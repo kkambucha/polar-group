@@ -207,20 +207,24 @@ $(function(){
 	});
 
 
-	/* Become polar partner - animation*/
+	/* Become polar partner - animation */
 
     $(document).ready( function () {
         var img = $(".b-vertex-background--partner"),
-            head = $(".c-table-cell--partner"),
-            all = $(".c-layout--partner");
+            head = $(".b-vertex-background__head--partner"),
+            all = $(".c-layout--partner"),
+            header = all.children(".mdl-layout__header"),
+            content = $(".l-content--partner");
 
         //head.css("vertical-align", "top");
-        all.css("opacity", 0);
-        all.queue(function() {
-            all.animate({opacity: 1}, 3000).delay(3000);
-            all.dequeue();
-        });
-        img.css("display", "none").fadeIn(3000);
+
+        header.css("opacity", 0);
+        content.css("opacity", 0);
+        head.css("top", "-370px");
+        img.css("opacity", 0).animate({ opacity: 1}, 2000);
+        header.delay(2000).animate({ opacity: 1}, 500);
+        head.delay(2500).animate({ top: 0}, 2000);
+        content.delay(4500).animate({ opacity: 1}, 500);
 	});
 
 
@@ -228,15 +232,19 @@ $(function(){
 
 	$(".c-popup-show").on("click", function(e){
 		e.preventDefault();
-		e.stopImmediatePropagation();
+        e.stopPropagation();
 		$(".b-popup").fadeIn(300);
 	});
-	$(".b-popup__content").click(function(e) {
-		e.stopImmediatePropagation();
+	/*$(".b-popup__content").click(function(e) {
+        e.stopPropagation();
+	});*/
+	$(".b-popup__content").onblur(function(e) {
+        $(".b-popup").fadeOut(300);
 	});
-	$("body").on("click", function(e){
+
+    /*$("body").on("click", function(e){
 		e.preventDefault();
-		$(".b-popup").fadeOut(300);
+		$(".b-popup").fadeOut(300);*/
 	});
 
 
@@ -249,8 +257,8 @@ $(function(){
 			head = office.children(".b-contact__office-head");
 
 		office.stop(true, true).slideDown(700);
-		items.stop(true, true).fadeIn(2500);
-		head.stop(true, true).fadeIn(2500);
+		items.stop(true, true).delay(700).fadeIn(1500);
+		head.stop(true, true).delay(700).fadeIn(1500);
 	});
 
 	$(".b-contact__item").on("mouseleave", function(e){

@@ -13073,6 +13073,8 @@ h4.b-plus-header__head {
     font-weight: 600; }
     .b-vertex-background__head--main {
       margin-bottom: 0; }
+    .b-vertex-background__head--partner {
+      position: relative; }
   .b-vertex-background__text {
     font-size: 36px;
     line-height: 43px;
@@ -13181,6 +13183,8 @@ h4.b-plus-header__head {
     vertical-align: middle; }
   .b-tracking__advanced a {
     color: #ffffff; }
+  .b-tracking__advanced a:hover {
+    text-decoration: none; }
 
 .b-tariff-requests__head {
   font-size: 72px;
