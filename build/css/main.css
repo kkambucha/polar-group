@@ -12034,6 +12034,7 @@ header .mdl-textfield__expandable-holder {
     padding-bottom: 6px; }
 
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+  background-color: transparent !important;
   background-image: url("../img/tick.svg"); }
 
 .mdl-checkbox__tick-outline {
@@ -12476,6 +12477,12 @@ header .mdl-textfield__expandable-holder {
 .b-news-filters__category-item:hover a {
   color: #ffffff; }
 
+.b-news-filters__category-active {
+  background: #344191; }
+
+.b-news-filters__category-active a {
+  color: #ffffff; }
+
 .b-news-filters__period-form {
   margin-top: 15px;
   margin-left: 15px; }
@@ -12502,7 +12509,7 @@ header .mdl-textfield__expandable-holder {
   top: 0;
   background: #ffffff;
   border: 1px solid #cccccc;
-  border-radius: 10px; }
+  border-radius: 50%; }
 
 .b-news-filters__period-input:checked + .b-news-filters__period-label:before {
   content: "";
@@ -12548,7 +12555,8 @@ header .mdl-textfield__expandable-holder {
 
 /*-------------------*/
 .b-news-list {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 60px; }
 
 .b-news-item {
   margin-bottom: 40px; }
@@ -12579,6 +12587,8 @@ header .mdl-textfield__expandable-holder {
     text-align: right; }
   .b-news-item__learn-more a {
     color: #000000; }
+  .b-news-item__learn-more a:hover {
+    text-decoration: none; }
 
 .pagination {
   width: 100%; }
@@ -13276,9 +13286,9 @@ h4.b-plus-header__head {
   .b-award-item__search {
     background-image: url("../pic/icon-search.png"); }
   .b-award-item__download:hover {
-    background-image: url("../pic/icon-download-blue.png"); }
+    background-image: url("../pic/icon-download-hover-b.png"); }
   .b-award-item__search:hover {
-    background-image: url("../pic/icon-search-blue.png"); }
+    background-image: url("../pic/icon-search-hover-b.png"); }
 
 .b-certificates {
   background: #f0f0f0; }
@@ -13328,9 +13338,9 @@ h4.b-plus-header__head {
   .b-certificates__search {
     background-image: url("../pic/icon-search-white.png"); }
   .b-certificates__download:hover {
-    background-image: url("../pic/icon-download-blue.png"); }
+    background-image: url("../pic/icon-download-hover.png"); }
   .b-certificates__search:hover {
-    background-image: url("../pic/icon-search-blue.png"); }
+    background-image: url("../pic/icon-search-hover.png"); }
 
 /* Slder */
 .rsHomePorthole .rsCapt {

@@ -247,6 +247,7 @@ header {
 	}
 }
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+	background-color: transparent !important;
 	background-image: url('../img/tick.svg');
 }
 .mdl-checkbox__tick-outline {
@@ -772,6 +773,12 @@ header {
   &__category-item:hover a{
     color: #ffffff;
   }
+  &__category-active {
+    background: #344191;
+  }
+  &__category-active a {
+    color: #ffffff;
+  }
 
   &__period-form {
     margin-top: 15px;
@@ -799,7 +806,7 @@ header {
     top: 0;
     background: #ffffff;
     border: 1px solid #cccccc;
-    border-radius: 10px;
+    border-radius: 50%;
   }
   &__period-input:checked + &__period-label:before {
     content: "";
@@ -850,6 +857,7 @@ header {
 
 .b-news-list{
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 
 .b-news-item {
@@ -884,6 +892,9 @@ header {
   }
   &__learn-more a {
     color: #000000;
+  }
+  &__learn-more a:hover {
+    text-decoration: none;
   }
 }
 .pagination {
@@ -1705,10 +1716,10 @@ h4.b-plus-header__head {
     background-image: url("../pic/icon-search.png");
   }
   &__download:hover {
-    background-image: url("../pic/icon-download-blue.png");
+    background-image: url("../pic/icon-download-hover-b.png");
   }
   &__search:hover {
-    background-image: url("../pic/icon-search-blue.png");
+    background-image: url("../pic/icon-search-hover-b.png");
   }
 }
 
@@ -1767,10 +1778,10 @@ h4.b-plus-header__head {
     background-image: url("../pic/icon-search-white.png");
   }
   &__download:hover {
-    background-image: url("../pic/icon-download-blue.png");
+    background-image: url("../pic/icon-download-hover.png");
   }
   &__search:hover {
-    background-image: url("../pic/icon-search-blue.png");
+    background-image: url("../pic/icon-search-hover.png");
   }
 }
 

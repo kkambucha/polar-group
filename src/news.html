@@ -40,7 +40,7 @@
 							<div class="b-news-filters__category">
 								<h3 class="b-news-filters__category-head">Category</h3>
 								<ul class="b-news-filters__category-content">
-									<li class="b-news-filters__category-item"><a href="#">All</a></li>
+									<li class="b-news-filters__category-item b-news-filters__category-active"><a href="#">All</a></li>
 									<li class="b-news-filters__category-item"><a href="#">News from Europe</a></li>
 									<li class="b-news-filters__category-item"><a href="#">News from North America</a></li>
 									<li class="b-news-filters__category-item"><a href="#">News from Asia</a></li>
@@ -51,31 +51,32 @@
 
 							<div class="b-news-filters__period">
 								<h3 class="b-news-filters__category-head">Period</h3>
-								<form class="b-news-filters__period-form">
-                                    <div class="b-news-filters__period-radio">
-                                        <input class="b-news-filters__period-input" type="radio" id="no" checked>
+								<form action="#" method="POST" class="b-news-filters__period-form">
+									<div class="b-news-filters__period-radio">
+                                        <input class="b-news-filters__period-input" type="radio" checked="checked" id="no">
                                         <label class="b-news-filters__period-label" for="no">No restriction</label>
                                     </div>
                                     <div class="b-news-filters__period-radio">
                                         <input class="b-news-filters__period-input" type="radio" id="yes">
                                         <label class="b-news-filters__period-label" for="yes">
-
-                                            <select class="b-news-filters__period-select">
-                                                <option>Year</option>
-                                                <option>2015</option>
-                                                <option>2014</option>
-                                            </select>
-
-                                            <select class="b-news-filters__period-select">
-                                                <option>Month</option>
-                                                <option>Juin</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                            </select>
-
+                                            <form action="#" method="POST">
+                                                <select class="b-news-filters__period-select">
+                                                    <option>Year</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                </select>
+                                                <select class="b-news-filters__period-select">
+                                                    <option>Month</option>
+                                                    <option>Juin</option>
+                                                    <option>July</option>
+                                                    <option>August</option>
+                                                </select>
+                                            </form>
                                         </label>
                                      </div>
                                 </form>
+
+
 							</div>
 
 							<div class="b-news-filters__most-popular">
