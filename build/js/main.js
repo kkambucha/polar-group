@@ -21988,20 +21988,16 @@ $(function(){
 	/* ShowPopup */
 
 	$(".c-popup-show").on("click", function(e){
-		e.preventDefault();
         e.stopPropagation();
 		$(".b-popup").fadeIn(300);
-	});
-	/*$(".b-popup__content").click(function(e) {
-        e.stopPropagation();
-	});*/
-	$(".b-popup__content").onblur(function(e) {
-        $(".b-popup").fadeOut(300);
+
+		$(".b-popup__content").click(function(e) {
+	       e.stopPropagation();
+		});
 	});
 
-    /*$("body").on("click", function(e){
-		e.preventDefault();
-		$(".b-popup").fadeOut(300);*/
+    $("body").on("click", function(e){
+		$(".b-popup").fadeOut(300);
 	});
 
 
