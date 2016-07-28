@@ -95,6 +95,7 @@
 	}
 }
 
+
 @media screen and (max-width: 1500px) {
 	.b-form	{
 		margin-bottom: 10px;
@@ -125,13 +126,6 @@
 	}
 	.rsHomePorthole .rsCapt {
 	  height: 80%;
-	}
-
-	.b-extending-logistics__content--left {
-		margin-right: 70px;
-	}
-	.b-extending-logistics__content--right {
-		float: left;
 	}
 }
 
@@ -166,23 +160,27 @@
 	}
 
 	.b-extending-logistics__content--left {
-		margin: 0 70px;
+		width: 520px;
 	}
-	.b-extending-logistics__content--right {
-		width: 80%;
-		.b-extending-logistics__contacts {
-			margin: auto;
-		}
 
-	}
 	.b-extending-logistics {
 		margin-top: 550px;
 		&__content {
-			margin: 0 auto;
+          width: 95%;
+          margin: 0 auto;
 		}
+      .b-big-header {
+        font-size: 48px;
+        margin-bottom: 30px;
+      }
+      .b-secondary-frase {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+      }
 	}
-    .b-vertex-background__content {
-      padding: 100px 0;
+    .b-vertex-background--thick .b-vertex-background__content {
+      padding: 70px 0 100px;
     }
 }
 
@@ -194,22 +192,35 @@
 	.top-bot-p-0 { padding-top: 0; padding-bottom: 0; }
 
 	.mdl-navigation--main-menu .mdl-button { margin: 0 12px; }
+    .b-extending-logistics {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &__content--left, &__content--right {
+        float: none;
+      }
+      &__content--right {
+        margin: 0 auto;
+      }
+    }
+
 }
 
 @media screen and (max-width:800px) {
 	.rsDesc img {
 		display: none;
 	}
-	.b-vertex-background {
+    .b-vertex-background--thick .b-vertex-background {
       &__content {
-        padding: 50px 0;
+        padding: 20px 0 50px;
       }
 	  &__head {
-		  font-size: 48px;
+        font-size: 48px;
 	  }
 	  &__text {
-		  font-size: 24px;
-		  padding: 0 30px;
+        font-size: 24px;
+		padding: 0 30px;
 	  }
 	}
 }

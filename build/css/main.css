@@ -12741,8 +12741,11 @@ header .mdl-textfield__expandable-holder {
     font-weight: 600; }
   .b-means__item--thin {
     width: 217px;
+    float: left;
     margin-bottom: 40px;
     cursor: pointer; }
+  .b-means__item--thin:last-child {
+    float: right; }
   .b-means__item--thin .b-means__image {
     width: 217px;
     height: 217px; }
@@ -12982,8 +12985,9 @@ h4.b-plus-header__head {
 
 /*  extending-logistics  */
 .b-extending-logistics {
+  width: 100%;
   font-family: "ProximaNova";
-  margin: 20px 0 80px; }
+  margin: 20px auto 80px; }
   .b-extending-logistics:before, .b-extending-logistics:after {
     content: "";
     display: table; }
@@ -13031,7 +13035,8 @@ h4.b-plus-header__head {
   .b-extending-logistics .b-secondary-frase {
     margin-bottom: 70px; }
   .b-extending-logistics__content {
-    width: 1170px; }
+    width: 1170px;
+    margin: 0 auto; }
     .b-extending-logistics__content:before, .b-extending-logistics__content:after {
       content: "";
       display: table; }
@@ -13039,10 +13044,18 @@ h4.b-plus-header__head {
       clear: both; }
     .b-extending-logistics__content--left {
       float: left;
-      margin-right: 140px; }
+      width: 590px;
+      margin: 0 auto; }
     .b-extending-logistics__content--right {
       float: right;
       width: 436px; }
+  .b-extending-logistics__content-row {
+    width: 100%; }
+    .b-extending-logistics__content-row:before, .b-extending-logistics__content-row:after {
+      content: "";
+      display: table; }
+    .b-extending-logistics__content-row:after {
+      clear: both; }
 
 .b-vertex-background {
   background-size: 100% auto;
@@ -14916,11 +14929,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .rsDesc img {
     margin-top: 10px; }
   .rsHomePorthole .rsCapt {
-    height: 80%; }
-  .b-extending-logistics__content--left {
-    margin-right: 70px; }
-  .b-extending-logistics__content--right {
-    float: left; } }
+    height: 80%; } }
 
 @media screen and (max-width: 1170px) {
   .mdl-layout__header {
@@ -14953,17 +14962,21 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     width: 60%;
     height: auto; }
   .b-extending-logistics__content--left {
-    margin: 0 70px; }
-  .b-extending-logistics__content--right {
-    width: 80%; }
-    .b-extending-logistics__content--right .b-extending-logistics__contacts {
-      margin: auto; }
+    width: 520px; }
   .b-extending-logistics {
     margin-top: 550px; }
     .b-extending-logistics__content {
+      width: 95%;
       margin: 0 auto; }
-  .b-vertex-background__content {
-    padding: 100px 0; } }
+    .b-extending-logistics .b-big-header {
+      font-size: 48px;
+      margin-bottom: 30px; }
+    .b-extending-logistics .b-secondary-frase {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 30px; }
+  .b-vertex-background--thick .b-vertex-background__content {
+    padding: 70px 0 100px; } }
 
 @media screen and (max-width: 1024px) {
   .mdl-layout__header {
@@ -14977,15 +14990,23 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     padding-top: 0;
     padding-bottom: 0; }
   .mdl-navigation--main-menu .mdl-button {
-    margin: 0 12px; } }
+    margin: 0 12px; }
+  .b-extending-logistics {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .b-extending-logistics__content--left, .b-extending-logistics__content--right {
+      float: none; }
+    .b-extending-logistics__content--right {
+      margin: 0 auto; } }
 
 @media screen and (max-width: 800px) {
   .rsDesc img {
     display: none; }
-  .b-vertex-background__content {
-    padding: 50px 0; }
-  .b-vertex-background__head {
+  .b-vertex-background--thick .b-vertex-background__content {
+    padding: 20px 0 50px; }
+  .b-vertex-background--thick .b-vertex-background__head {
     font-size: 48px; }
-  .b-vertex-background__text {
+  .b-vertex-background--thick .b-vertex-background__text {
     font-size: 24px;
     padding: 0 30px; } }

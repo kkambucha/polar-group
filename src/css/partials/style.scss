@@ -1082,8 +1082,12 @@ header {
   }
   &__item--thin {
     width: 217px;
+    float: left;
     margin-bottom: 40px;
     cursor: pointer;
+  }
+  &__item--thin:last-child {
+    float: right;
   }
   &__item--thin &__image {
     width: 217px;
@@ -1360,8 +1364,9 @@ h4.b-plus-header__head {
 /*  extending-logistics  */
 .b-extending-logistics {
   @include clearfix();
+  width: 100%;
   font-family: $proximaFont;
-  margin: 20px 0 80px;
+  margin: 20px auto 80px;
 
   &__frase {
     color: #000000;
@@ -1421,16 +1426,22 @@ h4.b-plus-header__head {
   }
   &__content {
     width: 1170px;
+    margin: 0 auto;
     @include clearfix();
 
     &--left {
       float: left;
-      margin-right: 140px;
+      width: 590px;
+      margin: 0 auto;
     }
     &--right {
       float: right;
       width: 436px;
     }
+  }
+  &__content-row {
+    width: 100%;
+    @include clearfix();
   }
 }
 
