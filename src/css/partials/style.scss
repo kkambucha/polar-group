@@ -81,6 +81,11 @@ html, body {
 		height: 22px;
 		margin: 0 35px;
 	}
+
+	.mdl-button:hover + .mdl-menu__container{
+		visibility: visible;
+	}
+
 	.mdl-button:hover, .mdl-button:focus:not(:active) {
 		background: none;
 		border-bottom: 1px solid #9fa4c5;
@@ -185,6 +190,9 @@ header {
     .b-top-row__lang .mdl-button {
       padding: 0;
       line-height: 2;
+    }
+    .b-top-row__lang #lang {
+      background: none;
     }
     .b-top-row__lang .mdl-button .material-icons{
       vertical-align: top;
@@ -1502,6 +1510,7 @@ h4.b-plus-header__head {
 }
 
 .b-vertex-background--thick {
+  background-size: cover;
   .b-vertex-background__content {
     padding: 150px 0;
   }

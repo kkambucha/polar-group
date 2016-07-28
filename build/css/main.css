@@ -11904,6 +11904,8 @@ html, body {
     line-height: 22px;
     height: 22px;
     margin: 0 35px; }
+  .mdl-navigation--main-menu .mdl-button:hover + .mdl-menu__container {
+    visibility: visible; }
   .mdl-navigation--main-menu .mdl-button:hover, .mdl-navigation--main-menu .mdl-button:focus:not(:active) {
     background: none;
     border-bottom: 1px solid #9fa4c5; }
@@ -11988,6 +11990,8 @@ header .mdl-textfield__expandable-holder {
   .b-top-row .b-top-row__lang .mdl-button {
     padding: 0;
     line-height: 2; }
+  .b-top-row .b-top-row__lang #lang {
+    background: none; }
   .b-top-row .b-top-row__lang .mdl-button .material-icons {
     vertical-align: top; }
   .b-top-row .b-top-row__lang li.mdl-menu__item {
@@ -13100,8 +13104,10 @@ h4.b-plus-header__head {
   .b-vertex-background--vacancy .b-vertex-background__table {
     height: 614px; }
 
-.b-vertex-background--thick .b-vertex-background__content {
-  padding: 150px 0; }
+.b-vertex-background--thick {
+  background-size: cover; }
+  .b-vertex-background--thick .b-vertex-background__content {
+    padding: 150px 0; }
 
 .b-news-blocks-slider {
   margin: 30px 0; }
@@ -14885,17 +14891,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     padding-top: 0;
     padding-bottom: 0; } }
 
-@media screen and (max-width: 1024px) {
-  .mdl-layout__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .top-bot-m-0 {
-    margin-top: 0;
-    margin-bottom: 0; }
-  .top-bot-p-0 {
-    padding-top: 0;
-    padding-bottom: 0; } }
+@media screen and (max-width: 1600px) {
+  .b-main-slider__loginform {
+    top: 30px; } }
 
 @media screen and (max-width: 1500px) {
   .b-form {
@@ -14918,4 +14916,76 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .rsDesc img {
     margin-top: 10px; }
   .rsHomePorthole .rsCapt {
-    height: 80%; } }
+    height: 80%; }
+  .b-extending-logistics__content--left {
+    margin-right: 70px; }
+  .b-extending-logistics__content--right {
+    float: left; } }
+
+@media screen and (max-width: 1170px) {
+  .mdl-layout__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .top-bot-m-0 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .top-bot-p-0 {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .mdl-navigation--main-menu .mdl-button {
+    margin: 0 18px; }
+  .b-main-slider__loginform {
+    top: 105%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .rsHomePorthole .rsCapt {
+    left: 45% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important; }
+  .rsHomePorthole .rsTitle {
+    display: none; }
+  .rsDesc a {
+    font-size: 18px;
+    line-height: 1.2; }
+  .rsDesc img {
+    width: 60%;
+    height: auto; }
+  .b-extending-logistics__content--left {
+    margin: 0 70px; }
+  .b-extending-logistics__content--right {
+    width: 80%; }
+    .b-extending-logistics__content--right .b-extending-logistics__contacts {
+      margin: auto; }
+  .b-extending-logistics {
+    margin-top: 550px; }
+    .b-extending-logistics__content {
+      margin: 0 auto; }
+  .b-vertex-background__content {
+    padding: 100px 0; } }
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .top-bot-m-0 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .top-bot-p-0 {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .mdl-navigation--main-menu .mdl-button {
+    margin: 0 12px; } }
+
+@media screen and (max-width: 800px) {
+  .rsDesc img {
+    display: none; }
+  .b-vertex-background__content {
+    padding: 50px 0; }
+  .b-vertex-background__head {
+    font-size: 48px; }
+  .b-vertex-background__text {
+    font-size: 24px;
+    padding: 0 30px; } }
