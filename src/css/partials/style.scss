@@ -614,7 +614,7 @@ header {
 
     &__big {
       width: 100%;
-      max-width: 1320px;
+      max-width: 1100px;
       margin: 0 auto;
       font-size: 36px;
       color: #aaaaaa;
@@ -633,14 +633,15 @@ header {
 }
 
 .b-transport-cards {
-  width: 1320px;
-  margin-bottom: 80px;
+  //width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
   @include clearfix();
 
   &__item {
     width: 300px;
     float: left;
-    margin-right: 40px;
+    margin:0 40px 80px 0;
     position: relative;
     cursor: pointer;
   }
@@ -1508,9 +1509,6 @@ h4.b-plus-header__head {
   &--partner &__table {
     height: 850px;
   }
-  &--about {
-  //  min-height: 500px;
-  }
   &--about &__table {
     height: 500px;
   }
@@ -1519,9 +1517,6 @@ h4.b-plus-header__head {
   }
   &--career &__table {
     height: 600px;
-  }
-  &--vacancy {
-    min-height: 614px;
   }
   &--vacancy &__table {
     height: 614px;
