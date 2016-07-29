@@ -227,6 +227,9 @@
 }
 
 @media screen and (max-width:800px) {
+    .b-vertex-background__head {
+      font-size: 48px;
+    }
 	.rsDesc img {
 		display: none;
 	}
@@ -273,9 +276,6 @@
         margin-bottom: 30px;
       }
     }
-   .b-vertex-background__head {
-     font-size: 48px;
-   }
 }
 
 @media screen and (max-width:480px) {
@@ -474,5 +474,78 @@
       margin-left: auto;
       margin-right: auto !important;
     }
+  }
+}
+
+/*--------- PARTNERS ---------*/
+@media screen and (max-width: 1500px) {
+  .b-vertex-background {
+    &--partner {
+      margin-bottom: 0;
+    }
+    &--partner &__table {
+      height: 680px;
+    }
+  }
+  .b-text-content {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .b-vertex-background {
+    &--partner &__table {
+      height: 600px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .b-vertex-background {
+    &--partner &__table {
+      height: 450px;
+    }
+  }
+  .b-text-content p {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b-vertex-background {
+    &--partner &__table {
+      height: 350px;
+    }
+  }
+  .b-text-content p {
+    font-size: 20px;
+  }
+  .b-button-wrapper {
+    margin: 40px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .b-vertex-background {
+    &--partner &__table {
+      height: 300px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .b-vertex-background {
+    &--partner &__table {
+      height: 230px;
+    }
+  }
+}
+
+/*--------- POPUP ---------*/
+@media screen and (max-width: 480px) {
+  .b-popup__content {
+    width: 100%;
+    min-width: 280px;
+    //padding-left: 10px;
+    //padding-right: 10px;
+  }
+  .b-question__form {
+    width: 90%;
   }
 }

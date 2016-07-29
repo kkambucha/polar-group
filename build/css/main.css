@@ -13110,7 +13110,7 @@ h4.b-plus-header__head {
   .b-vertex-background--partner {
     min-height: 80px; }
   .b-vertex-background--partner .b-vertex-background__table {
-    height: 850px; }
+    height: 810px; }
   .b-vertex-background--about .b-vertex-background__table {
     height: 500px; }
   .b-vertex-background--career {
@@ -15017,6 +15017,8 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
       right: -8px; } }
 
 @media screen and (max-width: 800px) {
+  .b-vertex-background__head {
+    font-size: 48px; }
   .rsDesc img {
     display: none; }
   .b-vertex-background--thick .b-vertex-background__content {
@@ -15044,9 +15046,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     padding: 25px 0; }
     .b-sec-slider__head {
       font-size: 30px;
-      margin-bottom: 30px; }
-  .b-vertex-background__head {
-    font-size: 48px; } }
+      margin-bottom: 30px; } }
 
 @media screen and (max-width: 480px) {
   .l-login-form {
@@ -15181,3 +15181,47 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     float: none !important;
     margin-left: auto;
     margin-right: auto !important; } }
+
+/*--------- PARTNERS ---------*/
+@media screen and (max-width: 1500px) {
+  .b-vertex-background--partner {
+    margin-bottom: 0; }
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 680px; }
+  .b-text-content {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 1280px) {
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 600px; } }
+
+@media screen and (max-width: 1024px) {
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 450px; }
+  .b-text-content p {
+    font-size: 24px;
+    line-height: 1.2; } }
+
+@media screen and (max-width: 800px) {
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 350px; }
+  .b-text-content p {
+    font-size: 20px; }
+  .b-button-wrapper {
+    margin: 40px 0; } }
+
+@media screen and (max-width: 600px) {
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 300px; } }
+
+@media screen and (max-width: 480px) {
+  .b-vertex-background--partner .b-vertex-background__table {
+    height: 230px; } }
+
+/*--------- POPUP ---------*/
+@media screen and (max-width: 480px) {
+  .b-popup__content {
+    width: 100%;
+    min-width: 280px; }
+  .b-question__form {
+    width: 90%; } }
