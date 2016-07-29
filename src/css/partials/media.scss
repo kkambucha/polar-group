@@ -549,3 +549,36 @@
     width: 90%;
   }
 }
+
+/*--------- BODY-NEWS ---------*/
+@media screen and (max-width: 1440px) {
+  .l-content {
+    &__head, &__subtitle {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .l-content {
+    &__head {
+      font-size: 36px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    &__button {
+      margin: 40px 0;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .l-content {
+    &__head {
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}

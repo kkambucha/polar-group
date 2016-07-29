@@ -12631,8 +12631,16 @@ header .mdl-textfield__expandable-holder {
   font-family: "ProximaNova"; }
 
 .l-content__img {
+  width: 100%;
+  max-width: 1400px;
   margin: 40px auto;
   text-align: center; }
+  .l-content__img--map {
+    max-width: 1127px; }
+
+.l-content__img img {
+  width: 100%;
+  height: auto; }
 
 .l-content__paragraph {
   margin-bottom: 30px;
@@ -15225,3 +15233,23 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     min-width: 280px; }
   .b-question__form {
     width: 90%; } }
+
+/*--------- BODY-NEWS ---------*/
+@media screen and (max-width: 1440px) {
+  .l-content__head, .l-content__subtitle {
+    text-align: center; } }
+
+@media screen and (max-width: 1024px) {
+  .l-content__head {
+    font-size: 36px; }
+  .l-content__subtitle {
+    font-size: 24px;
+    line-height: 1.2; }
+  .l-content__button {
+    margin: 40px 0; } }
+
+@media screen and (max-width: 480px) {
+  .l-content__head {
+    font-size: 24px; }
+  .l-content__subtitle {
+    font-size: 20px; } }

@@ -953,10 +953,18 @@ header {
     font-family: $proximaFont;
   }
   &__img {
+    width: 100%;
+    max-width: 1400px;
     margin: 40px auto;
     text-align: center;
+    &--map {
+      max-width: 1127px;
+    }
   }
-
+  &__img img{
+    width: 100%;
+    height: auto;
+  }
   &__paragraph {
     margin-bottom: 30px;
     font-family: $proximaFont;
