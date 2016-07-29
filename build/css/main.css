@@ -12646,7 +12646,7 @@ header .mdl-textfield__expandable-holder {
 /*--------------- ABOUT US ---------------*/
 .b-attitude {
   width: 1040px;
-  margin: 80px auto 55px; }
+  margin: 40px auto 55px; }
   .b-attitude:before, .b-attitude:after {
     content: "";
     display: table; }
@@ -12659,6 +12659,12 @@ header .mdl-textfield__expandable-holder {
     font-weight: 600;
     color: #40ac6e;
     text-align: center; }
+  .b-attitude__pic {
+    width: 860px;
+    margin: 80px auto 40px; }
+  .b-attitude__pic img {
+    width: 100%;
+    height: auto; }
   .b-attitude__left {
     float: left;
     width: 450px; }
@@ -12764,10 +12770,12 @@ header .mdl-textfield__expandable-holder {
   .b-means__hover {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     background: rgba(103, 175, 221, 0.8);
-    width: 100%;
-    height: 100%;
+    width: 256px;
+    height: 256px;
     border-radius: 50%;
     display: none; }
   .b-means__hover p {
@@ -13058,12 +13066,11 @@ h4.b-plus-header__head {
       clear: both; }
 
 .b-vertex-background {
-  background-size: 100% auto;
+  background-size: cover;
   text-align: center;
   padding: 0;
   color: #fff;
   background-repeat: no-repeat;
-  background-size: 100% auto;
   background-position: top center;
   max-width: 1920px;
   margin: 0 auto 30px auto; }
@@ -13104,8 +13111,6 @@ h4.b-plus-header__head {
     min-height: 80px; }
   .b-vertex-background--partner .b-vertex-background__table {
     height: 850px; }
-  .b-vertex-background--about {
-    min-height: 500px; }
   .b-vertex-background--about .b-vertex-background__table {
     height: 500px; }
   .b-vertex-background--career {
@@ -15059,3 +15064,76 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     width: 100%; }
   .b-extending-logistics__button {
     padding-bottom: 30px; } }
+
+/*--------- ABOUT ---------*/
+@media screen and (max-width: 1170px) {
+  .b-means__left-col .b-means__text {
+    left: -30%; }
+  .b-means__right-col .b-means__text {
+    left: -150%; } }
+
+@media screen and (max-width: 1024px) {
+  .b-attitude {
+    width: 100%;
+    margin: 0; }
+    .b-attitude__pic {
+      width: 90%;
+      max-width: 860px;
+      margin-top: 30px; }
+    .b-attitude__left, .b-attitude__right {
+      width: 45%; }
+  .b-philosophy {
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    margin-bottom: 40px; }
+    .b-philosophy__content {
+      width: 90%;
+      padding-bottom: 30px; }
+    .b-philosophy__head {
+      font-size: 48px;
+      line-height: 1.2;
+      margin: 0 0 40px;
+      padding-top: 40px; }
+  .b-vertex-background--about .b-vertex-background__table {
+    height: 300px; }
+  .b-means__head {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 800px) {
+  .b-attitude {
+    margin: 0; }
+    .b-attitude__head {
+      font-size: 48px;
+      line-height: 1.2;
+      margin: 0; }
+    .b-attitude__text p {
+      font-size: 18px;
+      margin-bottom: 20px; }
+  .b-philosophy__content p {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .b-means {
+    width: 90%; }
+    .b-means__left-col, .b-means__right-col {
+      float: none;
+      margin: 0 auto; }
+    .b-means__item {
+      margin-bottom: 40px; }
+    .b-means__image {
+      width: 100%;
+      text-align: center; }
+    .b-means__text {
+      width: 90%;
+      left: 0 !important; }
+    .b-means__text p {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 600px) {
+  .b-attitude__left, .b-attitude__right {
+    width: 90%;
+    float: none;
+    margin: 0 auto 40px; } }
