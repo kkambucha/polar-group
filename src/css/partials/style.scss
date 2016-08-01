@@ -1171,6 +1171,11 @@ header {
   &__image:hover &__text{
     display: block;
   }
+  &__image--thin:hover &__hover{
+    width: 217px;
+    height: 217px;
+    display: block;
+  }
 }
 
 

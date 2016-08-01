@@ -12815,6 +12815,10 @@ header .mdl-textfield__expandable-holder {
     display: block; }
   .b-means__image:hover .b-means__text {
     display: block; }
+  .b-means__image--thin:hover .b-means__hover {
+    width: 217px;
+    height: 217px;
+    display: block; }
 
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 .b-connect {
