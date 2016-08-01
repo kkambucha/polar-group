@@ -770,6 +770,9 @@
       font-size: 36px;
       padding: 30px 0 20px;
     }
+    &__form {
+      padding-bottom: 40px;
+    }
   }
 }
 @media screen and (max-width: 480px) {
@@ -781,3 +784,48 @@
   }
 }
 
+/*--------- FAQ ---------*/
+@media screen and (max-width: 1024px) {
+  .b-faq {
+    &__head {
+      font-size: 48px;
+      margin: 40px 0 30px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      width: 90%;
+      margin-bottom: 40px;
+    }
+  }
+  .b-faq-acc {
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .b-faq__text p {
+    font-size: 18px;
+  }
+  .b-faq-acc {
+    &__item-link {
+      font-size: 16px;
+    }
+    &__item-content h4 {
+      line-height: 1.2;
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .b-faq-acc__item:after {
+    right: -15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .b-faq-acc__item-link {
+    font-size: 14px;
+  }
+}

@@ -2139,6 +2139,7 @@ h4.b-plus-header__head {
   }
   &__subtitle {
     font-size: 36px;
+    line-height: 1.2;
     color: #aaaaaa;
     text-align: center;
     margin-bottom: 80px;
@@ -2155,9 +2156,11 @@ h4.b-plus-header__head {
 .b-faq-acc {
   width: 900px;
   margin: 0 auto 80px;
+  padding-right: 25px;
 
   &__list {
     list-style: none;
+    padding-left: 0;
   }
   &__item {
     margin-bottom: 15px;
@@ -2195,7 +2198,8 @@ h4.b-plus-header__head {
     display: none;
   }
   &__item-content {
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
     margin: 0 auto;
     text-align: center;
   }
@@ -2208,6 +2212,9 @@ h4.b-plus-header__head {
     padding-top: 40px;
   }
   &__item-content img {
+    width: 95%;
+    max-width: 454px;
+    height: auto;
     margin-bottom: 20px;
   }
   &__item-content p {
