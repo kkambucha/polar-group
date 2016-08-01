@@ -582,3 +582,101 @@
     }
   }
 }
+
+/*--------- CAREER ---------*/
+@media screen and (max-width: 1200px) {
+  .b-vacancies {
+    &__list {
+      max-width: 900px;
+    }
+    &__item {
+      width: 47%;
+      margin-right: 6%;
+    }
+    &__item:nth-child(3n) {
+      margin-right: 6%;
+    }
+    &__item:nth-child(even) {
+      margin-right: 0;
+    }
+    &__item h3 {
+      font-size: 48px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .b-vertex-background {
+    &--career &__table {
+      height: 300px;
+    }
+  }
+  .b-career {
+    &__head {
+      font-size: 48px;
+      margin: 0 0 40px !important;
+    }
+  }
+  .b-vacancies {
+    &__head {
+      font-size: 48px;
+      margin: 40px 0;
+      padding-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .b-career {
+    &__head {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    &__left, &__right {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__right {
+      max-width: 450px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__right img {
+      margin-top: 0;
+    }
+    &__text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  .b-vacancies {
+    &__item h3 {
+      top: 30px;
+      font-size: 36px;
+    }
+    &__text p {
+      font-size: 27px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .b-vacancies {
+    &__item {
+      width: 100%;
+      max-width: 400px;
+      float: none;
+      margin: 0 auto 20px !important;
+    }
+    &__text {
+      top: 50%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .b-vacancies {
+    &__text {
+      top: 55%;
+    }
+  }
+}
+
+

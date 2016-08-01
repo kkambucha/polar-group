@@ -1520,9 +1520,6 @@ h4.b-plus-header__head {
   &--about &__table {
     height: 500px;
   }
-  &--career {
-    min-height: 600px;
-  }
   &--career &__table {
     height: 600px;
   }
@@ -1854,7 +1851,9 @@ h4.b-plus-header__head {
 /*--------------- CAREER ---------------*/
 
 .b-career {
-  width: 1400px;
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto;
   @include clearfix();
 
   &__head {
@@ -1865,7 +1864,7 @@ h4.b-plus-header__head {
   }
   &__left {
     float: left;
-    width: 800px;
+    width: 57%;
   }
   &__text p {
     font-size: 20px;
@@ -1874,9 +1873,12 @@ h4.b-plus-header__head {
   }
   &__right {
     float: right;
-    width: 550px;
+    width: 40%;
   }
   &__right img {
+    width: 100%;
+    max-width: 572px;
+    height: auto;
     margin-top: 45px;
   }
 }
@@ -1895,21 +1897,35 @@ h4.b-plus-header__head {
     padding-top: 80px;
   }
   &__list {
-    width: 1400px;
+    width: 96%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding-bottom: 40px;
+    //padding-bottom: 40px;
     @include clearfix();
   }
   &__item {
-    width: 436px;
-    height: 562px;
+    //width: 436px;
+    //height: 562px;
+    width: 30%;
+    height: auto;
     float: left;
     position: relative;
     background: blueviolet;
-    margin-right: 46px;
+    margin-right: 5%;
+    margin-bottom: 40px;
+
+    &--no-open {
+      h3, .b-vacancies__text p {
+        opacity: 0.6;
+      }
+    }
   }
-  &__item:last-child {
+  &__item:nth-child(3n) {
     margin-right: 0;
+  }
+  &__item img {
+    width: 100%;
+    height: auto;
   }
   &__item h3 {
     font-size: 60px;
