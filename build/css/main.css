@@ -12320,8 +12320,7 @@ header .mdl-textfield__expandable-holder {
     margin-bottom: 30px; }
   .b-text-main__list {
     padding-left: 0;
-    list-style: none;
-    margin-bottom: 30px; }
+    list-style: none; }
   .b-text-main__list-item:before {
     content: '\2022';
     padding-right: 30px; }
@@ -15440,3 +15439,20 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 @media screen and (max-width: 360px) {
   .b-faq-acc__item-link {
     font-size: 14px; } }
+
+/*--------- LAWS ---------*/
+@media screen and (max-width: 1024px) {
+  .b-text-main__head2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 40px 0; } }
+
+@media screen and (max-width: 600px) {
+  .b-text-main__head2 {
+    font-size: 36px;
+    margin: 25px 0; }
+  .b-text-main__head {
+    margin-bottom: 15px; }
+  .b-text-main__paragraph {
+    font-size: 18px;
+    margin-bottom: 20px; } }

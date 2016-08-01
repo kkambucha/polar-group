@@ -829,3 +829,29 @@
     font-size: 14px;
   }
 }
+
+/*--------- LAWS ---------*/
+@media screen and (max-width: 1024px) {
+  .b-text-main {
+    &__head2 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin: 40px 0;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .b-text-main {
+    &__head2 {
+      font-size: 36px;
+      margin: 25px 0;
+    }
+    &__head {
+      margin-bottom: 15px;
+    }
+    &__paragraph {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
