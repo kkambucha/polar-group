@@ -13513,12 +13513,13 @@ h4.b-plus-header__head {
     clear: both; }
   .b-contact__item {
     float: left;
-    width: 480px;
-    height: 300px;
+    width: 33.333%;
+    height: auto;
     background: #344191;
     position: relative; }
-  .b-contact__item:hover > .b-contact__office {
-    /*display: block;*/ }
+  .b-contact__item img {
+    width: 100%;
+    height: auto; }
   .b-contact__item-head {
     width: 100%;
     position: absolute;
@@ -13531,9 +13532,9 @@ h4.b-plus-header__head {
     color: #ffffff;
     text-align: center; }
   .b-contact__office {
-    width: 1400px;
-    height: 480px;
-    padding: 40px 0 40px 40px;
+    width: 292%;
+    height: auto;
+    padding: 8% 0 8% 8%;
     background: #67afdd;
     position: absolute;
     z-index: 100;
@@ -13549,29 +13550,29 @@ h4.b-plus-header__head {
       left: 0; }
     .b-contact__office--ned {
       top: 0;
-      left: -480px; }
+      left: -100%; }
     .b-contact__office--ger {
       top: 0;
-      left: -960px; }
+      left: -200%; }
     .b-contact__office--pol {
-      top: -300px;
+      top: -100%;
       left: 0; }
     .b-contact__office--fin {
-      top: -300px;
-      left: -480px; }
+      top: -100%;
+      left: -100%; }
     .b-contact__office--ukr {
-      top: -300px;
-      left: -960px; }
+      top: -100%;
+      left: -200%; }
   .b-contact__office-head {
     font-size: 60px;
     font-weight: 600;
-    margin: 0 0 45px;
+    margin: 0 0 3%;
     display: none; }
   .b-contact__office-item {
-    width: 415px;
+    width: 30%;
     float: left;
-    margin-right: 35px;
-    margin-bottom: 25px;
+    margin-right: 3%;
+    margin-bottom: 2%;
     display: none; }
   .b-contact__office-item h4 {
     font-size: 30px;
@@ -13580,7 +13581,7 @@ h4.b-plus-header__head {
     margin: 0 0 5px; }
   .b-contact__office-item ul {
     list-style: none;
-    margin: 0 0 35px;
+    margin: 0 0 3%;
     padding: 0; }
   .b-contact__office-item ul li {
     font-size: 20px;
@@ -13602,6 +13603,8 @@ h4.b-plus-header__head {
     width: 400px;
     margin: 0 auto;
     padding-bottom: 80px; }
+  .b-question input.b-form__input {
+    height: 36px; }
   .b-question__send-files {
     margin-top: 8px;
     margin-bottom: 30px; }
@@ -15327,3 +15330,72 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 @media screen and (max-width: 480px) {
   .b-vacancies__text {
     top: 55%; } }
+
+/*--------- CONTACT US ---------*/
+@media screen and (max-width: 1200px) {
+  .b-contact {
+    margin-left: auto;
+    margin-right: auto; }
+    .b-contact__item-head {
+      font-size: 48px;
+      top: 45%; }
+    .b-contact__office-head {
+      font-size: 48px; }
+    .b-contact__office-item h4 {
+      font-size: 24px; }
+    .b-contact__office-item ul li {
+      font-size: 16px; } }
+
+@media screen and (max-width: 1024px) {
+  .b-contact__head {
+    font-size: 36px;
+    margin: 40px 0; }
+  .b-contact__item-head {
+    font-size: 36px;
+    top: 35%; }
+  .b-question__head {
+    font-size: 48px;
+    padding: 40px 0; } }
+
+@media screen and (max-width: 600px) {
+  .b-contact__head {
+    font-size: 36px;
+    margin: 30px 0 20px; }
+  .b-contact__item {
+    float: none;
+    width: 100%; }
+  .b-contact__office {
+    width: 97%;
+    padding: 3% 0 3% 3%; }
+    .b-contact__office--rus {
+      top: 0;
+      left: 0; }
+    .b-contact__office--ned {
+      top: 0;
+      left: 0; }
+    .b-contact__office--ger {
+      top: 0;
+      left: 0; }
+    .b-contact__office--pol {
+      top: 0;
+      left: 0; }
+    .b-contact__office--fin {
+      top: 0;
+      left: 0; }
+    .b-contact__office--ukr {
+      top: 0;
+      left: 0; }
+  .b-contact__office-item {
+    width: 47%;
+    margin-right: 3%;
+    margin-bottom: 3%; }
+  .b-contact__office-head {
+    font-size: 27px; }
+  .b-question__head {
+    font-size: 36px;
+    padding: 30px 0 20px; } }
+
+@media screen and (max-width: 480px) {
+  .b-contact__office-item {
+    width: 100%;
+    margin-bottom: 3%; } }
