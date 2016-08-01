@@ -13168,7 +13168,8 @@ h4.b-plus-header__head {
   margin-bottom: 80px; }
 
 .b-mypolar__list {
-  width: 930px;
+  width: 90%;
+  max-width: 930px;
   margin: 0 auto 80px;
   list-style: none;
   font-size: 20px; }
@@ -13187,7 +13188,8 @@ h4.b-plus-header__head {
 .b-track-trace {
   background: #f0f0f0; }
   .b-track-trace__wrap {
-    width: 1030px;
+    width: 80%;
+    max-width: 1030px;
     margin: 0 auto; }
     .b-track-trace__wrap:before, .b-track-trace__wrap:after {
       content: "";
@@ -13200,7 +13202,8 @@ h4.b-plus-header__head {
     text-align: center;
     margin: 80px 0; }
   .b-track-trace__text {
-    width: 480px;
+    width: 48%;
+    max-width: 480px;
     float: right;
     font-size: 20px;
     margin-top: 65px; }
@@ -13209,9 +13212,11 @@ h4.b-plus-header__head {
     color: #344191; }
 
 .b-tracking {
-  width: 400px;
+  width: 39%;
+  max-width: 400px;
   background: #344191;
   padding: 40px;
+  margin-right: 15px;
   margin-bottom: 80px;
   float: left; }
   .b-tracking__head {
@@ -13253,6 +13258,9 @@ h4.b-plus-header__head {
   font-size: 18px;
   color: #000000; }
 
+.b-tariff-requests input.b-form__input {
+  height: 36px; }
+
 .b-tariff-requests__send-files {
   margin-bottom: 30px; }
 
@@ -13291,9 +13299,12 @@ h4.b-plus-header__head {
     padding-top: 80px;
     margin-bottom: 80px; }
   .b-traffic__map {
-    width: 1400px;
-    height: 825px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto; }
+  .b-traffic__map img {
+    width: 100%;
+    height: auto; }
 
 /*--------------- AWARDS ---------------*/
 .b-awards {
@@ -15530,3 +15541,62 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     text-align: center; }
   .b-news-item__image img {
     width: 300px; } }
+
+/*--------- ONLINE SERVICES ---------*/
+@media screen and (max-width: 1024px) {
+  .b-mypolar__head {
+    font-size: 48px;
+    margin: 20px 0; }
+  .b-mypolar__subtitle {
+    font-size: 30px;
+    margin-bottom: 40px; }
+  .b-mypolar__list {
+    margin-bottom: 40px; }
+  .b-mypolar__button {
+    margin-bottom: 40px; }
+  .b-track-trace__wrap {
+    width: 95%; }
+  .b-track-trace__head {
+    font-size: 48px;
+    margin: 40px 0; }
+  .b-tariff-requests__form {
+    margin-bottom: 40px; }
+  .b-traffic {
+    padding-bottom: 40px; }
+    .b-traffic__head {
+      font-size: 48px;
+      padding-top: 40px;
+      margin-bottom: 40px; } }
+
+@media screen and (max-width: 800px) {
+  .b-tracking {
+    width: 80%;
+    margin: 0 auto 20px;
+    float: none; }
+  .b-track-trace__text {
+    width: 100%;
+    float: none;
+    margin: 0 auto 20px; } }
+
+@media screen and (max-width: 600px) {
+  .b-mypolar__head {
+    font-size: 36px;
+    margin: 0; }
+  .b-mypolar__subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+  .b-mypolar__list {
+    margin-bottom: 30px; }
+  .b-track-trace__head {
+    font-size: 36px;
+    margin: 20px 0; }
+  .b-tracking {
+    min-width: 200px; }
+  .b-traffic__head {
+    font-size: 36px;
+    margin: 20px 0; } }
+
+@media screen and (max-width: 480px) {
+  .b-tariff-requests__form {
+    width: 90%; } }

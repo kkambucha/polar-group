@@ -945,3 +945,98 @@
     }
   }
 }
+
+/*--------- ONLINE SERVICES ---------*/
+@media screen and (max-width: 1024px) {
+  .b-mypolar {
+    &__head {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+    &__subtitle {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    &__list {
+      margin-bottom: 40px;
+    }
+    &__button {
+      margin-bottom: 40px;
+    }
+  }
+  .b-track-trace {
+    &__wrap {
+      width: 95%;
+    }
+    &__head {
+      font-size: 48px;
+      margin: 40px 0;
+    }
+  }
+  .b-tariff-requests {
+    &__form {
+      margin-bottom: 40px;
+    }
+  }
+  .b-traffic {
+    padding-bottom: 40px;
+    &__head {
+      font-size: 48px;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .b-tracking {
+    width: 80%;
+    margin: 0 auto 20px;
+    float: none;
+  }
+  .b-track-trace {
+    &__text {
+      width: 100%;
+      float: none;
+      margin: 0 auto 20px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .b-mypolar {
+    &__head {
+      font-size: 36px;
+      margin: 0;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    &__list {
+      margin-bottom: 30px;
+    }
+  }
+  .b-track-trace {
+    &__head {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+  }
+  .b-tracking {
+    min-width: 200px;
+  }
+
+  .b-traffic {
+    &__head {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .b-tariff-requests {
+    &__form {
+      width: 90%;
+    }
+  }
+}
