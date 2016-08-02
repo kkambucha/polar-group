@@ -226,9 +226,9 @@
 	}
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     .b-vertex-background__head {
-      font-size: 48px;
+      font-size: 36px;
     }
 	.rsDesc img {
 		display: none;
@@ -1198,3 +1198,14 @@
   }
 }
 
+/*--------- VACANCY ---------*/
+@media screen and (max-width: 1170px) {
+  .b-vertex-background__head {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .b-vertex-background__head {
+    font-size: 36px;
+  }
+}
