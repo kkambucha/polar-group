@@ -13316,7 +13316,8 @@ h4.b-plus-header__head {
 
 /*--------------- AWARDS ---------------*/
 .b-awards {
-  width: 1160px;
+  width: 80%;
+  max-width: 1160px;
   margin: 80px auto; }
   .b-awards__head {
     font-size: 72px;
@@ -13332,13 +13333,18 @@ h4.b-plus-header__head {
   .b-award-item:after {
     clear: both; }
   .b-award-item__image {
-    width: 400px;
-    height: 200px;
+    width: 36%;
+    max-width: 400px;
+    height: auto;
     float: left;
-    margin-right: 20px; }
+    margin-right: 10px; }
+  .b-award-item__image img {
+    width: 100%;
+    height: auto; }
   .b-award-item__text {
-    width: 740px;
-    float: left; }
+    width: 60%;
+    max-width: 700px;
+    float: right; }
   .b-award-item__date {
     font-size: 18px;
     margin: 0 0 5px; }
@@ -13369,28 +13375,32 @@ h4.b-plus-header__head {
     padding-top: 80px;
     margin-bottom: 80px; }
   .b-certificates__content {
-    width: 1320px;
+    width: 100%;
+    max-width: 1320px;
     margin: 0 auto;
     padding-bottom: 80px; }
-  .b-certificates__row {
-    margin-bottom: 40px; }
-    .b-certificates__row:before, .b-certificates__row:after {
-      content: "";
-      display: table; }
-    .b-certificates__row:after {
-      clear: both; }
+  .b-certificates__row:before, .b-certificates__row:after {
+    content: "";
+    display: table; }
+  .b-certificates__row:after {
+    clear: both; }
   .b-certificates__item {
+    width: 23%;
+    max-width: 300px;
+    height: auto;
     float: left;
-    margin-left: 40px;
+    margin: 0 0 40px 3%;
     position: relative; }
   .b-certificates__item:hover > .b-certificates__icons {
     display: block; }
-  .b-certificates__item:first-child {
+  .b-certificates__item:nth-child(4n+1) {
     margin-left: 0; }
+  .b-certificates__item img {
+    width: 100%;
+    height: auto; }
   .b-certificates__icons {
-    width: 300px;
-    height: 400px;
-    line-height: 400px;
+    width: 100%;
+    height: 100%;
     background: rgba(103, 175, 221, 0.8);
     position: absolute;
     top: 0;
@@ -13402,7 +13412,7 @@ h4.b-plus-header__head {
     height: 64px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 10px; }
+    margin: 55% 10px 0; }
   .b-certificates__download {
     background-image: url("../pic/icon-download-white.png"); }
   .b-certificates__search {
@@ -15662,3 +15672,55 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     margin-bottom: 40px; }
   .b-work__item h3 {
     font-size: 24px; } }
+
+/*--------- SERTIFICATES & STANDARTS ---------*/
+@media screen and (max-width: 1440px) {
+  .b-awards {
+    width: 100%; } }
+
+@media screen and (max-width: 1350px) {
+  .b-certificates__content {
+    width: 90%;
+    max-width: 850px; }
+  .b-certificates__item {
+    width: 45%;
+    margin-left: 0; }
+  .b-certificates__item:nth-child(even) {
+    float: right; } }
+
+@media screen and (max-width: 1170px) {
+  .b-awards {
+    margin: 40px 0; }
+    .b-awards__head {
+      font-size: 48px;
+      margin: 0 0 40px; }
+  .b-award-item__text-head {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0 0 20px; }
+  .b-certificates__head {
+    font-size: 48px;
+    padding-top: 40px;
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 700px) {
+  .b-award-item__image {
+    width: 80%;
+    float: none;
+    margin-bottom: 20px; }
+  .b-award-item__text-head {
+    font-size: 24px; }
+  .b-award-item__text {
+    width: 100%;
+    float: none; }
+  .b-certificates__head {
+    font-size: 36px;
+    padding-top: 30px;
+    margin-bottom: 20px; }
+  .b-certificates__content {
+    width: 90%; }
+  .b-certificates__item {
+    width: 100%;
+    max-width: 300px;
+    float: none !important;
+    margin: 0 auto 40px !important; } }
