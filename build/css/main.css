@@ -12837,7 +12837,7 @@ header .mdl-textfield__expandable-holder {
 
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 .b-connect {
-  margin: 80px 0; }
+  margin: 40px 0 80px; }
   .b-connect:before, .b-connect:after {
     content: "";
     display: table; }
@@ -12845,9 +12845,11 @@ header .mdl-textfield__expandable-holder {
     clear: both; }
 
 .b-about-service {
-  width: 960px;
-  height: 1027px;
+  width: 66%;
+  max-width: 960px;
+  height: auto;
   background-image: url(../pic/connect-img.jpg);
+  background-size: cover;
   float: left; }
   .b-about-service__back {
     box-sizing: border-box;
@@ -12856,10 +12858,10 @@ header .mdl-textfield__expandable-holder {
     height: 100%;
     padding: 80px 40px 40px; }
   .b-about-service__head {
-    margin: 0 0 80px;
+    margin: 0 0 60px;
     text-align: center;
     font-family: "ProximaNova";
-    font-size: 72px;
+    font-size: 60px;
     font-weight: 600;
     color: #ffffff; }
   .b-about-service__text {
@@ -12869,6 +12871,14 @@ header .mdl-textfield__expandable-holder {
     font-family: "ProximaNova";
     font-size: 20px;
     color: #ffffff; }
+  .b-about-service__image {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+    margin: 0 auto; }
+  .b-about-service__image img {
+    width: 100%;
+    height: auto; }
 
 /*--- logistics ---*/
 h4.b-logistics-header__head {
@@ -12883,11 +12893,9 @@ h4.b-logistics-header__head {
     display: table; }
   .b-logistics:after {
     clear: both; }
-  .b-logistics .b-about-service {
-    width: 960px;
-    height: 1027px;
-    background-image: url(../pic/logistics-img-1.jpg);
-    float: left; }
+
+.b-about-service {
+  background-image: url(../pic/logistics-img-1.jpg); }
 
 /*--- plus ---*/
 h4.b-plus-header__head {
@@ -12902,16 +12910,15 @@ h4.b-plus-header__head {
     display: table; }
   .b-plus:after {
     clear: both; }
-  .b-plus .b-about-service {
-    width: 960px;
-    height: 691px;
-    background-image: url(../pic/plus-img.jpg);
-    float: left; }
-    .b-plus .b-about-service__text p {
-      margin-bottom: 25px; }
+
+.b-about-service {
+  background-image: url(../pic/plus-img.jpg); }
+  .b-about-service__text p {
+    margin-bottom: 25px; }
 
 .b-include {
-  width: 410px;
+  width: 28.5%;
+  max-width: 410px;
   float: right; }
   .b-include__head {
     font-size: 36px;
@@ -12928,23 +12935,24 @@ h4.b-plus-header__head {
     padding-right: 30px; }
 
 .b-work {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto 80px; }
   .b-work__head {
     font-size: 72px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 80px; }
-  .b-work__row {
-    margin-bottom: 80px; }
-    .b-work__row:before, .b-work__row:after {
-      content: "";
-      display: table; }
-    .b-work__row:after {
-      clear: both; }
+  .b-work__row:before, .b-work__row:after {
+    content: "";
+    display: table; }
+  .b-work__row:after {
+    clear: both; }
   .b-work__item {
-    width: 400px;
+    width: 33.333%;
+    min-width: 300px;
     float: left;
+    margin-bottom: 80px;
     text-align: center;
     position: relative; }
   .b-work__image {
@@ -12981,12 +12989,12 @@ h4.b-plus-header__head {
     line-height: 1;
     margin: 0; }
   .b-work__text {
-    width: 390px;
+    width: 98%;
     background: #ffffff;
     padding: 20px;
     position: absolute;
-    top: 235px;
-    left: -15px;
+    top: 94%;
+    left: -3%;
     z-index: 10;
     display: none; }
   .b-work__text:after {
@@ -15600,3 +15608,57 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 @media screen and (max-width: 480px) {
   .b-tariff-requests__form {
     width: 90%; } }
+
+/*--------- POLAR CONNECT, PLUS ---------*/
+@media screen and (max-width: 1170px) {
+  .b-about-service__head {
+    font-size: 48px;
+    margin-bottom: 40px; }
+  .b-about-service__back {
+    padding-top: 40px; }
+  .b-about-service__text {
+    margin-bottom: 40px; }
+  .b-about-service__text p {
+    margin-bottom: 20px; }
+  .b-work {
+    margin: 0 auto 40px; }
+    .b-work__head {
+      font-size: 48px;
+      margin-bottom: 40px; }
+    .b-work__item {
+      width: 50%;
+      margin-bottom: 60px; }
+  h4.b-logistics-header__head, h4.b-plus-header__head {
+    font-size: 27px; }
+  .b-logistics {
+    margin: 40px 0; } }
+
+@media screen and (max-width: 900px) {
+  .b-connect, .b-logistics, .b-plus {
+    margin: 0 0 40px; }
+  .b-about-service {
+    width: 100%;
+    float: none; }
+    .b-about-service__head {
+      font-size: 36px;
+      margin-bottom: 30px; }
+  .b-include {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+    .b-include__head {
+      margin: 40px 0; } }
+
+@media screen and (max-width: 700px) {
+  .b-about-service__text p {
+    font-size: 18px; }
+  .b-include__list-item {
+    font-size: 18px; }
+  .b-work__head {
+    font-size: 36px; }
+  .b-work__item {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px; }
+  .b-work__item h3 {
+    font-size: 24px; } }

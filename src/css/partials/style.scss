@@ -1199,13 +1199,15 @@ header {
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 
 .b-connect {
-  margin:80px 0;
+  margin: 40px 0 80px;
   @include clearfix();
 }
 .b-about-service {
-  width: 960px;
-  height: 1027px;
+  width: 66%;
+  max-width: 960px;
+  height: auto;
   background-image: url(../pic/connect-img.jpg);
+  background-size: cover;
   float: left;
 
   &__back {
@@ -1216,10 +1218,10 @@ header {
     padding: 80px 40px 40px;
   }
   &__head {
-    margin: 0 0 80px;
+    margin: 0 0 60px;
     text-align: center;
     font-family: $proximaFont;
-    font-size: 72px;
+    font-size: 60px;
     font-weight: $fontSemibold;
     color: #ffffff;
   }
@@ -1232,6 +1234,16 @@ header {
     font-size: 20px;
     color: #ffffff;
   }
+  &__image {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+    margin: 0 auto;
+  }
+  &__image img {
+    width: 100%;
+    height: auto;
+  }
 }
 /*--- logistics ---*/
 h4.b-logistics-header__head {
@@ -1240,16 +1252,13 @@ h4.b-logistics-header__head {
   line-height: 1.1;
 }
 .b-logistics {
-  margin:80px 0;
+  margin: 80px 0;
   @include clearfix();
-
-  .b-about-service {
-    width: 960px;
-    height: 1027px;
-    background-image: url(../pic/logistics-img-1.jpg);
-    float: left;
-  }
 }
+.b-about-service {
+  background-image: url(../pic/logistics-img-1.jpg);
+}
+
 /*--- plus ---*/
 h4.b-plus-header__head {
   font-size: 36px;
@@ -1257,24 +1266,19 @@ h4.b-plus-header__head {
   line-height: 1.1;
 }
 .b-plus {
-  margin:80px 0;
+  margin: 80px 0;
   @include clearfix();
-
-  .b-about-service {
-    width: 960px;
-    height: 691px;
-    background-image: url(../pic/plus-img.jpg);
-    float: left;
-
-    &__text p {
-      margin-bottom: 25px;
-    }
+}
+.b-about-service {
+  background-image: url(../pic/plus-img.jpg);
+  &__text p {
+    margin-bottom: 25px;
   }
 }
 
-
 .b-include {
-  width: 410px;
+  width: 28.5%;
+  max-width: 410px;
   float: right;
 
   &__head {
@@ -1297,7 +1301,8 @@ h4.b-plus-header__head {
 }
 
 .b-work {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto 80px;
 
   &__head {
@@ -1307,12 +1312,13 @@ h4.b-plus-header__head {
     margin-bottom: 80px;
   }
   &__row {
-    margin-bottom: 80px;
     @include clearfix();
   }
   &__item {
-    width: 400px;
+    width: 33.333%;
+    min-width: 300px;
     float: left;
+    margin-bottom: 80px;
     text-align: center;
     position: relative;
   }
@@ -1355,12 +1361,12 @@ h4.b-plus-header__head {
     margin: 0;
   }
   &__text {
-    width: 390px;
+    width: 98%;
     background: #ffffff;
     padding: 20px;
     position: absolute;
-    top: 235px;
-    left: -15px;
+    top: 94%;
+    left: -3%;
     z-index: 10;
     display: none;
   }
