@@ -378,14 +378,14 @@ header {
 }
 
 .b-sec-slider {
-  padding: 65px 0;
+  padding: 35px 0;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1;
     text-align: center;
     font-weight: $fontSemibold;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .swiper-button {
     color: unquote("rgb(#{$color-primary})");
@@ -492,8 +492,8 @@ header {
 
 .b-text-content {
   & > * {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 1.2;
   }
 
   margin: 3em 0;
@@ -508,7 +508,7 @@ header {
 }
 
 .b-button-wrapper {
-  margin: 4em 0;
+  margin: 3em 0;
   text-align: center;
 }
 
@@ -578,7 +578,7 @@ header {
 
 .b-text-main {
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     & > * {
       font-size: 20px;
@@ -591,13 +591,13 @@ header {
     }
     &__head2 {
       color: #000000;
-      font-size: 72px;
+      font-size: 48px;
       font-weight: $fontSemibold;
       text-align: center;
-      margin: 80px 0;
+      margin: 40px 0;
     }
     &__paragraph {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     &__list{
       padding-left: 0;
@@ -615,11 +615,11 @@ header {
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      font-size: 36px;
+      font-size: 30px;
       color: #aaaaaa;
       text-align: center;
       line-height: 1.2;
-      margin-bottom: 75px;
+      margin-bottom: 45px;
     }
     &__big span{
       font-weight: $fontSemibold;
@@ -627,7 +627,7 @@ header {
     &__small{
       max-width: 900px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 }
 
@@ -640,7 +640,7 @@ header {
   &__item {
     width: 300px;
     float: left;
-    margin:0 40px 80px 0;
+    margin:0 40px 60px 0;
     position: relative;
     cursor: pointer;
   }
@@ -958,7 +958,7 @@ header {
 
 .l-content {
   &__head {
-    font-size: 50px;
+    font-size: 42px;
     color: #344191;
     font-family: $proximaFont;
     font-weight: $fontSemibold;
@@ -966,7 +966,7 @@ header {
     margin-bottom: 20px;
   }
   &__subtitle {
-    font-size: 36px;
+    font-size: 30px;
     font-family: $proximaFont;
   }
   &__img {
@@ -983,12 +983,12 @@ header {
     height: auto;
   }
   &__paragraph {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-family: $proximaFont;
     font-size: 18px;
   }
   &__button{
-    margin: 80px 0;
+    margin: 60px 0;
     text-align: center;
   }
 }
@@ -997,21 +997,22 @@ header {
 
 .b-attitude {
   width: 1040px;
-  margin: 40px auto 55px;
+  margin: 30px auto 15px;
   @include clearfix();
 
   & > * {
     font-family: $proximaFont;
   }
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     color: #40ac6e;
     text-align: center;
+    margin-top: 0;
   }
   &__pic {
-    width: 860px;
-    margin: 80px auto 40px;
+    width: 700px;
+    margin: 40px auto 30px;
   }
   &__pic img {
     width: 100%;
@@ -1054,9 +1055,9 @@ header {
 
 .b-philosophy {
   max-width: 1920px;
-  height: 950px;
+  height: auto;
   background-image: url(../pic/philosophy.jpg);
-  margin: 0 auto 80px auto;
+  margin: 0 auto 60px;
 
   &__back {
     background: rgba(52,65,145,.6);
@@ -1069,21 +1070,22 @@ header {
     color: #ffffff;
   }
   &__content p {
-    margin-bottom: 30px;
+    margin-bottom: 25x;
     font-family: $proximaFont;
     font-size: 20px;
   }
   &__head {
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 40px;
+    margin-bottom: 40px;
     font-family: $proximaFont;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
     width: 100%;
   }
   &__sign {
     text-align: right;
+    padding-bottom: 40px;
   }
 }
 
@@ -1094,10 +1096,10 @@ header {
 
   &__head {
     font-family: $proximaFont;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__left-col{
     float: left;
@@ -1107,7 +1109,7 @@ header {
   }
   &__item {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   &__item h3 {
     font-family: $proximaFont;
@@ -1199,12 +1201,14 @@ header {
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 
 .b-connect {
-  margin: 40px 0 80px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 60px;
   @include clearfix();
 }
 .b-about-service {
   width: 66%;
-  max-width: 960px;
+  max-width: 800px;
   height: auto;
   background-image: url(../pic/connect-img.jpg);
   background-size: cover;
@@ -1215,18 +1219,18 @@ header {
     background: rgba(52,65,145,.6);
     width: 100%;
     height: 100%;
-    padding: 80px 40px 40px;
+    padding: 60px 30px 40px;
   }
   &__head {
-    margin: 0 0 60px;
+    margin: 0 0 40px;
     text-align: center;
     font-family: $proximaFont;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     color: #ffffff;
   }
   &__text {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__text p {
     margin-bottom: 30px;
@@ -1252,7 +1256,9 @@ h4.b-logistics-header__head {
   line-height: 1.1;
 }
 .b-logistics {
-  margin: 80px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
   @include clearfix();
 }
 .b-about-service {
@@ -1266,7 +1272,9 @@ h4.b-plus-header__head {
   line-height: 1.1;
 }
 .b-plus {
-  margin: 80px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
   @include clearfix();
 }
 .b-about-service {
@@ -1283,7 +1291,7 @@ h4.b-plus-header__head {
 
   &__head {
     font-size: 36px;
-    margin: 80px 0;
+    margin: 40px 0;
   }
   &__list{
     padding-left: 20px;
@@ -1303,13 +1311,13 @@ h4.b-plus-header__head {
 .b-work {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 0 auto 40px;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__row {
     @include clearfix();
@@ -1318,7 +1326,7 @@ h4.b-plus-header__head {
     width: 33.333%;
     min-width: 300px;
     float: left;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     text-align: center;
     position: relative;
   }
@@ -1412,7 +1420,7 @@ h4.b-plus-header__head {
   @include clearfix();
   width: 100%;
   font-family: $proximaFont;
-  margin: 20px auto 80px;
+  margin: 20px auto 60px;
 
   &__frase {
     color: #000000;
@@ -1500,7 +1508,7 @@ h4.b-plus-header__head {
   background-repeat: no-repeat;
   background-position: top center;
   max-width: 1920px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px;
 
   &__table {
     display: table;
@@ -1518,7 +1526,7 @@ h4.b-plus-header__head {
     width: 100%;
   }
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
     width: 85%;
@@ -1533,9 +1541,9 @@ h4.b-plus-header__head {
     }
   }
   &__text {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
-    margin: 30px 0;
+    margin: 25px 0;
     width: 100%;
     padding: 0 50px;
     display: inline-block;
@@ -1548,20 +1556,20 @@ h4.b-plus-header__head {
     height: 810px;
   }
   &--about &__table {
-    height: 500px;
+    height: 450px;
   }
   &--career &__table {
-    height: 600px;
+    height: 450px;
   }
   &--vacancy &__table {
-    height: 500px;
+    height: 450px;
   }
 }
 
 .b-vertex-background--thick {
   background-size: cover;
   .b-vertex-background__content {
-    padding: 150px 0;
+    padding: 50px 0 80px;
   }
 }
 
@@ -1573,22 +1581,22 @@ h4.b-plus-header__head {
 
 .b-mypolar {
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     color: #344191;
-    margin: 50px 0 40px;
+    margin: 20px 0;
     text-align: center;
   }
   &__subtitle {
-    font-size: 36px;
+    font-size: 30px;
     color: #aaaaaa;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__list {
     width: 90%;
     max-width: 930px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
     list-style: none;
     font-size: 20px;
   }
@@ -1598,7 +1606,7 @@ h4.b-plus-header__head {
   }
   &__button {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__button a {
     font-size: 18px;
@@ -1615,17 +1623,17 @@ h4.b-plus-header__head {
     @include clearfix();
   }
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin: 80px 0;
+    margin: 40px 0;
   }
   &__text {
     width: 48%;
     max-width: 480px;
     float: right;
     font-size: 20px;
-    margin-top: 65px;
+    margin-top: 35px;
   }
   &__text span{
     font-weight: $fontSemibold;
@@ -1670,14 +1678,14 @@ h4.b-plus-header__head {
 
 .b-tariff-requests {
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
     margin: 80px 0;
   }
   &__form {
     width: 400px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
   }
   &__form-item {
     width: 388px;
@@ -1723,15 +1731,15 @@ h4.b-plus-header__head {
 }
 .b-traffic {
   background: #5a5a5a;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     color: #ffffff;
     text-align: center;
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 40px;
+    margin-bottom: 40px;
   }
   &__map {
     width: 100%;
@@ -1747,24 +1755,24 @@ h4.b-plus-header__head {
 /*--------------- AWARDS ---------------*/
 
 .b-awards {
-  width: 80%;
-  max-width: 1160px;
-  margin: 80px auto;
+  width: 75%;
+  max-width: 1000px;
+  margin: 40px auto;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 .b-award-item {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   @include clearfix();
 
   &__image {
-    width: 36%;
-    max-width: 400px;
+    width: 33%;
+    max-width: 330px;
     height: auto;
     float: left;
     margin-right: 10px;
@@ -1774,18 +1782,19 @@ h4.b-plus-header__head {
     height: auto;
   }
   &__text {
-    width: 60%;
-    max-width: 700px;
+    width: 64%;
+    max-width: 750px;
     float: right;
   }
   &__date {
     font-size: 18px;
     margin: 0 0 5px;
+    line-height: 1;
   }
   &__text-head {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1;
-    margin: 0 0 35px;
+    margin: 0 0 20px;
   }
   &__icons a {
     width: 48px;
@@ -1811,17 +1820,17 @@ h4.b-plus-header__head {
   background: #f0f0f0;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 40px;
+    margin-bottom: 40px;
   }
   &__content {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   &__row {
     @include clearfix();
@@ -1906,16 +1915,16 @@ h4.b-plus-header__head {
 /*--------------- CAREER ---------------*/
 
 .b-career {
-  width: 96%;
-  max-width: 1400px;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
   @include clearfix();
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   &__left {
     float: left;
@@ -1924,7 +1933,7 @@ h4.b-plus-header__head {
   &__text p {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   &__right {
     float: right;
@@ -1932,7 +1941,7 @@ h4.b-plus-header__head {
   }
   &__right img {
     width: 100%;
-    max-width: 572px;
+    max-width: 472px;
     height: auto;
     margin-top: 45px;
   }
@@ -1945,22 +1954,19 @@ h4.b-plus-header__head {
   padding-bottom: 40px;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 80px;
-    padding-top: 80px;
+    margin-bottom: 50px;
+    padding-top: 50px;
   }
   &__list {
     width: 96%;
     max-width: 1400px;
     margin: 0 auto;
-    //padding-bottom: 40px;
     @include clearfix();
   }
   &__item {
-    //width: 436px;
-    //height: 562px;
     width: 30%;
     height: auto;
     float: left;
@@ -1983,7 +1989,7 @@ h4.b-plus-header__head {
     height: auto;
   }
   &__item h3 {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     line-height: 1;
     color: #ffffff;
@@ -1991,7 +1997,7 @@ h4.b-plus-header__head {
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 40px;
+    top: 50px;
   }
   &__text {
     width: 100%;
@@ -2018,13 +2024,13 @@ h4.b-plus-header__head {
 /*--------------- CONTACT US ---------------*/
 
 .b-contact {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin: 80px 0;
+    margin: 50px 0;
   }
   &__row {
     @include clearfix();
@@ -2046,7 +2052,7 @@ h4.b-plus-header__head {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    font-size: 60px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     line-height: 1.1;
     color: #ffffff;
@@ -2092,7 +2098,7 @@ h4.b-plus-header__head {
     }
   }
   &__office-head {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     margin: 0 0 3%;
     display: none;
@@ -2130,16 +2136,16 @@ h4.b-plus-header__head {
   background: #f0f0f0;
 
   &__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
     margin: 0;
   }
   &__form {
     width: 400px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
   input.b-form__input {
     height: 36px;
@@ -2182,21 +2188,21 @@ h4.b-plus-header__head {
 
 .b-faq {
   &__head {
-    font-size: 72px;
+    font-size: 60px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin: 80px 0 40px;
+    margin: 40px 0 20px;
   }
   &__subtitle {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
     color: #aaaaaa;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
   &__text {
     width: 720px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
   }
   &__text p {
     font-size: 20px;
@@ -2205,7 +2211,7 @@ h4.b-plus-header__head {
 }
 .b-faq-acc {
   width: 900px;
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
   padding-right: 25px;
 
   &__list {

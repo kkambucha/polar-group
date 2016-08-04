@@ -11819,7 +11819,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     margin-top: 3px; }
 
 .b-big-header {
-  font-size: 72px;
+  font-size: 60px;
   line-height: 60px;
   text-align: center;
   font-weight: 600;
@@ -11827,7 +11827,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
 .b-secondary-frase {
   color: #aaaaaa;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12144,13 +12144,13 @@ header .mdl-textfield__expandable-holder {
   padding-top: 8px; }
 
 .b-sec-slider {
-  padding: 65px 0; }
+  padding: 35px 0; }
   .b-sec-slider__head {
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1;
     text-align: center;
     font-weight: 600;
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
   .b-sec-slider .swiper-button {
     color: rgb(52,65,145); }
   .b-sec-slider--white .b-sec-slider__head {
@@ -12230,15 +12230,15 @@ header .mdl-textfield__expandable-holder {
 .b-text-content {
   margin: 3em 0; }
   .b-text-content > * {
-    font-size: 30px;
-    line-height: 35px; }
+    font-size: 24px;
+    line-height: 1.2; }
   .b-text-content p {
     margin: 1.2em 0; }
   .b-text-content strong {
     color: rgb(52,65,145); }
 
 .b-button-wrapper {
-  margin: 4em 0;
+  margin: 3em 0;
   text-align: center; }
 
 .b-main-image {
@@ -12302,7 +12302,7 @@ header .mdl-textfield__expandable-holder {
 /*------------------------  PARTNERS ----------------------------*/
 .b-text-main {
   margin-top: 40px;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
   .b-text-main > * {
     font-size: 20px; }
   .b-text-main__head {
@@ -12312,12 +12312,12 @@ header .mdl-textfield__expandable-holder {
     margin-bottom: 30px; }
   .b-text-main__head2 {
     color: #000000;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin: 80px 0; }
+    margin: 40px 0; }
   .b-text-main__paragraph {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
   .b-text-main__list {
     padding-left: 0;
     list-style: none; }
@@ -12330,17 +12330,17 @@ header .mdl-textfield__expandable-holder {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    font-size: 36px;
+    font-size: 30px;
     color: #aaaaaa;
     text-align: center;
     line-height: 1.2;
-    margin-bottom: 75px; }
+    margin-bottom: 45px; }
   .b-text-main__big span {
     font-weight: 600; }
   .b-text-main__small {
     max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
 
 .b-transport-cards {
   max-width: 1320px;
@@ -12353,7 +12353,7 @@ header .mdl-textfield__expandable-holder {
   .b-transport-cards__item {
     width: 300px;
     float: left;
-    margin: 0 40px 80px 0;
+    margin: 0 40px 60px 0;
     position: relative;
     cursor: pointer; }
   .b-transport-cards__item:last-child {
@@ -12634,7 +12634,7 @@ header .mdl-textfield__expandable-holder {
 
 /*----------   BODY-NEWS   -----------*/
 .l-content__head {
-  font-size: 50px;
+  font-size: 42px;
   color: #344191;
   font-family: "ProximaNova";
   font-weight: 600;
@@ -12642,7 +12642,7 @@ header .mdl-textfield__expandable-holder {
   margin-bottom: 20px; }
 
 .l-content__subtitle {
-  font-size: 36px;
+  font-size: 30px;
   font-family: "ProximaNova"; }
 
 .l-content__img {
@@ -12658,18 +12658,18 @@ header .mdl-textfield__expandable-holder {
   height: auto; }
 
 .l-content__paragraph {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-family: "ProximaNova";
   font-size: 18px; }
 
 .l-content__button {
-  margin: 80px 0;
+  margin: 60px 0;
   text-align: center; }
 
 /*--------------- ABOUT US ---------------*/
 .b-attitude {
   width: 1040px;
-  margin: 40px auto 55px; }
+  margin: 30px auto 15px; }
   .b-attitude:before, .b-attitude:after {
     content: "";
     display: table; }
@@ -12678,13 +12678,14 @@ header .mdl-textfield__expandable-holder {
   .b-attitude > * {
     font-family: "ProximaNova"; }
   .b-attitude__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     color: #40ac6e;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
   .b-attitude__pic {
-    width: 860px;
-    margin: 80px auto 40px; }
+    width: 700px;
+    margin: 40px auto 30px; }
   .b-attitude__pic img {
     width: 100%;
     height: auto; }
@@ -12717,9 +12718,9 @@ header .mdl-textfield__expandable-holder {
 
 .b-philosophy {
   max-width: 1920px;
-  height: 950px;
+  height: auto;
   background-image: url(../pic/philosophy.jpg);
-  margin: 0 auto 80px auto; }
+  margin: 0 auto 60px; }
   .b-philosophy__back {
     background: rgba(52, 65, 145, 0.6);
     width: 100%;
@@ -12729,19 +12730,20 @@ header .mdl-textfield__expandable-holder {
     width: 930px;
     color: #ffffff; }
   .b-philosophy__content p {
-    margin-bottom: 30px;
+    margin-bottom: 25x;
     font-family: "ProximaNova";
     font-size: 20px; }
   .b-philosophy__head {
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 40px;
+    margin-bottom: 40px;
     font-family: "ProximaNova";
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
     width: 100%; }
   .b-philosophy__sign {
-    text-align: right; }
+    text-align: right;
+    padding-bottom: 40px; }
 
 .b-means {
   width: 770px;
@@ -12753,17 +12755,17 @@ header .mdl-textfield__expandable-holder {
     clear: both; }
   .b-means__head {
     font-family: "ProximaNova";
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .b-means__left-col {
     float: left; }
   .b-means__right-col {
     float: right; }
   .b-means__item {
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
   .b-means__item h3 {
     font-family: "ProximaNova";
     font-size: 30px;
@@ -12837,7 +12839,9 @@ header .mdl-textfield__expandable-holder {
 
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
 .b-connect {
-  margin: 40px 0 80px; }
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 60px; }
   .b-connect:before, .b-connect:after {
     content: "";
     display: table; }
@@ -12846,7 +12850,7 @@ header .mdl-textfield__expandable-holder {
 
 .b-about-service {
   width: 66%;
-  max-width: 960px;
+  max-width: 800px;
   height: auto;
   background-image: url(../pic/connect-img.jpg);
   background-size: cover;
@@ -12856,16 +12860,16 @@ header .mdl-textfield__expandable-holder {
     background: rgba(52, 65, 145, 0.6);
     width: 100%;
     height: 100%;
-    padding: 80px 40px 40px; }
+    padding: 60px 30px 40px; }
   .b-about-service__head {
-    margin: 0 0 60px;
+    margin: 0 0 40px;
     text-align: center;
     font-family: "ProximaNova";
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     color: #ffffff; }
   .b-about-service__text {
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .b-about-service__text p {
     margin-bottom: 30px;
     font-family: "ProximaNova";
@@ -12887,7 +12891,9 @@ h4.b-logistics-header__head {
   line-height: 1.1; }
 
 .b-logistics {
-  margin: 80px 0; }
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto; }
   .b-logistics:before, .b-logistics:after {
     content: "";
     display: table; }
@@ -12904,7 +12910,9 @@ h4.b-plus-header__head {
   line-height: 1.1; }
 
 .b-plus {
-  margin: 80px 0; }
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto; }
   .b-plus:before, .b-plus:after {
     content: "";
     display: table; }
@@ -12922,7 +12930,7 @@ h4.b-plus-header__head {
   float: right; }
   .b-include__head {
     font-size: 36px;
-    margin: 80px 0; }
+    margin: 40px 0; }
   .b-include__list {
     padding-left: 20px;
     list-style: none;
@@ -12937,12 +12945,12 @@ h4.b-plus-header__head {
 .b-work {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 80px; }
+  margin: 0 auto 40px; }
   .b-work__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .b-work__row:before, .b-work__row:after {
     content: "";
     display: table; }
@@ -12952,7 +12960,7 @@ h4.b-plus-header__head {
     width: 33.333%;
     min-width: 300px;
     float: left;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     text-align: center;
     position: relative; }
   .b-work__image {
@@ -13030,7 +13038,7 @@ h4.b-plus-header__head {
 .b-extending-logistics {
   width: 100%;
   font-family: "ProximaNova";
-  margin: 20px auto 80px; }
+  margin: 20px auto 60px; }
   .b-extending-logistics:before, .b-extending-logistics:after {
     content: "";
     display: table; }
@@ -13108,7 +13116,7 @@ h4.b-plus-header__head {
   background-repeat: no-repeat;
   background-position: top center;
   max-width: 1920px;
-  margin: 0 auto 30px auto; }
+  margin: 0 auto 20px; }
   .b-vertex-background:before, .b-vertex-background:after {
     content: "";
     display: table; }
@@ -13126,7 +13134,7 @@ h4.b-plus-header__head {
     display: inline-block;
     width: 100%; }
   .b-vertex-background__head {
-    font-size: 72px;
+    font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
     width: 85%;
@@ -13137,9 +13145,9 @@ h4.b-plus-header__head {
     .b-vertex-background__head--partner {
       position: relative; }
   .b-vertex-background__text {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2;
-    margin: 30px 0;
+    margin: 25px 0;
     width: 100%;
     padding: 0 50px;
     display: inline-block;
@@ -13149,38 +13157,38 @@ h4.b-plus-header__head {
   .b-vertex-background--partner .b-vertex-background__table {
     height: 810px; }
   .b-vertex-background--about .b-vertex-background__table {
-    height: 500px; }
+    height: 450px; }
   .b-vertex-background--career .b-vertex-background__table {
-    height: 600px; }
+    height: 450px; }
   .b-vertex-background--vacancy .b-vertex-background__table {
-    height: 500px; }
+    height: 450px; }
 
 .b-vertex-background--thick {
   background-size: cover; }
   .b-vertex-background--thick .b-vertex-background__content {
-    padding: 150px 0; }
+    padding: 50px 0 80px; }
 
 .b-news-blocks-slider {
   margin: 30px 0; }
 
 /*------------------ ONLINE SERVICES -------------------*/
 .b-mypolar__head {
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 600;
   color: #344191;
-  margin: 50px 0 40px;
+  margin: 20px 0;
   text-align: center; }
 
 .b-mypolar__subtitle {
-  font-size: 36px;
+  font-size: 30px;
   color: #aaaaaa;
   text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 .b-mypolar__list {
   width: 90%;
   max-width: 930px;
-  margin: 0 auto 80px;
+  margin: 0 auto 40px;
   list-style: none;
   font-size: 20px; }
 
@@ -13190,7 +13198,7 @@ h4.b-plus-header__head {
 
 .b-mypolar__button {
   text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 .b-mypolar__button a {
   font-size: 18px; }
@@ -13207,16 +13215,16 @@ h4.b-plus-header__head {
     .b-track-trace__wrap:after {
       clear: both; }
   .b-track-trace__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin: 80px 0; }
+    margin: 40px 0; }
   .b-track-trace__text {
     width: 48%;
     max-width: 480px;
     float: right;
     font-size: 20px;
-    margin-top: 65px; }
+    margin-top: 35px; }
   .b-track-trace__text span {
     font-weight: 600;
     color: #344191; }
@@ -13249,14 +13257,14 @@ h4.b-plus-header__head {
     text-decoration: none; }
 
 .b-tariff-requests__head {
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 600;
   text-align: center;
   margin: 80px 0; }
 
 .b-tariff-requests__form {
   width: 400px;
-  margin: 0 auto 80px; }
+  margin: 0 auto 40px; }
 
 .b-tariff-requests__form-item {
   width: 388px;
@@ -13300,14 +13308,14 @@ h4.b-plus-header__head {
 
 .b-traffic {
   background: #5a5a5a;
-  padding-bottom: 80px; }
+  padding-bottom: 40px; }
   .b-traffic__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     color: #ffffff;
     text-align: center;
-    padding-top: 80px;
-    margin-bottom: 80px; }
+    padding-top: 40px;
+    margin-bottom: 40px; }
   .b-traffic__map {
     width: 100%;
     max-width: 1400px;
@@ -13318,25 +13326,25 @@ h4.b-plus-header__head {
 
 /*--------------- AWARDS ---------------*/
 .b-awards {
-  width: 80%;
-  max-width: 1160px;
-  margin: 80px auto; }
+  width: 75%;
+  max-width: 1000px;
+  margin: 40px auto; }
   .b-awards__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
 
 .b-award-item {
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
   .b-award-item:before, .b-award-item:after {
     content: "";
     display: table; }
   .b-award-item:after {
     clear: both; }
   .b-award-item__image {
-    width: 36%;
-    max-width: 400px;
+    width: 33%;
+    max-width: 330px;
     height: auto;
     float: left;
     margin-right: 10px; }
@@ -13344,16 +13352,17 @@ h4.b-plus-header__head {
     width: 100%;
     height: auto; }
   .b-award-item__text {
-    width: 60%;
-    max-width: 700px;
+    width: 64%;
+    max-width: 750px;
     float: right; }
   .b-award-item__date {
     font-size: 18px;
-    margin: 0 0 5px; }
+    margin: 0 0 5px;
+    line-height: 1; }
   .b-award-item__text-head {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1;
-    margin: 0 0 35px; }
+    margin: 0 0 20px; }
   .b-award-item__icons a {
     width: 48px;
     height: 64px;
@@ -13371,16 +13380,16 @@ h4.b-plus-header__head {
 .b-certificates {
   background: #f0f0f0; }
   .b-certificates__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    padding-top: 80px;
-    margin-bottom: 80px; }
+    padding-top: 40px;
+    margin-bottom: 40px; }
   .b-certificates__content {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding-bottom: 80px; }
+    padding-bottom: 40px; }
   .b-certificates__row:before, .b-certificates__row:after {
     content: "";
     display: table; }
@@ -13451,8 +13460,8 @@ h4.b-plus-header__head {
 
 /*--------------- CAREER ---------------*/
 .b-career {
-  width: 96%;
-  max-width: 1400px;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto; }
   .b-career:before, .b-career:after {
     content: "";
@@ -13460,23 +13469,23 @@ h4.b-plus-header__head {
   .b-career:after {
     clear: both; }
   .b-career__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 50px; }
   .b-career__left {
     float: left;
     width: 57%; }
   .b-career__text p {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
   .b-career__right {
     float: right;
     width: 40%; }
   .b-career__right img {
     width: 100%;
-    max-width: 572px;
+    max-width: 472px;
     height: auto;
     margin-top: 45px; }
 
@@ -13486,11 +13495,11 @@ h4.b-plus-header__head {
   background: #f0f0f0;
   padding-bottom: 40px; }
   .b-vacancies__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 80px;
-    padding-top: 80px; }
+    margin-bottom: 50px;
+    padding-top: 50px; }
   .b-vacancies__list {
     width: 96%;
     max-width: 1400px;
@@ -13516,7 +13525,7 @@ h4.b-plus-header__head {
     width: 100%;
     height: auto; }
   .b-vacancies__item h3 {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     line-height: 1;
     color: #ffffff;
@@ -13524,7 +13533,7 @@ h4.b-plus-header__head {
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 40px; }
+    top: 50px; }
   .b-vacancies__text {
     width: 100%;
     position: absolute;
@@ -13545,13 +13554,13 @@ h4.b-plus-header__head {
 
 /*--------------- CONTACT US ---------------*/
 .b-contact {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   /*--- hover ---*/ }
   .b-contact__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin: 80px 0; }
+    margin: 50px 0; }
   .b-contact__row:before, .b-contact__row:after {
     content: "";
     display: table; }
@@ -13572,7 +13581,7 @@ h4.b-plus-header__head {
     top: 48%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     line-height: 1.1;
     color: #ffffff;
@@ -13610,7 +13619,7 @@ h4.b-plus-header__head {
       top: -100%;
       left: -200%; }
   .b-contact__office-head {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     margin: 0 0 3%;
     display: none; }
@@ -13640,15 +13649,15 @@ h4.b-plus-header__head {
 .b-question {
   background: #f0f0f0; }
   .b-question__head {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 600;
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
     margin: 0; }
   .b-question__form {
     width: 400px;
     margin: 0 auto;
-    padding-bottom: 80px; }
+    padding-bottom: 50px; }
   .b-question input.b-form__input {
     height: 36px; }
   .b-question__send-files {
@@ -13679,21 +13688,21 @@ h4.b-plus-header__head {
 
 /*--------------- FAQ ---------------*/
 .b-faq__head {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 600;
   text-align: center;
-  margin: 80px 0 40px; }
+  margin: 40px 0 20px; }
 
 .b-faq__subtitle {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.2;
   color: #aaaaaa;
   text-align: center;
-  margin-bottom: 80px; }
+  margin-bottom: 30px; }
 
 .b-faq__text {
   width: 720px;
-  margin: 0 auto 80px; }
+  margin: 0 auto 40px; }
 
 .b-faq__text p {
   font-size: 20px;
@@ -13701,7 +13710,7 @@ h4.b-plus-header__head {
 
 .b-faq-acc {
   width: 900px;
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
   padding-right: 25px; }
   .b-faq-acc__list {
     list-style: none;
@@ -15647,6 +15656,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
 @media screen and (max-width: 900px) {
   .b-connect, .b-logistics, .b-plus {
+    width: 100%;
     margin: 0 0 40px; }
   .b-about-service {
     width: 100%;
