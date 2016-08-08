@@ -12303,8 +12303,8 @@ header .mdl-textfield__expandable-holder {
 
 /*------------------------  PARTNERS ----------------------------*/
 .b-text-main {
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  width: 80%;
+  margin: 40px auto; }
   .b-text-main > * {
     font-size: 20px; }
   .b-text-main__head {
@@ -12847,7 +12847,7 @@ header .mdl-textfield__expandable-holder {
 .b-connect {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto 60px; }
+  margin: 40px auto; }
   .b-connect:before, .b-connect:after {
     content: "";
     display: table; }
@@ -12868,18 +12868,18 @@ header .mdl-textfield__expandable-holder {
     height: 100%;
     padding: 60px 30px 40px; }
   .b-about-service__head {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     text-align: center;
     font-family: "ProximaNova";
     font-size: 48px;
     font-weight: 600;
     color: #ffffff; }
   .b-about-service__text {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .b-about-service__text p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: "ProximaNova";
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff; }
   .b-about-service__image {
     width: 100%;
@@ -13242,17 +13242,17 @@ h4.b-plus-header__head {
   width: 39%;
   max-width: 400px;
   background: #344191;
-  padding: 40px;
+  padding: 30px;
   margin-right: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   float: left; }
   .b-tracking__head {
     font-size: 30px;
     font-weight: 600;
     color: #ffffff;
-    margin: 0 0 40px; }
+    margin: 0 0 20px; }
   .b-tracking__input {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .b-tracking__button a {
     font-size: 18px; }
   .b-tracking__advanced {
@@ -13326,7 +13326,7 @@ h4.b-plus-header__head {
     padding-top: 40px;
     margin-bottom: 40px; }
   .b-traffic__map {
-    width: 100%;
+    width: 98%;
     max-width: 1400px;
     margin: 0 auto; }
   .b-traffic__map img {
@@ -13335,8 +13335,8 @@ h4.b-plus-header__head {
 
 /*--------------- AWARDS ---------------*/
 .b-awards {
-  width: 75%;
-  max-width: 1000px;
+  width: 70%;
+  max-width: 900px;
   margin: 40px auto; }
   .b-awards__head {
     font-size: 48px;
@@ -13353,7 +13353,7 @@ h4.b-plus-header__head {
     clear: both; }
   .b-award-item__image {
     width: 33%;
-    max-width: 330px;
+    max-width: 300px;
     height: auto;
     float: left;
     margin-right: 10px; }
@@ -13362,14 +13362,14 @@ h4.b-plus-header__head {
     height: auto; }
   .b-award-item__text {
     width: 64%;
-    max-width: 750px;
+    max-width: 600px;
     float: right; }
   .b-award-item__date {
     font-size: 18px;
     margin: 0 0 5px;
     line-height: 1; }
   .b-award-item__text-head {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 1;
     margin: 0 0 20px; }
   .b-award-item__icons a {
@@ -13396,7 +13396,7 @@ h4.b-plus-header__head {
     margin-bottom: 40px; }
   .b-certificates__content {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 40px; }
   .b-certificates__row:before, .b-certificates__row:after {
@@ -13406,7 +13406,7 @@ h4.b-plus-header__head {
     clear: both; }
   .b-certificates__item {
     width: 23%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     float: left;
     margin: 0 0 40px 3%;
@@ -13701,18 +13701,18 @@ h4.b-plus-header__head {
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-  margin: 40px 0 20px; }
+  margin: 40px 0 15px; }
 
 .b-faq__subtitle {
   font-size: 30px;
   line-height: 1.2;
   color: #aaaaaa;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
 
 .b-faq__text {
   width: 720px;
-  margin: 0 auto 40px; }
+  margin: 0 auto 30px; }
 
 .b-faq__text p {
   font-size: 20px;
@@ -13720,7 +13720,7 @@ h4.b-plus-header__head {
 
 .b-faq-acc {
   width: 900px;
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
   padding-right: 25px; }
   .b-faq-acc__list {
     list-style: none;
@@ -15250,7 +15250,8 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .b-vertex-background--vacancy .b-vertex-background__table {
     height: 300px; }
   .b-text-main {
-    margin: 15px 0 40px; }
+    width: 90%;
+    margin: 15px auto 40px; }
     .b-text-main__big {
       font-size: 30px;
       margin-bottom: 40px; }
@@ -15259,7 +15260,10 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
 @media screen and (max-width: 800px) {
   .b-text-main {
-    margin: 0 0 20px; }
+    width: 95%;
+    margin: 0 auto 20px; }
+    .b-text-main > * {
+      font-size: 18px; }
     .b-text-main__big {
       font-size: 24px;
       margin-bottom: 20px; }
@@ -15577,28 +15581,31 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 /*--------- ONLINE SERVICES ---------*/
 @media screen and (max-width: 1024px) {
   .b-mypolar__head {
-    font-size: 48px;
-    margin: 20px 0; }
+    font-size: 36px;
+    line-height: 1;
+    margin: 15px 0; }
   .b-mypolar__subtitle {
     font-size: 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .b-mypolar__list {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .b-mypolar__button {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .b-track-trace__wrap {
     width: 95%; }
   .b-track-trace__head {
-    font-size: 48px;
+    font-size: 36px;
     margin: 40px 0; }
+  .b-tariff-requests__head {
+    font-size: 36px; }
   .b-tariff-requests__form {
     margin-bottom: 40px; }
   .b-traffic {
     padding-bottom: 40px; }
     .b-traffic__head {
-      font-size: 48px;
-      padding-top: 40px;
-      margin-bottom: 40px; } }
+      font-size: 36px;
+      padding-top: 30px;
+      margin-bottom: 30px; } }
 
 @media screen and (max-width: 800px) {
   .b-tracking {
@@ -15612,7 +15619,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
 @media screen and (max-width: 600px) {
   .b-mypolar__head {
-    font-size: 36px;
     margin: 0; }
   .b-mypolar__subtitle {
     font-size: 24px;
@@ -15621,17 +15627,16 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .b-mypolar__list {
     margin-bottom: 30px; }
   .b-track-trace__head {
-    font-size: 36px;
     margin: 20px 0; }
   .b-tracking {
     min-width: 200px; }
   .b-traffic__head {
-    font-size: 36px;
     margin: 20px 0; } }
 
 @media screen and (max-width: 480px) {
   .b-tariff-requests__form {
-    width: 90%; } }
+    width: 90%;
+    box-sizing: border-box; } }
 
 /*--------- POLAR CONNECT, PLUS ---------*/
 @media screen and (max-width: 1170px) {
@@ -15693,30 +15698,28 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .b-awards {
     width: 100%; } }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1170px) {
+  .b-awards {
+    margin: 40px 0; }
+    .b-awards__head {
+      font-size: 36px;
+      margin: 0 0 40px; }
+  .b-award-item__text-head {
+    font-size: 24px;
+    line-height: 1.1;
+    margin: 0 0 20px; }
+  .b-certificates__head {
+    font-size: 36px;
+    padding-top: 40px;
+    margin-bottom: 40px; }
   .b-certificates__content {
-    width: 90%;
-    max-width: 850px; }
+    width: 60%;
+    max-width: 800px; }
   .b-certificates__item {
     width: 45%;
     margin-left: 0; }
   .b-certificates__item:nth-child(even) {
     float: right; } }
-
-@media screen and (max-width: 1170px) {
-  .b-awards {
-    margin: 40px 0; }
-    .b-awards__head {
-      font-size: 48px;
-      margin: 0 0 40px; }
-  .b-award-item__text-head {
-    font-size: 30px;
-    line-height: 1.1;
-    margin: 0 0 20px; }
-  .b-certificates__head {
-    font-size: 48px;
-    padding-top: 40px;
-    margin-bottom: 40px; } }
 
 @media screen and (max-width: 700px) {
   .b-award-item__image {
@@ -15724,12 +15727,11 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     float: none;
     margin-bottom: 20px; }
   .b-award-item__text-head {
-    font-size: 24px; }
+    font-size: 20px; }
   .b-award-item__text {
     width: 100%;
     float: none; }
   .b-certificates__head {
-    font-size: 36px;
     padding-top: 30px;
     margin-bottom: 20px; }
   .b-certificates__content {

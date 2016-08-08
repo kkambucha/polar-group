@@ -579,8 +579,8 @@ header {
 /*------------------------  PARTNERS ----------------------------*/
 
 .b-text-main {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 80%;
+    margin: 40px auto;
 
     & > * {
       font-size: 20px;
@@ -1213,7 +1213,7 @@ header {
 .b-connect {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto 60px;
+  margin: 40px auto;
   @include clearfix();
 }
 .b-about-service {
@@ -1232,7 +1232,7 @@ header {
     padding: 60px 30px 40px;
   }
   &__head {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     text-align: center;
     font-family: $proximaFont;
     font-size: 48px;
@@ -1240,12 +1240,12 @@ header {
     color: #ffffff;
   }
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   &__text p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: $proximaFont;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
   }
   &__image {
@@ -1658,19 +1658,19 @@ h4.b-plus-header__head {
   width: 39%;
   max-width: 400px;
   background: #344191;
-  padding: 40px;
+  padding: 30px;
   margin-right: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   float: left;
 
   &__head {
     font-size: 30px;
     font-weight: $fontSemibold;
     color: #ffffff;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
   }
   &__input {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   &__button a{
     font-size: 18px;
@@ -1755,7 +1755,7 @@ h4.b-plus-header__head {
     margin-bottom: 40px;
   }
   &__map {
-    width: 100%;
+    width: 98%;
     max-width: 1400px;
     margin: 0 auto;
    }
@@ -1768,8 +1768,8 @@ h4.b-plus-header__head {
 /*--------------- AWARDS ---------------*/
 
 .b-awards {
-  width: 75%;
-  max-width: 1000px;
+  width: 70%;
+  max-width: 900px;
   margin: 40px auto;
 
   &__head {
@@ -1785,7 +1785,7 @@ h4.b-plus-header__head {
 
   &__image {
     width: 33%;
-    max-width: 330px;
+    max-width: 300px;
     height: auto;
     float: left;
     margin-right: 10px;
@@ -1796,7 +1796,7 @@ h4.b-plus-header__head {
   }
   &__text {
     width: 64%;
-    max-width: 750px;
+    max-width: 600px;
     float: right;
   }
   &__date {
@@ -1805,7 +1805,7 @@ h4.b-plus-header__head {
     line-height: 1;
   }
   &__text-head {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 1;
     margin: 0 0 20px;
   }
@@ -1841,7 +1841,7 @@ h4.b-plus-header__head {
   }
   &__content {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 40px;
   }
@@ -1850,7 +1850,7 @@ h4.b-plus-header__head {
   }
   &__item {
     width: 23%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     float: left;
     margin: 0 0 40px 3%;
@@ -2204,18 +2204,18 @@ h4.b-plus-header__head {
     font-size: 60px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 15px;
   }
   &__subtitle {
     font-size: 30px;
     line-height: 1.2;
     color: #aaaaaa;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   &__text {
     width: 720px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
   }
   &__text p {
     font-size: 20px;
@@ -2224,7 +2224,7 @@ h4.b-plus-header__head {
 }
 .b-faq-acc {
   width: 900px;
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
   padding-right: 25px;
 
   &__list {

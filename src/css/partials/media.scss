@@ -435,7 +435,8 @@
     }
   }
   .b-text-main {
-    margin: 15px 0 40px;
+    width: 90%;
+    margin: 15px auto 40px;
     &__big {
       font-size: 30px;
       margin-bottom: 40px;
@@ -449,7 +450,11 @@
 }
 @media screen and (max-width: 800px) {
   .b-text-main {
-    margin: 0 0 20px;
+    width: 95%;
+    margin: 0 auto 20px;
+    & > * {
+      font-size: 18px;
+    }
     &__big {
       font-size: 24px;
       margin-bottom: 20px;
@@ -939,18 +944,19 @@
 @media screen and (max-width: 1024px) {
   .b-mypolar {
     &__head {
-      font-size: 48px;
-      margin: 20px 0;
+      font-size: 36px;
+      line-height: 1;
+      margin: 15px 0;
     }
     &__subtitle {
       font-size: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     &__list {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     &__button {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
   .b-track-trace {
@@ -958,11 +964,14 @@
       width: 95%;
     }
     &__head {
-      font-size: 48px;
+      font-size: 36px;
       margin: 40px 0;
     }
   }
   .b-tariff-requests {
+    &__head {
+      font-size: 36px;
+    }
     &__form {
       margin-bottom: 40px;
     }
@@ -970,9 +979,9 @@
   .b-traffic {
     padding-bottom: 40px;
     &__head {
-      font-size: 48px;
-      padding-top: 40px;
-      margin-bottom: 40px;
+      font-size: 36px;
+      padding-top: 30px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -993,7 +1002,6 @@
 @media screen and (max-width: 600px) {
   .b-mypolar {
     &__head {
-      font-size: 36px;
       margin: 0;
     }
     &__subtitle {
@@ -1007,7 +1015,6 @@
   }
   .b-track-trace {
     &__head {
-      font-size: 36px;
       margin: 20px 0;
     }
   }
@@ -1017,7 +1024,6 @@
 
   .b-traffic {
     &__head {
-      font-size: 36px;
       margin: 20px 0;
     }
   }
@@ -1026,6 +1032,7 @@
   .b-tariff-requests {
     &__form {
       width: 90%;
+      box-sizing: border-box;
     }
   }
 }
@@ -1119,9 +1126,33 @@
 }
 @media screen and (max-width: 1350px) {
   .b-certificates {
+
+  }
+}
+@media screen and (max-width: 1170px) {
+  .b-awards {
+    margin: 40px 0;
+    &__head {
+      font-size: 36px;
+      margin: 0 0 40px;
+    }
+  }
+  .b-award-item {
+    &__text-head {
+      font-size: 24px;
+      line-height: 1.1;
+      margin: 0 0 20px;
+    }
+  }
+  .b-certificates {
+    &__head {
+      font-size: 36px;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
     &__content {
-      width: 90%;
-      max-width: 850px;
+      width: 60%;
+      max-width: 800px;
     }
     &__item {
       width: 45%;
@@ -1129,29 +1160,6 @@
     }
     &__item:nth-child(even) {
       float: right;
-    }
-  }
-}
-@media screen and (max-width: 1170px) {
-  .b-awards {
-    margin: 40px 0;
-    &__head {
-      font-size: 48px;
-      margin: 0 0 40px;
-    }
-  }
-  .b-award-item {
-    &__text-head {
-      font-size: 30px;
-      line-height: 1.1;
-      margin: 0 0 20px;
-    }
-  }
-  .b-certificates {
-    &__head {
-      font-size: 48px;
-      padding-top: 40px;
-      margin-bottom: 40px;
     }
   }
 }
@@ -1163,7 +1171,7 @@
       margin-bottom: 20px;
     }
     &__text-head {
-      font-size: 24px;
+      font-size: 20px;
     }
     &__text {
       width: 100%;
@@ -1172,7 +1180,6 @@
   }
   .b-certificates {
     &__head {
-      font-size: 36px;
       padding-top: 30px;
       margin-bottom: 20px;
     }
