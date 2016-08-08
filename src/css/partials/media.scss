@@ -592,7 +592,7 @@
 @media screen and (max-width: 1200px) {
   .b-vacancies {
     &__list {
-      max-width: 900px;
+      max-width: 750px;
     }
     &__item {
       width: 47%;
@@ -604,9 +604,6 @@
     &__item:nth-child(even) {
       margin-right: 0;
     }
-    &__item h3 {
-      font-size: 48px;
-    }
   }
 }
 @media screen and (max-width: 1024px) {
@@ -615,15 +612,8 @@
       height: 300px;
     }
   }
-  .b-career {
-    &__head {
-      font-size: 48px;
-      margin: 0 0 40px !important;
-    }
-  }
   .b-vacancies {
     &__head {
-      font-size: 48px;
       margin: 40px 0;
       padding-top: 20px;
     }
@@ -655,11 +645,13 @@
   }
   .b-vacancies {
     &__item h3 {
-      top: 30px;
-      font-size: 36px;
+      font-size: 30px;
+    }
+    &__text {
+      top: 55%;
     }
     &__text p {
-      font-size: 27px;
+      font-size: 20px;
     }
   }
 }
@@ -667,7 +659,7 @@
   .b-vacancies {
     &__item {
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
       float: none;
       margin: 0 auto 20px !important;
     }
@@ -687,17 +679,11 @@
 /*--------- CONTACT US ---------*/
 @media screen and (max-width: 1200px) {
   .b-contact {
+    width: 90%;
      margin-left: auto;
      margin-right: auto;
      &__item-head {
-       font-size: 48px;
        top: 45%;
-     }
-     &__office-head {
-       font-size: 48px;
-     }
-     &__office-item h4 {
-       font-size: 24px;
      }
      &__office-item ul li {
        font-size: 16px;
@@ -711,17 +697,20 @@
       margin: 40px 0;
     }
      &__item-head {
-       font-size: 36px;
        top: 35%;
      }
   }
-  .b-question {
-    &__head {
-      font-size: 48px;
-      padding: 40px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .b-contact {
+    width: 100%;
+    &__item-head {
+      font-size: 30px;
     }
   }
 }
+
 @media screen and (max-width: 600px) {
   .b-contact {
     &__head {

@@ -11819,11 +11819,11 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     margin-top: 3px; }
 
 .b-big-header {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 48px;
+  line-height: 48px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 40px; }
+  margin-bottom: 25px; }
 
 .b-secondary-frase {
   color: #aaaaaa;
@@ -12228,7 +12228,9 @@ header .mdl-textfield__expandable-holder {
   padding: 0 1.5%; }
 
 .b-text-content {
-  margin: 3em 0; }
+  width: 80%;
+  max-width: 1000px;
+  margin: 2em auto; }
   .b-text-content > * {
     font-size: 24px;
     line-height: 1.2; }
@@ -12341,9 +12343,12 @@ header .mdl-textfield__expandable-holder {
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 25px; }
+  .b-text-main--body-news {
+    width: 1000px;
+    margin: 0 auto; }
 
 .b-transport-cards {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto; }
   .b-transport-cards:before, .b-transport-cards:after {
     content: "";
@@ -12351,18 +12356,22 @@ header .mdl-textfield__expandable-holder {
   .b-transport-cards:after {
     clear: both; }
   .b-transport-cards__item {
-    width: 300px;
+    width: 280px;
     float: left;
-    margin: 0 40px 60px 0;
+    margin: 0 20px 60px 0;
     position: relative;
     cursor: pointer; }
   .b-transport-cards__item:last-child {
     margin-right: 0; }
   .b-transport-cards__item:hover .b-transport-cards__item-full {
-    display: block; }
+    height: 100%; }
+  .b-transport-cards__item img {
+    width: 100%;
+    height: auto; }
   .b-transport-cards__item-wrap {
     width: 100%;
-    height: 100px;
+    height: auto;
+    min-height: 100px;
     background: rgba(52, 65, 145, 0.8);
     position: absolute;
     left: 0;
@@ -12371,11 +12380,11 @@ header .mdl-textfield__expandable-holder {
     color: #ffffff; }
   .b-transport-cards__item-text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    position: relative;
+    padding: 15px 0 10px;
+    top: 0; }
   .b-transport-cards__item-text h4 {
     font-weight: 600;
     line-height: 1.1;
@@ -12387,14 +12396,9 @@ header .mdl-textfield__expandable-holder {
     margin: 0;
     padding: 0 10px; }
   .b-transport-cards__item-full {
-    padding: 10px 10px 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 20;
-    color: #ffffff;
-    background: #344191;
-    display: none; }
+    overflow: hidden;
+    height: 0;
+    padding: 6px 10px 3px; }
   .b-transport-cards__item-full h4 {
     font-size: 20px;
     font-weight: 600;
@@ -12407,7 +12411,8 @@ header .mdl-textfield__expandable-holder {
     margin: 0 0 15px; }
   .b-transport-cards__item-full ul {
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
   .b-transport-cards__item-full ul li {
     font-size: 18px;
     line-height: 1.2;
@@ -12418,7 +12423,7 @@ header .mdl-textfield__expandable-holder {
     padding-right: 5px; }
   .b-transport-cards__button {
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
   .b-transport-cards__button a {
     font-size: 18px; }
 
@@ -12765,26 +12770,27 @@ header .mdl-textfield__expandable-holder {
     float: right; }
   .b-means__item {
     text-align: center;
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
   .b-means__item h3 {
     font-family: "ProximaNova";
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600; }
   .b-means__item--thin {
-    width: 217px;
+    width: 200px;
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     cursor: pointer; }
   .b-means__item--thin:last-child {
     float: right; }
   .b-means__item--thin .b-means__image {
-    width: 217px;
-    height: 217px; }
+    width: 200px;
+    height: 200px; }
   .b-means__item--thin .b-means__image img {
     width: 100%;
     height: auto; }
   .b-means__item--thin h3 {
-    font-size: 30px; }
+    font-size: 24px;
+    margin: 5px 0; }
   .b-means__image {
     width: 256px;
     height: 256px;
@@ -12833,8 +12839,8 @@ header .mdl-textfield__expandable-holder {
   .b-means__image:hover .b-means__text {
     display: block; }
   .b-means__image--thin:hover .b-means__hover {
-    width: 217px;
-    height: 217px;
+    width: 200px;
+    height: 200px;
     display: block; }
 
 /*--------------- SAMPLE PAGES: CONNECT, LOGISTICS, PLUS ---------------*/
@@ -13038,7 +13044,7 @@ h4.b-plus-header__head {
 .b-extending-logistics {
   width: 100%;
   font-family: "ProximaNova";
-  margin: 20px auto 60px; }
+  margin: 0 auto 40px; }
   .b-extending-logistics:before, .b-extending-logistics:after {
     content: "";
     display: table; }
@@ -13049,44 +13055,47 @@ h4.b-plus-header__head {
     font-size: 20px;
     text-align: center;
     width: 80%;
-    margin: 25px auto 0 auto; }
+    margin: 10px auto 0; }
   .b-extending-logistics__contacts {
-    width: 436px;
-    height: 562px;
+    width: 400px;
+    height: auto;
     color: #fff;
     border-radius: 4px;
     font-size: 18px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px; }
   .b-extending-logistics__contacts p, .b-extending-logistics__contacts ul {
     font-size: 18px;
-    margin-bottom: 30px;
-    padding: 0 40px; }
+    margin-bottom: 20px;
+    padding: 0 30px; }
   .b-extending-logistics__contacts ul {
     list-style: none; }
   .b-extending-logistics__contacts ul li {
     margin-bottom: 10px; }
   .b-extending-logistics__button {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 25px; }
   .b-extending-logistics__head {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
-    margin: 0 0 30px;
-    padding-top: 40px; }
+    margin: 0 0 20px;
+    padding-top: 30px; }
     .b-extending-logistics__head--left {
       text-align: left;
       padding: 0 0 0 40px; }
   .b-extending-logistics__town {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600; }
   .b-extending-logistics__branch {
     color: #fff;
     font-size: 18px;
     display: inline-block; }
   .b-extending-logistics .b-secondary-frase {
-    margin-bottom: 70px; }
+    margin-bottom: 40px; }
   .b-extending-logistics__content {
-    width: 1170px;
+    width: 1000px;
     margin: 0 auto; }
     .b-extending-logistics__content:before, .b-extending-logistics__content:after {
       content: "";
@@ -13095,11 +13104,11 @@ h4.b-plus-header__head {
       clear: both; }
     .b-extending-logistics__content--left {
       float: left;
-      width: 590px;
+      width: 500px;
       margin: 0 auto; }
     .b-extending-logistics__content--right {
       float: right;
-      width: 436px; }
+      width: 400px; }
   .b-extending-logistics__content-row {
     width: 100%; }
     .b-extending-logistics__content-row:before, .b-extending-logistics__content-row:after {
@@ -13461,7 +13470,7 @@ h4.b-plus-header__head {
 /*--------------- CAREER ---------------*/
 .b-career {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto; }
   .b-career:before, .b-career:after {
     content: "";
@@ -13472,17 +13481,17 @@ h4.b-plus-header__head {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .b-career__left {
     float: left;
-    width: 57%; }
+    width: 60%; }
   .b-career__text p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    margin-bottom: 25px; }
+    margin-bottom: 20px; }
   .b-career__right {
     float: right;
-    width: 40%; }
+    width: 38%; }
   .b-career__right img {
     width: 100%;
     max-width: 472px;
@@ -13501,8 +13510,8 @@ h4.b-plus-header__head {
     margin-bottom: 50px;
     padding-top: 50px; }
   .b-vacancies__list {
-    width: 96%;
-    max-width: 1400px;
+    width: 80%;
+    max-width: 1000px;
     margin: 0 auto; }
     .b-vacancies__list:before, .b-vacancies__list:after {
       content: "";
@@ -13525,7 +13534,7 @@ h4.b-plus-header__head {
     width: 100%;
     height: auto; }
   .b-vacancies__item h3 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
     line-height: 1;
     color: #ffffff;
@@ -13541,7 +13550,7 @@ h4.b-plus-header__head {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   .b-vacancies__text p {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.2;
     color: #ffffff;
@@ -13554,13 +13563,14 @@ h4.b-plus-header__head {
 
 /*--------------- CONTACT US ---------------*/
 .b-contact {
-  margin-bottom: 50px;
+  width: 1080px;
+  margin: 0 auto 40px;
   /*--- hover ---*/ }
   .b-contact__head {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    margin: 50px 0; }
+    margin: 40px 0; }
   .b-contact__row:before, .b-contact__row:after {
     content: "";
     display: table; }
@@ -13581,7 +13591,7 @@ h4.b-plus-header__head {
     top: 48%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
     line-height: 1.1;
     color: #ffffff;
@@ -13619,9 +13629,9 @@ h4.b-plus-header__head {
       top: -100%;
       left: -200%; }
   .b-contact__office-head {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
-    margin: 0 0 3%;
+    margin: 0 0 2%;
     display: none; }
   .b-contact__office-item {
     width: 30%;
@@ -13630,7 +13640,7 @@ h4.b-plus-header__head {
     margin-bottom: 2%;
     display: none; }
   .b-contact__office-item h4 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1;
     margin: 0 0 5px; }
@@ -13639,7 +13649,7 @@ h4.b-plus-header__head {
     margin: 0 0 3%;
     padding: 0; }
   .b-contact__office-item ul li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     display: block;
     margin: 0; }
@@ -13652,7 +13662,7 @@ h4.b-plus-header__head {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
-    padding: 40px 0;
+    padding: 25px 0;
     margin: 0; }
   .b-question__form {
     width: 400px;
@@ -15337,25 +15347,19 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 /*--------- CAREER ---------*/
 @media screen and (max-width: 1200px) {
   .b-vacancies__list {
-    max-width: 900px; }
+    max-width: 750px; }
   .b-vacancies__item {
     width: 47%;
     margin-right: 6%; }
   .b-vacancies__item:nth-child(3n) {
     margin-right: 6%; }
   .b-vacancies__item:nth-child(even) {
-    margin-right: 0; }
-  .b-vacancies__item h3 {
-    font-size: 48px; } }
+    margin-right: 0; } }
 
 @media screen and (max-width: 1024px) {
   .b-vertex-background--career .b-vertex-background__table {
     height: 300px; }
-  .b-career__head {
-    font-size: 48px;
-    margin: 0 0 40px !important; }
   .b-vacancies__head {
-    font-size: 48px;
     margin: 40px 0;
     padding-top: 20px; } }
 
@@ -15377,15 +15381,16 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     font-size: 18px;
     margin-bottom: 20px; }
   .b-vacancies__item h3 {
-    top: 30px;
-    font-size: 36px; }
+    font-size: 30px; }
+  .b-vacancies__text {
+    top: 55%; }
   .b-vacancies__text p {
-    font-size: 27px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 600px) {
   .b-vacancies__item {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     float: none;
     margin: 0 auto 20px !important; }
   .b-vacancies__text {
@@ -15398,15 +15403,11 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 /*--------- CONTACT US ---------*/
 @media screen and (max-width: 1200px) {
   .b-contact {
+    width: 90%;
     margin-left: auto;
     margin-right: auto; }
     .b-contact__item-head {
-      font-size: 48px;
       top: 45%; }
-    .b-contact__office-head {
-      font-size: 48px; }
-    .b-contact__office-item h4 {
-      font-size: 24px; }
     .b-contact__office-item ul li {
       font-size: 16px; } }
 
@@ -15415,11 +15416,13 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     font-size: 36px;
     margin: 40px 0; }
   .b-contact__item-head {
-    font-size: 36px;
-    top: 35%; }
-  .b-question__head {
-    font-size: 48px;
-    padding: 40px 0; } }
+    top: 35%; } }
+
+@media screen and (max-width: 800px) {
+  .b-contact {
+    width: 100%; }
+    .b-contact__item-head {
+      font-size: 30px; } }
 
 @media screen and (max-width: 600px) {
   .b-contact__head {

@@ -491,12 +491,14 @@ header {
 }
 
 .b-text-content {
+  width: 80%;
+  max-width: 1000px;
+  margin: 2em auto;
+
   & > * {
     font-size: 24px;
     line-height: 1.2;
   }
-
-  margin: 3em 0;
 
   p {
     margin: 1.2em 0;
@@ -629,18 +631,23 @@ header {
       margin: 0 auto;
       margin-bottom: 25px;
     }
+
+    &--body-news {
+      width: 1000px;
+      margin: 0 auto;
+    }
 }
 
 .b-transport-cards {
   //width: 100%;
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
   @include clearfix();
 
   &__item {
-    width: 300px;
+    width: 280px;
     float: left;
-    margin:0 40px 60px 0;
+    margin: 0 20px 60px 0;
     position: relative;
     cursor: pointer;
   }
@@ -648,11 +655,16 @@ header {
     margin-right: 0;
   }
   &__item:hover &__item-full{
-    display: block;
+    height: 100%;
+  }
+  &__item img{
+    width: 100%;
+    height: auto;
   }
   &__item-wrap {
     width: 100%;
-    height: 100px;
+    height: auto;
+    min-height: 100px;
     background: rgba(52,65,145,.8);
     position: absolute;
     left: 0;
@@ -662,10 +674,11 @@ header {
   }
   &__item-text {
     width: 100%;
+    box-sizing: border-box;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    padding: 15px 0 10px;
+    top: 0;
   }
   &__item-text h4 {
     font-weight: $fontSemibold;
@@ -681,14 +694,9 @@ header {
   }
 
   &__item-full {
-    padding: 10px 10px 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 20;
-    color: #ffffff;
-    background: #344191;
-    display: none;
+    overflow: hidden;
+    height: 0;
+    padding: 6px 10px 3px;
   }
   &__item-full h4{
     font-size: 20px;
@@ -705,6 +713,7 @@ header {
   &__item-full ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   &__item-full ul li {
     font-size: 18px;
@@ -719,7 +728,7 @@ header {
 
   &__button {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   &__button a {
     font-size: 18px;
@@ -1109,32 +1118,33 @@ header {
   }
   &__item {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   &__item h3 {
     font-family: $proximaFont;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: $fontSemibold;
   }
   &__item--thin {
-    width: 217px;
+    width: 200px;
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     cursor: pointer;
   }
   &__item--thin:last-child {
     float: right;
   }
   &__item--thin &__image {
-    width: 217px;
-    height: 217px;
+    width: 200px;
+    height: 200px;
   }
   &__item--thin &__image img {
     width: 100%;
     height: auto;
   }
   &__item--thin h3 {
-    font-size: 30px;
+    font-size: 24px;
+    margin: 5px 0;
   }
   &__image {
     width: 256px;
@@ -1191,8 +1201,8 @@ header {
     display: block;
   }
   &__image--thin:hover &__hover{
-    width: 217px;
-    height: 217px;
+    width: 200px;
+    height: 200px;
     display: block;
   }
 }
@@ -1420,29 +1430,31 @@ h4.b-plus-header__head {
   @include clearfix();
   width: 100%;
   font-family: $proximaFont;
-  margin: 20px auto 60px;
+  margin: 0 auto 40px;
 
   &__frase {
     color: #000000;
     font-size: 20px;
     text-align: center;
     width: 80%;
-    margin: 25px auto 0 auto;
+    margin: 10px auto 0;
   }
 
   &__contacts {
-    width: 436px;
-    height: 562px;
+    width: 400px;
+    height: auto;
     color: #fff;
     border-radius: 4px;
     font-size: 18px;
     background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
   }
 
   &__contacts p, &__contacts ul {
     font-size: 18px;
-    margin-bottom: 30px;
-    padding: 0 40px;
+    margin-bottom: 20px;
+    padding: 0 30px;
   }
   &__contacts ul {
     list-style: none;
@@ -1452,13 +1464,14 @@ h4.b-plus-header__head {
   }
   &__button {
     text-align: center;
+    padding-bottom: 25px;
   }
   &__head {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
-    margin: 0 0 30px;
-    padding-top: 40px;
+    margin: 0 0 20px;
+    padding-top: 30px;
     &--left {
       text-align: left;
       padding: 0 0 0 40px;
@@ -1466,7 +1479,7 @@ h4.b-plus-header__head {
   }
 
   &__town {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
   }
 
@@ -1476,21 +1489,21 @@ h4.b-plus-header__head {
     display: inline-block;
   }
   .b-secondary-frase {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   &__content {
-    width: 1170px;
+    width: 1000px;
     margin: 0 auto;
     @include clearfix();
 
     &--left {
       float: left;
-      width: 590px;
+      width: 500px;
       margin: 0 auto;
     }
     &--right {
       float: right;
-      width: 436px;
+      width: 400px;
     }
   }
   &__content-row {
@@ -1916,7 +1929,7 @@ h4.b-plus-header__head {
 
 .b-career {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   @include clearfix();
 
@@ -1924,20 +1937,20 @@ h4.b-plus-header__head {
     font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   &__left {
     float: left;
-    width: 57%;
+    width: 60%;
   }
   &__text p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   &__right {
     float: right;
-    width: 40%;
+    width: 38%;
   }
   &__right img {
     width: 100%;
@@ -1961,8 +1974,8 @@ h4.b-plus-header__head {
     padding-top: 50px;
   }
   &__list {
-    width: 96%;
-    max-width: 1400px;
+    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
     @include clearfix();
   }
@@ -1989,7 +2002,7 @@ h4.b-plus-header__head {
     height: auto;
   }
   &__item h3 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: $fontSemibold;
     line-height: 1;
     color: #ffffff;
@@ -2006,7 +2019,7 @@ h4.b-plus-header__head {
     transform: translateY(-50%);
   }
   &__text p {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: $fontSemibold;
     line-height: 1.2;
     color: #ffffff;
@@ -2024,13 +2037,13 @@ h4.b-plus-header__head {
 /*--------------- CONTACT US ---------------*/
 
 .b-contact {
-  margin-bottom: 50px;
-
+  width: 1080px;
+  margin: 0 auto 40px;
   &__head {
     font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    margin: 50px 0;
+    margin: 40px 0;
   }
   &__row {
     @include clearfix();
@@ -2052,7 +2065,7 @@ h4.b-plus-header__head {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 36px;
     font-weight: $fontSemibold;
     line-height: 1.1;
     color: #ffffff;
@@ -2098,9 +2111,9 @@ h4.b-plus-header__head {
     }
   }
   &__office-head {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: $fontSemibold;
-    margin: 0 0 3%;
+    margin: 0 0 2%;
     display: none;
   }
   &__office-item {
@@ -2111,7 +2124,7 @@ h4.b-plus-header__head {
     display: none;
   }
   &__office-item h4{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: $fontSemibold;
     line-height: 1;
     margin: 0 0 5px;
@@ -2122,7 +2135,7 @@ h4.b-plus-header__head {
     padding: 0;
   }
   &__office-item ul li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     display: block;
     margin: 0;
@@ -2139,7 +2152,7 @@ h4.b-plus-header__head {
     font-size: 48px;
     font-weight: $fontSemibold;
     text-align: center;
-    padding: 40px 0;
+    padding: 25px 0;
     margin: 0;
   }
   &__form {
