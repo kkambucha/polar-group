@@ -13904,7 +13904,7 @@ header .mdl-textfield {
   /* Sub-menu level2*/ }
   .b-main-menu__item {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 0 35px;
     position: relative; }
   .b-main-menu__item a {
     color: #fff;
@@ -13963,6 +13963,17 @@ header .mdl-textfield {
     border-radius: 4px 4px 0 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
+
+/*--- Adaptive ---*/
+@media screen and (max-width: 1500px) {
+  .b-main-menu__item--media .b-main-menu__sub {
+    left: -30px; } }
+
+@media screen and (max-width: 1170px) {
+  .b-main-menu__item {
+    margin-left: 20px; }
+  .b-main-menu__item--media .b-main-menu__sub {
+    left: -43px; } }
 
 /* v1.0.3 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
