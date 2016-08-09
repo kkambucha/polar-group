@@ -15026,6 +15026,14 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   overflow: hidden;
   padding: 0; }
 
+.js-scrolling .b-top-row {
+  display: none; }
+
+.js-scrolling header {
+  display: block;
+  position: fixed;
+  top: 0; }
+
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {
   .mdl-layout__header {

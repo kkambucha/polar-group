@@ -89,7 +89,6 @@ $(function(){
 			portholeSlider.scale = portholeSlider.container.attr("data-scale") ? portholeSlider.container.attr("data-scale") : "fill";
 			portholeSlider.paused = portholeSlider.container.attr("data-paused") ? portholeSlider.container.attr("data-paused") : true;
 			portholeSlider.hendheld = $(window).width() < 740 && dtGlobals.isMobile ? true : false;
-		console.log(portholeSlider);
 		$("#main-slideshow-content").appendTo(portholeSlider.container);
 
 		portholeSlider.api = $(".rsHomePorthole").royalSlider({
@@ -261,9 +260,62 @@ $(function(){
 		$(".b-contact__office").fadeOut(500);
 	});
 
+
   /* Static main menu */
+  var topScroll,
+      topRowHeight = $('.b-top-row').height();
 
+  $('body > .mdl-js-layout').on('scroll', function(){
 
+    topScroll = $(this).scrollTop();
+
+    if(topScroll > topRowHeight) {
+      $('body').addClass('js-scrolling');
+      $('.js-scrolling header').css({'right' : getScrollBarWidth() + 'px', 'padding-left' : '17px'});
+      console.log('1');
+    } else {
+
+      setTimeout(function(){
+        $('.js-scrolling header').css({'right' : 'auto', 'padding-left' : '0px'});
+        $('body').removeClass('js-scrolling');
+      }, 100);
+
+    }
+
+  });
+
+  function getScrollBarWidth() {
+    var inner = document.createElement('p');
+    inner.style.width = "100%";
+    inner.style.height = "200px";
+
+    var outer = document.createElement('div');
+    outer.style.position = "absolute";
+    outer.style.top = "0px";
+    outer.style.left = "0px";
+    outer.style.visibility = "hidden";
+    outer.style.width = "200px";
+    outer.style.height = "150px";
+    outer.style.overflow = "hidden";
+    outer.appendChild (inner);
+
+    document.body.appendChild (outer);
+    var w1 = inner.offsetWidth;
+    outer.style.overflow = 'scroll';
+    var w2 = inner.offsetWidth;
+    if (w1 == w2) w2 = outer.clientWidth;
+
+    document.body.removeChild (outer);
+
+    return (w1 - w2);
+  };
+
+  // $('.js-main-menu-static').find('.b-top-row').hide();
+  // $('.js-main-menu-static').css({
+  //   'position' : 'fixed',
+  //   'top' : 0,
+  //   'left' : 0
+  // });
 
 	/* News-form */
 
