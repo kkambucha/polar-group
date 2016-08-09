@@ -22952,6 +22952,9 @@ $(function(){
 		$(".b-contact__office").fadeOut(500);
 	});
 
+  /* Static main menu */
+
+
 
 	/* News-form */
 
