@@ -184,25 +184,25 @@
 						<h3 class="b-news-filters__category-head">Period</h3>
 						<form action="#" method="POST" class="b-news-filters__period-form">
 							<div class="b-news-filters__period-radio">
-								<input class="b-news-filters__period-input" type="radio" checked="checked" id="no">
+								<input id="no" name="period" value="no_period" type="radio" class="b-news-filters__period-input c-period-no" checked>
 								<label class="b-news-filters__period-label" for="no">No restriction</label>
 							</div>
 							<div class="b-news-filters__period-radio">
-								<input class="b-news-filters__period-input" type="radio" id="yes">
+								<input id="yes" name="period" value="date" type="radio" class="b-news-filters__period-input c-period-yes">
 								<label class="b-news-filters__period-label" for="yes">
-									<form action="#" method="POST">
-										<select class="b-news-filters__period-select">
-											<option>Year</option>
-											<option>2015</option>
-											<option>2014</option>
-										</select>
-										<select class="b-news-filters__period-select">
-											<option>Month</option>
-											<option>Juin</option>
-											<option>July</option>
-											<option>August</option>
-										</select>
-									</form>
+
+									<select class="b-news-filters__period-select" disabled>
+										<option>Year</option>
+										<option>2015</option>
+										<option>2014</option>
+									</select>
+									<select class="b-news-filters__period-select" disabled>
+										<option>Month</option>
+										<option>Juin</option>
+										<option>July</option>
+										<option>August</option>
+									</select>
+
 								</label>
 							 </div>
 						</form>

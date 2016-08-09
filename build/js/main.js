@@ -22953,4 +22953,23 @@ $(function(){
 	});
 
 
+<<<<<<< HEAD
+=======
+	/* News-form */
+
+	$(document).ready( function () {
+		var input1 = $(".c-period-yes"),
+		    input2 = $(".c-period-no"),
+			select = $(".b-news-filters__period-select");
+
+        $(input1).click(function(e) {
+           select.prop('disabled', false);
+        });
+        $(input2).click(function(e) {
+           select.prop('disabled', true);
+        });
+	});
+
+
+>>>>>>> 87b6bf34d7816d6ad90af8349db12b2cd5c0be9b
 });
