@@ -100,10 +100,21 @@
     }
   }
 
+  &__item--media:hover &__sub &__sub-wrapper {
+    left: -98%;
+  }
+
 }
 
 
 /*--- Adaptive ---*/
+@media screen and (max-width: 1600px) {
+  .b-main-menu {
+    &__item--solutions:hover &__sub &__sub-wrapper {
+      left: -138%;
+    }
+  }
+}
 @media screen and (max-width: 1500px) {
   .b-main-menu__item--media {
     .b-main-menu__sub {

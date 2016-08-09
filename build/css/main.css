@@ -13963,8 +13963,14 @@ header .mdl-textfield {
     border-radius: 4px 4px 0 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
+  .b-main-menu__item--media:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
+    left: -98%; }
 
 /*--- Adaptive ---*/
+@media screen and (max-width: 1600px) {
+  .b-main-menu__item--solutions:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
+    left: -138%; } }
+
 @media screen and (max-width: 1500px) {
   .b-main-menu__item--media .b-main-menu__sub {
     left: -30px; } }
