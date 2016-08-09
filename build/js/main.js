@@ -22953,8 +22953,6 @@ $(function(){
 	});
 
 
-<<<<<<< HEAD
-=======
 	/* News-form */
 
 	$(document).ready( function () {
@@ -22970,6 +22968,4 @@ $(function(){
         });
 	});
 
-
->>>>>>> 87b6bf34d7816d6ad90af8349db12b2cd5c0be9b
 });
