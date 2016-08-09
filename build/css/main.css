@@ -11862,6 +11862,10 @@ html, body {
   width: 482px;
   background-color: rgba(52, 65, 145, 0.8);
   border-radius: 5px; }
+  @media only screen and (max-width: 1500px) {
+    .l-login-form {
+      width: 350px;
+      margin: 20px 0 0 30px; } }
 
 /*-----------------------------------BLOCKS----------------------------------*/
 .mdl-cell--no-t-marg {
@@ -13769,6 +13773,18 @@ h4.b-plus-header__head {
   .b-faq-acc__item-content ol li {
     font-size: 18px; }
 
+.b-logo {
+  padding: 10px 0; }
+
+.mdl-navigation--main-menu {
+  padding: 20px 0 !important; }
+
+header .mdl-textfield {
+  padding: 10px 35px 10px 0 !important; }
+
+.l-main-menu-wrapper {
+  padding-top: 10px; }
+
 /*--------- POPUP ---------*/
 .b-popup {
   width: 100%;
@@ -13803,6 +13819,9 @@ h4.b-plus-header__head {
     font-family: "ProximaNova";
     color: #fff;
     margin: 20px 0; }
+    @media only screen and (max-width: 1500px) {
+      .b-form__header {
+        font-size: 25px; } }
   .b-form__input {
     background: #fff;
     border: 1px solid #cccccc;
@@ -13813,6 +13832,10 @@ h4.b-plus-header__head {
     border-radius: 3px;
     padding: 0 10px;
     box-sizing: border-box; }
+    @media only screen and (max-width: 1500px) {
+      .b-form__input {
+        font-size: 15px;
+        line-height: 28px; } }
   .b-form__label {
     line-height: 34px;
     font-size: 18px;
@@ -13821,6 +13844,10 @@ h4.b-plus-header__head {
     top: 8px;
     font-weight: 600;
     box-sizing: border-box; }
+    @media only screen and (max-width: 1500px) {
+      .b-form__label {
+        font-size: 15px;
+        line-height: 28px; } }
   .b-form__label:after {
     background-color: rgb(103,175,221);
     bottom: 7px; }
@@ -13829,10 +13856,16 @@ h4.b-plus-header__head {
   .b-form__checkbox-label {
     color: #fff;
     font-size: 19px; }
+    @media only screen and (max-width: 1500px) {
+      .b-form__checkbox-label {
+        font-size: 15px; } }
   .b-form__buttons {
     color: #fff;
     font-size: 18px;
     margin: 35px 0; }
+    @media only screen and (max-width: 1500px) {
+      .b-form__buttons {
+        font-size: 15px; } }
   .b-form__alter-link {
     color: #fff;
     text-decoration: none; }
@@ -13853,6 +13886,83 @@ h4.b-plus-header__head {
     margin-left: 1px; }
   .b-form .b-form__buttons .mdl-button {
     margin-right: 5px; }
+    @media only screen and (max-width: 1500px) {
+      .b-form .b-form__buttons .mdl-button {
+        font-size: 15px;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px; } }
+  @media only screen and (max-width: 1500px) {
+    .b-form .b-form__buttons {
+      margin: 20px 0; } }
+
+.b-main-menu {
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  /* Sub-menu level2*/ }
+  .b-main-menu__item {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative; }
+  .b-main-menu__item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    white-space: nowrap; }
+  .b-main-menu__sub {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #fff;
+    border-radius: 4px; }
+  .b-main-menu__sub a {
+    color: #000;
+    font-size: 20px;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 15px;
+    display: block; }
+  .b-main-menu__sub a:hover {
+    color: #fff;
+    background: rgb(103,175,221); }
+  .b-main-menu__sub .b-main-menu__sub-item:first-child a:hover {
+    border-radius: 4px 4px 0 0; }
+  .b-main-menu__sub .b-main-menu__sub-item:last-child a:hover {
+    border-radius: 0 0 4px 4px; }
+  .b-main-menu__sub .b-main-menu__sub-item:last-child a {
+    border: none; }
+  .b-main-menu__item:hover .b-main-menu__sub {
+    display: block; }
+  .b-main-menu__sub-item {
+    position: relative; }
+  .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub {
+    position: relative;
+    left: auto;
+    background: #fff;
+    overflow: visible;
+    top: 0; }
+  .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0 10px;
+    z-index: 500; }
+  .b-main-menu__sub-item:hover .b-main-menu__sub-wrapper.second {
+    display: inline-block !important; }
+  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item {
+    border-bottom: 1px solid #cccccc; }
+  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child {
+    border: 0; }
+  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:first-child a {
+    border-radius: 4px 4px 0 0; }
+  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
+    border-radius: 0 0 4px 4px; }
 
 /* v1.0.3 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -15014,7 +15124,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .rsDesc img {
     margin-top: 10px; }
   .rsHomePorthole .rsCapt {
-    height: 80%; }
+    height: 75%; }
   .b-sec-slider--news .b-one-slide-block__wrapper {
     height: 530px; } }
 

@@ -37,6 +37,10 @@ html, body {
 	width: 482px;
 	background-color: rgba(52, 65, 145, 0.8);
 	border-radius: 5px;
+  @media only screen and (max-width: 1500px) {
+    width: 350px;
+    margin: 20px 0 0 30px;
+  }
 }
 /*-----------------------------------BLOCKS----------------------------------*/
 .mdl-cell--no-t-marg {
@@ -2309,6 +2313,19 @@ h4.b-plus-header__head {
   &__item-content ol li {
     font-size: 18px;
   }
+}
+
+.b-logo {
+  padding: 10px 0;
+}
+.mdl-navigation--main-menu {
+  padding: 20px 0 !important;
+}
+header .mdl-textfield {
+  padding: 10px 35px 10px 0 !important;
+}
+.l-main-menu-wrapper {
+  padding-top: 10px;
 }
 
 /*--------- POPUP ---------*/
