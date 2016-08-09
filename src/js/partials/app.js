@@ -261,4 +261,21 @@ $(function(){
 		$(".b-contact__office").fadeOut(500);
 	});
 
+
+	/* News-form */
+
+	$(document).ready( function () {
+		var input1 = $(".c-period-yes"),
+		    input2 = $(".c-period-no"),
+			select = $(".b-news-filters__period-select");
+
+        $(input1).click(function(e) {
+           select.prop('disabled', false);
+        });
+        $(input2).click(function(e) {
+           select.prop('disabled', true);
+        });
+	});
+
+
 });
