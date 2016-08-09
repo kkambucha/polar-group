@@ -6,7 +6,7 @@
 
   &__item {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 0 35px;
     position: relative;
   }
 
@@ -100,4 +100,26 @@
     }
   }
 
+}
+
+
+/*--- Adaptive ---*/
+@media screen and (max-width: 1500px) {
+  .b-main-menu__item--media {
+    .b-main-menu__sub {
+      left: -30px;
+    }
+  }
+}
+@media screen and (max-width: 1170px) {
+  .b-main-menu {
+    &__item {
+      margin-left: 20px;
+    }
+  }
+  .b-main-menu__item--media {
+    .b-main-menu__sub {
+      left: -43px;
+    }
+  }
 }
