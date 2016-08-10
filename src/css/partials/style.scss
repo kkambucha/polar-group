@@ -2336,17 +2336,17 @@ header .mdl-textfield {
   background-color: rgba(0,0,0,0.5);
   overflow: auto;
   position: absolute;
-  top: 0;
   z-index: 999;
   display: none;
 
 }
 .b-popup__content {
   width: 480px;
-  height: 640px;
-  margin: 8% auto;
+  height: auto;
+  margin: 5% auto;
   background: #ffffff;
   padding-top: 40px;
+  position: relative;
 
 }
 .b-popup__content textarea {

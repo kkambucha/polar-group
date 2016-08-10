@@ -7,7 +7,15 @@ $(function(){
       slidesPerView: 3,
       paginationClickable: true,
       spaceBetween: 5,
-
+	  breakpoints: {
+		  600: {
+			  slidesPerView: 1,
+			  spaceBetween: 10
+		  },
+		  1200: {
+			  slidesPerView: 2
+		  }
+	  },
       // Navigation arrows
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
@@ -232,6 +240,8 @@ $(function(){
 	$(".c-popup-show").on("click", function(e){
         e.stopPropagation();
 		$(".b-popup").fadeIn(300);
+		$(".b-popup").css("top", 0);
+		$(".b-popup__content").css("top", "20px");
 
 		$(".b-popup__content").click(function(e) {
 	       e.stopPropagation();

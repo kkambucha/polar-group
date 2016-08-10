@@ -13792,16 +13792,16 @@ header .mdl-textfield {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
   position: absolute;
-  top: 0;
   z-index: 999;
   display: none; }
 
 .b-popup__content {
   width: 480px;
-  height: 640px;
-  margin: 8% auto;
+  height: auto;
+  margin: 5% auto;
   background: #ffffff;
-  padding-top: 40px; }
+  padding-top: 40px;
+  position: relative; }
 
 .b-popup__content textarea {
   resize: none; }
@@ -13963,23 +13963,13 @@ header .mdl-textfield {
     border-radius: 4px 4px 0 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
-  .b-main-menu__item--media:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    left: -98%; }
+  .b-main-menu__item--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
+    left: -16em; }
 
 /*--- Adaptive ---*/
-@media screen and (max-width: 1600px) {
-  .b-main-menu__item--solutions:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    left: -138%; } }
-
-@media screen and (max-width: 1500px) {
-  .b-main-menu__item--media .b-main-menu__sub {
-    left: -30px; } }
-
 @media screen and (max-width: 1170px) {
   .b-main-menu__item {
-    margin-left: 20px; }
-  .b-main-menu__item--media .b-main-menu__sub {
-    left: -43px; } }
+    margin-left: 20px; } }
 
 /* v1.0.3 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -15186,7 +15176,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .b-extending-logistics__content--left {
     width: 520px; }
   .b-extending-logistics {
-    margin-top: 550px; }
+    margin-top: 520px; }
     .b-extending-logistics__content {
       width: 95%;
       margin: 0 auto; }
@@ -15203,7 +15193,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .b-sec-slider {
     padding: 30px 0; }
     .b-sec-slider__head {
-      font-size: 48px; } }
+      font-size: 48px; }
+  .l-login-form {
+    margin: 20px auto 0; } }
 
 @media screen and (max-width: 1024px) {
   .mdl-layout__header {
@@ -15226,12 +15218,10 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
       float: none; }
     .b-extending-logistics__content--right {
       margin: 0 auto; }
-  .swiper-container {
-    width: 94%; }
-    .swiper-container .b-one-slide-block {
-      width: 50% !important; }
-    .swiper-container .swiper-button-next {
-      right: -8px; } }
+  .swiper-container .swiper-button-prev {
+    left: -8px; }
+  .swiper-container .swiper-button-next {
+    right: -8px; } }
 
 @media screen and (max-width: 800px) {
   .b-vertex-background__head {
@@ -15257,8 +15247,11 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
       width: 100%; }
       .b-extending-logistics__content--left {
         width: 96%; }
-  .swiper-container .b-one-slide-block {
-    width: 100% !important; }
+  /*.swiper-container {
+		.b-one-slide-block {
+			width: 100% !important;
+		}
+	}*/
   .b-sec-slider {
     padding: 25px 0; }
     .b-sec-slider__head {
