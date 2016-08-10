@@ -11889,6 +11889,9 @@ html, body {
 
 .mdl-layout__header-row {
   padding: 0; }
+  .mdl-layout__header-row .mdl-cell--12-col {
+    margin-top: 0;
+    margin-bottom: 0; }
 
 .mdl-button--no-capital {
   text-transform: none; }
@@ -11901,7 +11904,7 @@ html, body {
 .mdl-navigation--main-menu {
   display: inline-block;
   float: right;
-  padding: 40px 0 !important; }
+  padding: 18px 0 20px 0 !important; }
   .mdl-navigation--main-menu .mdl-button {
     font-size: 22px;
     padding: 0;
@@ -12039,7 +12042,7 @@ header .mdl-textfield__expandable-holder {
     bottom: -4px; }
   .b-top-row .mdl-grid {
     padding-top: 6px;
-    padding-bottom: 6px; }
+    padding-bottom: 0; }
 
 .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
   background-color: transparent !important;
@@ -13774,13 +13777,13 @@ h4.b-plus-header__head {
     font-size: 18px; }
 
 .b-logo {
-  padding: 10px 0; }
+  padding: 5px 0; }
 
 .mdl-navigation--main-menu {
-  padding: 20px 0 !important; }
+  padding: 12px 0 !important; }
 
 header .mdl-textfield {
-  padding: 10px 35px 10px 0 !important; }
+  padding: 0 35px 10px 0 !important; }
 
 .l-main-menu-wrapper {
   padding-top: 10px; }
