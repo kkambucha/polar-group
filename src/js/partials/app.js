@@ -285,10 +285,10 @@ $(function(){
       console.log('1');
     } else {
 
-      setTimeout(function(){
+
         $('.js-scrolling header').css({'right' : 'auto', 'padding-left' : '0px'});
         $('body').removeClass('js-scrolling');
-      }, 100);
+
 
     }
 

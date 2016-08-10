@@ -13967,7 +13967,7 @@ header .mdl-textfield {
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
   .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    left: -16.2em; }
+    left: -16.3em; }
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
@@ -15036,6 +15036,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   display: block;
   position: fixed;
   top: 0; }
+
+.js-scrolling .mdl-layout__content {
+  padding-top: 128px; }
 
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {
