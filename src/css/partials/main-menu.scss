@@ -100,15 +100,21 @@
     }
   }
 
-  &__item--left:hover &__sub &__sub-wrapper {
-    left: -16em;
+  .dropdown--left:hover &__sub &__sub-wrapper {
+    left: -16.2em;
   }
 
 }
 
 
 /*--- Adaptive ---*/
-
+@media screen and (max-width: 1500px) {
+  .b-main-menu {
+    .dropdown--left:hover &__sub {
+      left: -45px;
+    }
+  }
+}
 @media screen and (max-width: 1170px) {
   .b-main-menu {
     &__item {

@@ -13963,10 +13963,14 @@ header .mdl-textfield {
     border-radius: 4px 4px 0 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
-  .b-main-menu__item--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    left: -16em; }
+  .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
+    left: -16.2em; }
 
 /*--- Adaptive ---*/
+@media screen and (max-width: 1500px) {
+  .dropdown--left:hover .b-main-menu__sub {
+    left: -45px; } }
+
 @media screen and (max-width: 1170px) {
   .b-main-menu__item {
     margin-left: 20px; } }
