@@ -21844,97 +21844,6 @@ $(function(){
 /* jQuery extensions: end */
 
 
-/* !-Royal Slider */
-	if ($(".rsHomePorthole").exists()) {
-		var portholeSlider = {};
-			portholeSlider.container = $("#main-slideshow");
-			portholeSlider.width = portholeSlider.container.attr("data-width") ? parseInt(portholeSlider.container.attr("data-width")) : 1280;
-			portholeSlider.height = portholeSlider.container.attr("data-height") ? parseInt(portholeSlider.container.attr("data-height")) : 720;
-			portholeSlider.autoslide = portholeSlider.container.attr("data-autoslide") && parseInt(portholeSlider.container.attr("data-autoslide")) > 999 ? parseInt(portholeSlider.container.attr("data-autoslide")) : 5000;
-			portholeSlider.scale = portholeSlider.container.attr("data-scale") ? portholeSlider.container.attr("data-scale") : "fill";
-			portholeSlider.paused = portholeSlider.container.attr("data-paused") ? portholeSlider.container.attr("data-paused") : true;
-			portholeSlider.hendheld = $(window).width() < 740 && dtGlobals.isMobile ? true : false;
-		$("#main-slideshow-content").appendTo(portholeSlider.container);
-
-		portholeSlider.api = $(".rsHomePorthole").royalSlider({
-			transitionType: 'fade',
-			autoScaleSlider: true,
-			autoScaleSliderWidth: portholeSlider.width,
-			autoScaleSliderHeight: portholeSlider.height,
-			autoPlay: {
-				enabled: !portholeSlider.hendheld,
-				stopAtAction: false,
-				pauseOnHover: false,
-				delay: portholeSlider.autoslide
-			},
-			imageScaleMode: portholeSlider.scale,
-			imageScalePadding: 0,
-			numImagesToPreload: 999,
-			slidesOrientation: "horizontal",
-			disableResponsiveness: false,
-			loopRewind: true,
-			arrowsNav: false,
-			globalCaption: true,
-			controlNavigation: !portholeSlider.hendheld ? 'porthole' : 'none',
-			thumbs: {
-				orientation: 'horizontal',
-				drag: false,
-				touch: false,
-				spacing: 10,
-				firstMargin: false,
-				appendSpan: false
-			},
-			block: {
-				fadeEffect: true,
-				moveEffect: 'bottom',
-				moveOffset: 5
-			}
-		}).data("royalSlider");
-		var $_this = portholeSlider.container,
-			$_this_childs = $_this.find(".rsSlide").size();
-		if ($_this_childs < 2) {
-			$(".rsThumbs", $_this).hide();
-			portholeSlider.api._isMove = false;
-			$_this.find(".rsOverflow").css("cursor", "auto")
-		};
-
-		if (portholeSlider.paused == "true") {
-			$(".rsHomePorthole").royalSlider("stopAutoPlay");
-		}
-	};
-
-	$(".slider-content .preload-me").loaded(null, function() {
-		$(".slider-content").each(function(){
-			var $this = $(this),
-				autoslide = $this.attr("data-autoslide") && parseInt($this.attr("data-autoslide")) > 999 ? parseInt($this.attr("data-autoslide")) : 5000;
-				hendheld = !($(window).width() < 740 && dtGlobals.isMobile) && $this.attr("data-autoslide") ? true : false;
-
-			$this.royalSlider({
-				autoPlay: {
-					enabled: hendheld,
-					stopAtAction: false,
-					pauseOnHover: false,
-					delay: autoslide
-				},
-				autoHeight: true,
-				controlsInside: false,
-				fadeinLoadedSlide: false,
-				controlNavigationSpacing: 0,
-				controlNavigation: 'bullets',
-				imageScaleMode: 'none',
-				imageAlignCenter:false,
-				loop: false,
-				loopRewind: true,
-				numImagesToPreload: 6,
-				keyboardNavEnabled: true
-
-			}).data("royalSlider");
-		});
-	}, true);
-
-	/* Royal Slider: end */
-
-
 	/* Upload file */
 
 	$(".b-tariff-requests__input-file").change(function(){
@@ -21997,8 +21906,8 @@ $(function(){
 	$(".c-popup-show").on("click", function(e){
         e.stopPropagation();
 		$(".b-popup").fadeIn(300);
-		$(".b-popup").css("top", 0);
-		$(".b-popup__content").css("top", "20px");
+		$(".b-popup__content").fadeIn(300);
+		$(".b-popup__content").css("margin", "25px auto 0");
 
 		$(".b-popup__content").click(function(e) {
 	       e.stopPropagation();
@@ -22007,6 +21916,7 @@ $(function(){
 
     $("body").on("click", function(e){
 		$(".b-popup").fadeOut(300);
+		$(".b-popup__content").fadeOut(300);
 	});
 
 
@@ -22029,53 +21939,53 @@ $(function(){
 
 
   /* Static main menu */
-  var topScroll,
-      topRowHeight = $('.b-top-row').height();
 
-  $('body > .mdl-js-layout').on('scroll', function(){
+    $(document).ready( function () {
+      var topScroll,
+          topRowHeight = $('.b-top-row').height();
 
-    topScroll = $(this).scrollTop();
+      $('body > .mdl-js-layout').on('scroll', function(){
 
-    if(topScroll > topRowHeight) {
-      $('body').addClass('js-scrolling');
-      $('.js-scrolling header').css({'right' : getScrollBarWidth() + 'px', 'padding-left' : '17px'});
-      console.log('1');
-    } else {
+        topScroll = $(this).scrollTop();
 
+        if(topScroll > topRowHeight) {
+          $('body').addClass('js-scrolling');
+          $('.js-scrolling header').css({'right' : getScrollBarWidth() + 'px', 'padding-left' : '17px'});
+          console.log('1');
+        } else {
 
-        $('.js-scrolling header').css({'right' : 'auto', 'padding-left' : '0px'});
-        $('body').removeClass('js-scrolling');
+            $('.js-scrolling header').css({'right' : 'auto', 'padding-left' : '0px'});
+            $('body').removeClass('js-scrolling');
 
+        }
 
-    }
+      });
 
-  });
+      function getScrollBarWidth() {
+        var inner = document.createElement('p');
+        inner.style.width = "100%";
+        inner.style.height = "200px";
 
-  function getScrollBarWidth() {
-    var inner = document.createElement('p');
-    inner.style.width = "100%";
-    inner.style.height = "200px";
+        var outer = document.createElement('div');
+        outer.style.position = "absolute";
+        outer.style.top = "0px";
+        outer.style.left = "0px";
+        outer.style.visibility = "hidden";
+        outer.style.width = "200px";
+        outer.style.height = "150px";
+        outer.style.overflow = "hidden";
+        outer.appendChild (inner);
 
-    var outer = document.createElement('div');
-    outer.style.position = "absolute";
-    outer.style.top = "0px";
-    outer.style.left = "0px";
-    outer.style.visibility = "hidden";
-    outer.style.width = "200px";
-    outer.style.height = "150px";
-    outer.style.overflow = "hidden";
-    outer.appendChild (inner);
+        document.body.appendChild (outer);
+        var w1 = inner.offsetWidth;
+        outer.style.overflow = 'scroll';
+        var w2 = inner.offsetWidth;
+        if (w1 == w2) w2 = outer.clientWidth;
 
-    document.body.appendChild (outer);
-    var w1 = inner.offsetWidth;
-    outer.style.overflow = 'scroll';
-    var w2 = inner.offsetWidth;
-    if (w1 == w2) w2 = outer.clientWidth;
+        document.body.removeChild (outer);
 
-    document.body.removeChild (outer);
-
-    return (w1 - w2);
-  };
+        return (w1 - w2);
+      };
 
   // $('.js-main-menu-static').find('.b-top-row').hide();
   // $('.js-main-menu-static').css({
@@ -22084,6 +21994,7 @@ $(function(){
   //   'left' : 0
   // });
 
+    });
 	/* News-form */
 
 	$(document).ready( function () {
@@ -22098,5 +22009,96 @@ $(function(){
            select.prop('disabled', true);
         });
 	});
+
+
+    /* !-Royal Slider */
+    if ($(".rsHomePorthole").exists()) {
+        var portholeSlider = {};
+        portholeSlider.container = $("#main-slideshow");
+        portholeSlider.width = portholeSlider.container.attr("data-width") ? parseInt(portholeSlider.container.attr("data-width")) : 1280;
+        portholeSlider.height = portholeSlider.container.attr("data-height") ? parseInt(portholeSlider.container.attr("data-height")) : 720;
+        portholeSlider.autoslide = portholeSlider.container.attr("data-autoslide") && parseInt(portholeSlider.container.attr("data-autoslide")) > 999 ? parseInt(portholeSlider.container.attr("data-autoslide")) : 5000;
+        portholeSlider.scale = portholeSlider.container.attr("data-scale") ? portholeSlider.container.attr("data-scale") : "fill";
+        portholeSlider.paused = portholeSlider.container.attr("data-paused") ? portholeSlider.container.attr("data-paused") : true;
+        portholeSlider.hendheld = $(window).width() < 740 && dtGlobals.isMobile ? true : false;
+        $("#main-slideshow-content").appendTo(portholeSlider.container);
+
+        portholeSlider.api = $(".rsHomePorthole").royalSlider({
+            transitionType: 'fade',
+            autoScaleSlider: true,
+            autoScaleSliderWidth: portholeSlider.width,
+            autoScaleSliderHeight: portholeSlider.height,
+            autoPlay: {
+                enabled: !portholeSlider.hendheld,
+                stopAtAction: false,
+                pauseOnHover: false,
+                delay: portholeSlider.autoslide
+            },
+            imageScaleMode: portholeSlider.scale,
+            imageScalePadding: 0,
+            numImagesToPreload: 999,
+            slidesOrientation: "horizontal",
+            disableResponsiveness: false,
+            loopRewind: true,
+            arrowsNav: false,
+            globalCaption: true,
+            controlNavigation: !portholeSlider.hendheld ? 'porthole' : 'none',
+            thumbs: {
+                orientation: 'horizontal',
+                drag: false,
+                touch: false,
+                spacing: 10,
+                firstMargin: false,
+                appendSpan: false
+            },
+            block: {
+                fadeEffect: true,
+                moveEffect: 'bottom',
+                moveOffset: 5
+            }
+        }).data("royalSlider");
+        var $_this = portholeSlider.container,
+            $_this_childs = $_this.find(".rsSlide").size();
+        if ($_this_childs < 2) {
+            $(".rsThumbs", $_this).hide();
+            portholeSlider.api._isMove = false;
+            $_this.find(".rsOverflow").css("cursor", "auto")
+        };
+
+        if (portholeSlider.paused == "true") {
+            $(".rsHomePorthole").royalSlider("stopAutoPlay");
+        }
+    };
+
+    $(".slider-content .preload-me").loaded(null, function() {
+        $(".slider-content").each(function(){
+            var $this = $(this),
+                autoslide = $this.attr("data-autoslide") && parseInt($this.attr("data-autoslide")) > 999 ? parseInt($this.attr("data-autoslide")) : 5000;
+            hendheld = !($(window).width() < 740 && dtGlobals.isMobile) && $this.attr("data-autoslide") ? true : false;
+
+            $this.royalSlider({
+                autoPlay: {
+                    enabled: hendheld,
+                    stopAtAction: false,
+                    pauseOnHover: false,
+                    delay: autoslide
+                },
+                autoHeight: true,
+                controlsInside: false,
+                fadeinLoadedSlide: false,
+                controlNavigationSpacing: 0,
+                controlNavigation: 'bullets',
+                imageScaleMode: 'none',
+                imageAlignCenter:false,
+                loop: false,
+                loopRewind: true,
+                numImagesToPreload: 6,
+                keyboardNavEnabled: true
+
+            }).data("royalSlider");
+        });
+    }, true);
+
+    /* Royal Slider: end */
 
 });
