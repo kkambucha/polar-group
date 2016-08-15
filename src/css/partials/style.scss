@@ -2339,14 +2339,13 @@ header .mdl-textfield {
 .b-popup {
   background-color: rgba(0,0,0,0.5);
   overflow: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 999;
   display: none;
-
 }
 .b-popup__content {
   width: 480px;
@@ -2354,10 +2353,13 @@ header .mdl-textfield {
   background: #ffffff;
   padding-top: 40px;
   overflow: auto;
-  position: relative;
+  margin: 0 auto;
   display: none;
   z-index: 1000;
 }
 .b-popup__content textarea {
  resize: none;
+}
+.mdl-cell--12-col {
+  position: relative;
 }

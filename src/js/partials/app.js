@@ -121,7 +121,7 @@ $(function(){
                 content.stop(true, true).slideUp(300);
                 item.removeClass("active");
             }
-            ;
+
         });
     });
 
@@ -152,8 +152,9 @@ $(function(){
         $(".c-popup-show").on("click", function(e){
             e.stopPropagation();
             $(".b-popup").fadeIn(300);
+            $(".b-popup").scrollTop('100px');
             $(".b-popup__content").fadeIn(300);
-            $(".b-popup__content").css("margin", "25px auto 0");
+            $(".b-popup__content").css("margin", "120px auto 0");
 
             $(".b-popup__content").click(function(e) {
                 e.stopPropagation();

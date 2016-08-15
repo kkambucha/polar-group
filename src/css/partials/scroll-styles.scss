@@ -11,3 +11,11 @@
     padding-top: 128px;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .js-scrolling {
+    header {
+      display: none;
+    }
+  }
+}
