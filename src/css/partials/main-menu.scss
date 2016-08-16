@@ -106,6 +106,10 @@
 
 }
 
+.mdl-layout__drawer-button {
+  position: fixed;
+}
+
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
@@ -120,5 +124,10 @@
     &__item {
       margin-left: 20px;
     }
+  }
+}
+@media screen and (max-width: 991px) {
+  .mdl-grid {
+    padding-top: 0;
   }
 }

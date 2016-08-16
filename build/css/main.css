@@ -12722,7 +12722,7 @@ header .mdl-textfield__expandable-holder {
     width: 930px;
     color: #ffffff; }
   .b-philosophy__content p {
-    margin-bottom: 25x;
+    margin-bottom: 25px;
     font-family: "ProximaNova";
     font-size: 20px; }
   .b-philosophy__head {
@@ -13974,6 +13974,9 @@ header .mdl-textfield {
   .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
     left: -15.2em; }
 
+.mdl-layout__drawer-button {
+  position: fixed; }
+
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
   .dropdown--left:hover .b-main-menu__sub {
@@ -13982,6 +13985,10 @@ header .mdl-textfield {
 @media screen and (max-width: 1170px) {
   .b-main-menu__item {
     margin-left: 20px; } }
+
+@media screen and (max-width: 991px) {
+  .mdl-grid {
+    padding-top: 0; } }
 
 /* v1.0.3 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
@@ -15045,10 +15052,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 .js-scrolling .mdl-layout__content {
   padding-top: 128px; }
 
-@media screen and (max-width: 991px) {
-  .js-scrolling header {
-    display: none; } }
-
 /* ----------------------------- MOBILE --------------------------- */
 @media screen and (max-width: 479px) {
   .mdl-layout__header {
@@ -15075,7 +15078,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     padding: 0;
     position: absolute;
     top: 8px;
-    left: 65px; }
+    left: 55px; }
   header .mdl-textfield {
     padding: 0 !important; }
   .top-bot-m-0 {
@@ -15083,7 +15086,15 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     margin-bottom: 0; }
   .top-bot-p-0 {
     padding-top: 0;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .mdl-textfield--expandable {
+    max-width: 200px; } }
+
+@media screen and (max-width: 400px) {
+  .mdl-textfield--expandable {
+    max-width: 145px; }
+  .b-logo {
+    left: 50px; } }
 
 /* ----------------------------- TABLET --------------------------- */
 @media screen and (min-width: 480px) and (max-width: 959px) {
