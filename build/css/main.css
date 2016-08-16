@@ -13974,10 +13974,10 @@ header .mdl-textfield {
   .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
     left: -15.2em; }
 
-.mdl-layout__drawer {
-  height: auto; }
-  .mdl-layout__drawer .mdl-navigation {
-    padding-top: 0; }
+.mdl-layout__drawer .mdl-navigation {
+  padding-top: 0; }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    padding: 12px 16px; }
 
 .mdl-layout__drawer-button {
   position: fixed; }

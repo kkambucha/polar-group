@@ -107,10 +107,13 @@
 }
 
 .mdl-layout__drawer {
-  height: auto;
 
   .mdl-navigation {
     padding-top: 0;
+
+    .mdl-navigation__link {
+      padding: 12px 16px;
+    }
   }
 }
 .mdl-layout__drawer-button {
