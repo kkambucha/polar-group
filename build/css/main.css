@@ -13974,8 +13974,25 @@ header .mdl-textfield {
   .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
     left: -15.2em; }
 
+.mdl-layout__drawer {
+  height: auto; }
+  .mdl-layout__drawer .mdl-navigation {
+    padding-top: 0; }
+
 .mdl-layout__drawer-button {
   position: fixed; }
+
+.adaptive-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.adaptive-menu__list-inner {
+  list-style: none;
+  padding: 0; }
+
+.adaptive-menu__list-inner li a {
+  padding-left: 30px !important; }
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
@@ -13986,9 +14003,15 @@ header .mdl-textfield {
   .b-main-menu__item {
     margin-left: 20px; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 960px) {
   .mdl-grid {
-    padding-top: 0; } }
+    padding-top: 0; }
+  .mdl-layout__header {
+    position: fixed; }
+  .mdl-layout__content {
+    padding-top: 56px; }
+  .js-scrolling .mdl-layout__content {
+    padding-top: 56px !important; } }
 
 /* v1.0.3 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
