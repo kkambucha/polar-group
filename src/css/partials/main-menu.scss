@@ -125,6 +125,9 @@
   padding: 0;
   list-style: none;
 }
+.adaptive-menu__list li a {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
 .adaptive-menu__list-inner {
   list-style: none;
   padding: 0;
