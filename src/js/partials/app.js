@@ -222,6 +222,16 @@ $(function(){
         });
     });
 
+    /* Sertificates */
+
+    $(".cb-group1").colorbox({
+        rel: 'cb-group1',
+        current: false,
+        width: '100%',
+        height: "auto",
+        maxWidth: '300px'
+    });
+
 
     /* !-Royal Slider */
     $(document).ready( function () {
