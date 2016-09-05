@@ -14069,6 +14069,9 @@ header .mdl-textfield {
 .adaptive-menu__list-inner li a {
   padding-left: 30px !important; }
 
+.mdl-layout__header {
+  z-index: 200; }
+
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
   .dropdown--left:hover .b-main-menu__sub {
