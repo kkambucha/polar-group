@@ -66,7 +66,7 @@
 
   &__item:hover &__sub &__sub {
     position: relative;
-    left: auto;
+    left: -100%;
     background: #fff;
     overflow: visible;
     top: 0;
@@ -76,8 +76,8 @@
     display: none !important;
     position: absolute;
     top: 0;
-    left: 100%;
-    padding: 0 1px;
+    //left: 100%;
+    //padding: 0 1px;
     z-index: 500;
   }
 
@@ -100,9 +100,9 @@
     }
   }
 
-  .dropdown--left:hover &__sub &__sub-wrapper {
-    left: -15.2em;
-  }
+  //.dropdown--left:hover &__sub &__sub-wrapper {
+  //  left: -15.2em;
+  //}
 
 }
 
@@ -142,11 +142,11 @@
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
-  .b-main-menu {
+  /*.b-main-menu {
     .dropdown--left:hover &__sub {
       left: -45px;
     }
-  }
+  }*/
 }
 @media screen and (max-width: 1170px) {
   .b-main-menu {

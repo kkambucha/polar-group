@@ -12262,7 +12262,6 @@ header .mdl-textfield__expandable-holder {
             transform: translate(-19px, -20px) !important; }
 
 .b-one-slide-block {
-  width: 33.33333333333333%;
   box-sizing: border-box;
   float: left;
   padding: 2%; }
@@ -14021,7 +14020,7 @@ header .mdl-textfield {
     position: relative; }
   .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub {
     position: relative;
-    left: auto;
+    left: -100%;
     background: #fff;
     overflow: visible;
     top: 0; }
@@ -14029,8 +14028,6 @@ header .mdl-textfield {
     display: none !important;
     position: absolute;
     top: 0;
-    left: 100%;
-    padding: 0 1px;
     z-index: 500; }
   .b-main-menu__sub-item:hover .b-main-menu__sub-wrapper.second {
     display: inline-block !important; }
@@ -14042,8 +14039,6 @@ header .mdl-textfield {
     border-radius: 4px 4px 0 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child a {
     border-radius: 0 0 4px 4px; }
-  .dropdown--left:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    left: -15.2em; }
 
 .mdl-layout__drawer {
   position: fixed; }
@@ -14075,8 +14070,11 @@ header .mdl-textfield {
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
-  .dropdown--left:hover .b-main-menu__sub {
-    left: -45px; } }
+  /*.b-main-menu {
+    .dropdown--left:hover &__sub {
+      left: -45px;
+    }
+  }*/ }
 
 @media screen and (max-width: 1170px) {
   .b-main-menu__item {
