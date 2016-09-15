@@ -13718,7 +13718,8 @@ h4.b-plus-header__head {
     text-decoration: underline; }
 
 .b-question {
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  position: relative; }
   .b-question__head {
     font-size: 48px;
     font-weight: 600;
@@ -13867,6 +13868,16 @@ header .mdl-textfield {
   bottom: 0;
   z-index: 999;
   display: none; }
+  .b-popup__close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background-image: url("../pic/icon-close.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 .b-popup__content {
   width: 480px;
@@ -13876,7 +13887,8 @@ header .mdl-textfield {
   overflow: auto;
   margin: 0 auto;
   display: none;
-  z-index: 1000; }
+  z-index: 1000;
+  position: relative; }
 
 .b-popup__content textarea {
   resize: none; }

@@ -2168,6 +2168,7 @@ h4.b-plus-header__head {
 
 .b-question {
   background: #f0f0f0;
+  position: relative;
 
   &__head {
     font-size: 48px;
@@ -2347,6 +2348,18 @@ header .mdl-textfield {
   bottom: 0;
   z-index: 999;
   display: none;
+
+  &__close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background-image: url("../pic/icon-close.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .b-popup__content {
   width: 480px;
@@ -2357,9 +2370,10 @@ header .mdl-textfield {
   margin: 0 auto;
   display: none;
   z-index: 1000;
+  position: relative;
 }
 .b-popup__content textarea {
- resize: none;
+  resize: none;
 }
 .mdl-cell--12-col {
   position: relative;

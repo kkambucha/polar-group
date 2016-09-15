@@ -165,6 +165,11 @@ $(function(){
             $(".b-popup").fadeOut(300);
             $(".b-popup__content").fadeOut(300);
         });
+
+        $(".c-popup__close").on("click", function(e){
+            $(".b-popup").fadeOut(300);
+            $(".b-popup__content").fadeOut(300);
+        });
     });
 
 
