@@ -102,12 +102,6 @@
 	.top-bot-p-0 { padding-top: 0; padding-bottom: 0; }
 }
 
-@media screen and (max-width: 1600px) {
-	.b-main-slider__loginform {
-		top: 30px;
-	}
-}
-
 
 @media screen and (max-width: 1500px) {
 	.b-form	{
@@ -157,9 +151,14 @@
 	.mdl-navigation--main-menu .mdl-button { margin: 0 18px; }
 
 	.b-main-slider__loginform {
-		top: 105%;
-		left: 50%;
-		transform: translateX(-50%)
+      position: relative;
+      margin: 30px auto 0 !important;
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+		//top: 105%;
+		//left: 50%;
+		//transform: translateX(-50%)
 	}
 	.rsHomePorthole .rsCapt {
 		left: 45% !important;
@@ -182,8 +181,7 @@
 	}
 
 	.b-extending-logistics {
-		margin-top: 520px;
-		&__content {
+      &__content {
           width: 95%;
           margin: 0 auto;
 		}

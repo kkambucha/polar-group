@@ -11934,7 +11934,7 @@ html, body {
   @media only screen and (max-width: 1500px) {
     .l-login-form {
       width: 350px;
-      margin: 20px 0 0 30px; } }
+      margin: 0 0 0 30px; } }
 
 /*-----------------------------------BLOCKS----------------------------------*/
 .mdl-cell--no-t-marg {
@@ -12126,7 +12126,9 @@ header .mdl-textfield__expandable-holder {
   margin-bottom: 30px; }
   .b-main-slider__loginform {
     position: absolute;
-    top: 80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     padding: 10px 40px;
     box-sizing: border-box;
     z-index: 200; }
@@ -13925,7 +13927,8 @@ header .mdl-textfield {
     @media only screen and (max-width: 1500px) {
       .b-form__input {
         font-size: 15px;
-        line-height: 28px; } }
+        line-height: 28px;
+        height: 30px; } }
   .b-form__label {
     line-height: 34px;
     font-size: 18px;
@@ -15257,10 +15260,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     padding-top: 0;
     padding-bottom: 0; } }
 
-@media screen and (max-width: 1600px) {
-  .b-main-slider__loginform {
-    top: 30px; } }
-
 @media screen and (max-width: 1500px) {
   .b-form {
     margin-bottom: 10px; }
@@ -15300,10 +15299,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .mdl-navigation--main-menu .mdl-button {
     margin: 0 18px; }
   .b-main-slider__loginform {
-    top: 105%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    position: relative;
+    margin: 30px auto 0 !important;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   .rsHomePorthole .rsCapt {
     left: 45% !important;
     -webkit-transform: translateX(-50%) !important;
@@ -15318,19 +15319,17 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     height: auto; }
   .b-extending-logistics__content--left {
     width: 520px; }
-  .b-extending-logistics {
-    margin-top: 520px; }
-    .b-extending-logistics__content {
-      width: 95%;
-      margin: 0 auto; }
-    .b-extending-logistics .b-big-header {
-      font-size: 48px;
-      line-height: 1.1;
-      margin-bottom: 30px; }
-    .b-extending-logistics .b-secondary-frase {
-      font-size: 24px;
-      line-height: 1.2;
-      margin-bottom: 30px; }
+  .b-extending-logistics__content {
+    width: 95%;
+    margin: 0 auto; }
+  .b-extending-logistics .b-big-header {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 30px; }
+  .b-extending-logistics .b-secondary-frase {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 30px; }
   .b-vertex-background--thick .b-vertex-background__content {
     padding: 70px 0 100px; }
   .b-sec-slider {
