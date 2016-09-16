@@ -14083,10 +14083,12 @@ header .mdl-textfield {
 .mdl-layout__header {
   z-index: 200; }
 
+.b-main-menu__item:last-child .b-main-menu__sub {
+  right: 0;
+  left: auto; }
+
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
-  .b-main-menu__item:nth-last-child(1) .b-main-menu__sub {
-    left: -150px; }
   .b-main-menu__item:nth-last-child(2) .b-main-menu__sub {
     left: -100px; }
   .b-main-menu__item:nth-last-child(3) .b-main-menu__sub {
