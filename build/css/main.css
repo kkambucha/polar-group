@@ -14013,7 +14013,8 @@ header .mdl-textfield {
     top: 30px;
     left: 0;
     background: #fff;
-    border-radius: 4px; }
+    border-radius: 4px;
+    z-index: 600; }
   .b-main-menu__sub a {
     color: #000;
     font-size: 20px;
@@ -14033,21 +14034,22 @@ header .mdl-textfield {
     display: block; }
   .b-main-menu__sub-item {
     position: relative; }
-  .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub {
+  .b-main-menu__item .b-main-menu__sub .b-main-menu__sub {
+    display: none;
     position: relative;
     left: -100%;
     background: #fff;
     overflow: visible;
     top: 0; }
+  .b-main-menu__item .b-main-menu__sub-item:hover .b-main-menu__sub {
+    display: block; }
   .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
-    display: none !important;
+    height: 0;
     position: absolute;
     top: 0;
     z-index: 500; }
   .b-main-menu__sub-item:hover .b-main-menu__sub-wrapper.second {
     display: inline-block !important; }
-  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item {
-    border-bottom: 1px solid #cccccc; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child {
     border: 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:first-child a {
