@@ -73,7 +73,7 @@
     overflow: visible;
     top: 0;
   }
-  &__item &__sub-item:hover &__sub {
+  &__item &__sub-item:hover > &__sub-wrapper > &__sub {
     display: block;
   }
 
@@ -89,9 +89,9 @@
   }
 
   &__sub-wrapper.second {
-    //.b-main-menu__sub-item {
-    //  border-bottom: 1px solid #cccccc;
-    //}
+    .b-main-menu__sub-item {
+      border-bottom: 1px solid #cccccc;
+    }
     .b-main-menu__sub-item:last-child {
       border: 0;
     }

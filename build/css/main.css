@@ -14041,7 +14041,7 @@ header .mdl-textfield {
     background: #fff;
     overflow: visible;
     top: 0; }
-  .b-main-menu__item .b-main-menu__sub-item:hover .b-main-menu__sub {
+  .b-main-menu__item .b-main-menu__sub-item:hover > .b-main-menu__sub-wrapper > .b-main-menu__sub {
     display: block; }
   .b-main-menu__item:hover .b-main-menu__sub .b-main-menu__sub-wrapper {
     height: 0;
@@ -14050,6 +14050,8 @@ header .mdl-textfield {
     z-index: 500; }
   .b-main-menu__sub-item:hover .b-main-menu__sub-wrapper.second {
     display: inline-block !important; }
+  .b-main-menu__sub-wrapper.second .b-main-menu__sub-item {
+    border-bottom: 1px solid #cccccc; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:last-child {
     border: 0; }
   .b-main-menu__sub-wrapper.second .b-main-menu__sub-item:first-child a {
