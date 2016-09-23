@@ -13991,7 +13991,7 @@ header .mdl-textfield {
 
 .b-main-menu {
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   /* Sub-menu level2 */ }
@@ -14017,9 +14017,9 @@ header .mdl-textfield {
     z-index: 600; }
   .b-main-menu__sub a {
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     border-bottom: 1px solid #cccccc;
-    padding: 10px 15px;
+    padding: 8px 10px;
     display: block; }
   .b-main-menu__sub a:hover {
     color: #fff;
@@ -14093,10 +14093,8 @@ header .mdl-textfield {
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
-  .b-main-menu__item:nth-last-child(2) .b-main-menu__sub {
-    left: -100px; }
-  .b-main-menu__item:nth-last-child(3) .b-main-menu__sub {
-    left: -50px; } }
+  .b-main-menu__item:nth-last-child(2) > .b-main-menu__sub {
+    left: -80px; } }
 
 @media screen and (max-width: 1170px) {
   .b-main-menu__item {

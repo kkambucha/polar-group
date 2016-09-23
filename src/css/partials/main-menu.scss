@@ -1,6 +1,6 @@
 .b-main-menu {
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 
@@ -32,9 +32,9 @@
 
   &__sub a {
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     border-bottom: 1px solid #cccccc;
-    padding: 10px 15px;
+    padding: 8px 10px;
     display: block;
   }
 
@@ -144,12 +144,12 @@
 
 /*--- Adaptive ---*/
 @media screen and (max-width: 1500px) {
-  .b-main-menu__item:nth-last-child(2) .b-main-menu__sub {
-    left: -100px;
+  .b-main-menu__item:nth-last-child(2) > .b-main-menu__sub {
+    left: -80px;
   }
-  .b-main-menu__item:nth-last-child(3) .b-main-menu__sub {
-    left: -50px;
-  }
+  //.b-main-menu__item:nth-last-child(3) .b-main-menu__sub {
+  //  left: -50px;
+  //}
 }
 @media screen and (max-width: 1170px) {
   .b-main-menu {
