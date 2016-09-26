@@ -842,13 +842,13 @@ header {
     left: 0;
     top: 0;
     background: #ffffff;
-    border: 1px solid #cccccc;
+    border: 1px solid #999999;
     border-radius: 50%;
   }
   &__period-input:checked + &__period-label:before {
     content: "";
     background: #344191;
-    border: none;
+    border: 1px solid #344191;
   }
   &__period-select {
     width: 240px;
@@ -961,7 +961,7 @@ header {
   &__list-item a {
     font-size: 20px;
     font-family: $proximaFont;
-    color: #cccccc;
+    color: #999999;
     text-decoration: none;
   }
   &__list-item.back > a, &__list-item.forward > a {
@@ -970,9 +970,11 @@ header {
   }
   &__list-item.active > a {
     color: #344191;
+    font-weight: 600;
   }
   &__list-item a:hover {
     color: #344191;
+    font-weight: 600;
   }
 }
 .pagination-min {
